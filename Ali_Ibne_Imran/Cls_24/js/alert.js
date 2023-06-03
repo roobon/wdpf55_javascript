@@ -1,0 +1,1 @@
+alert("Alert messege from JS")

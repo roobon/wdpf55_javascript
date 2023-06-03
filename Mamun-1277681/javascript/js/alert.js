@@ -1,0 +1,1 @@
+alert("aler in external folder")

@@ -7,32 +7,24 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 id="demo"></h1>
     <script>
         var x; //variable declaration
         x=5; //value assignment
         var y; 
         y ="Masum"
         var z;
-        z=x+y;
+        z=y+ " has " + x + " Mangoes ";
 
-        alert(z);
-
-
-        
-    </script>
-     <script>
-        var x; //variable declaration
-        x=5; //value assignment
-        var y; 
-        y =10;
-        var z;
-        z=x+y;
-
-        alert(z);
+       // alert(z);
+       //documents.write(z);
+       //console.log(z);
+       document.getElementById("demo").innerHTML = z;
 
 
         
     </script>
+    
     
 </body>
 </html>

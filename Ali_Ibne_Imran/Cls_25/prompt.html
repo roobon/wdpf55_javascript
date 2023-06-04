@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo"></div>
+    <!-- <script>
+        var name, email;
+       name =  prompt("Enter Your Name");
+       email = prompt("Enter Your Email");
+
+    //    document.write("Your name is " + name +"<br>"+ " Your email  is " + email);
+    var output = "Your name is " + name +"<br>"+ " Your email  is " + email;
+
+       document.getElementById("demo").innerHTML = output
+    </script> -->
+
+    <script>
+        var first_name, last_name;
+        first_name = prompt("Enter your fast_name");
+        last_name = prompt("Enter your last_name");
+
+        var output = "Your Full Name Is " + first_name + last_name;
+
+        document.getElementById("demo").innerHTML = output
+        alert(output.length)
+
+        // alert(output)
+
+        // console.log(output)
+    </script>
+</body>
+</html>

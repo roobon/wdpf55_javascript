@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #name{
+            font-size: 20px;
+            color:blue
+        }
+    </style>
+</head>
+<body>
+    <div id="name"></div>
+    <script>
+        //ElementById("name").innerHTML = output;
+    </script>
+    <div id ="Demo"></div>
+    <script>
+        
+        var firstName,lastName;
+        firstName = prompt("Enter Your firstName is","");
+        lastName = prompt("Enter Your lastName is","");
+
+        var output = "Your first Name Is" + firstName + "<br>" + "and your last Name" + lastName;
+        document.getElementById ("Demo").innerHTML = output;
+
+        
+    </script>
+  
+    
+</body>
+</html>

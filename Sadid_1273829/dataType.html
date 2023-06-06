@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+</head>
+<body>
+    
+
+    <script>
+        let x; //Undefined data type
+        x = 25; //number data type
+        x = "Jhon"; //String data type
+        let age = 25;
+        // let p = BigInt(01798537135);
+        console.log(typeof(p));
+
+        // to know data type we can use typeof(); 
+        let y = `My name is "Hasnain Sadid". I'm ${age} years old.`;
+        console.log(y);
+    </script>
+
+    <h3>Array Data Type.</h3>
+    <script>
+        const fruits = ['Mango', 'Orange', 'Jack-Fruits', 'Banana', 'Pine-Apple'];
+        
+        // document.write(fruits);
+        document.write(fruits[1]);
+        </script>
+    <h3>Object Data Type.</h3>
+    <p id="information"></p>
+    <script>
+        const info = {
+            name: "Sadid",
+            age: 25,
+            phone: "01798537135",
+            city: "Mymensingh",
+            country: "Bangladesh"
+        }
+
+        let r = `Hello! I'm ${info.name}, from ${info.city}, ${info.country}. I'm ${info.age} years old. You can contact me by phone. My phone number is ${info.phone}. Thank You.`
+
+        document.getElementById('information').innerHTML = r;
+    </script>
+</body>
+</html>

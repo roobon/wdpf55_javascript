@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+</head>
+<body>
+    <h3>String Changes in Uppercase</h3>
+    <p id="show1"></p>
+
+    <script>
+        let message = "today is tuesday";
+        let upperCase = message.toUpperCase();
+        document.getElementById("show1").innerHTML = upperCase;
+    </script>
+
+    <h3>String Changes in Lowercase</h3>
+    <p id="show2"></p>
+    <script>
+        let text = "This is a text file"
+        let converted = text.toLocaleLowerCase();
+        document.getElementById("show2").innerHTML = converted;
+    </script>
+    <h3>String Changes in Uppercase</h3>
+    <p id="show3"></p>
+    <script>
+        let string_1 = "Masum";
+        let string_2 = "is a play boy";
+        let string_3 = string_1.concat(" ", string_2);
+        document.getElementById("show3").innerHTML = string_3;
+    </script>
+
+    <h3>String trim()</h3>
+    <p id="show4"></p>
+    <script>
+        let string_4 = "Molla";
+        let string_5 = "  is a play boy ";
+        string_5 = string_5.trim();
+
+        let string_6 = string_4 + string_5;
+
+        document.getElementById("show4").innerHTML = string_6;
+    </script>
+    
+    <h3>String lenght</h3>
+    <p id="show5"></p>
+    <script>
+        let string1 = "We want to see a strong Bangladesh.";
+        let len = string1.length;
+        document.getElementById("show5").innerHTML = len;
+    </script>
+    
+    <h3>String slice</h3>
+    <p id="show6"></p>
+    <script>
+        let string2 = "We want to see a strong Bangladesh.";
+        let slices = string2.slice(3,10);
+        document.getElementById("show6").innerHTML = slices;
+    </script>
+</body>
+</html>

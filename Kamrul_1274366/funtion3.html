@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="fn">
+    <input type="number" id="ln">
+    <p id="show"></p>
+
+    <button onclick="plus()">Plus</button>
+    <button onclick="min ()">Minus</button>
+    <button onclick="mul ()">Multiply</button>
+    <button onclick="dev ()">Devision</button>
+
+    <script>
+        function plus (){
+        let fn = document.getElementById("fn").value;
+        let ln = document.getElementById("ln").value;
+       fn = parseInt (fn);
+        ln = parseInt (ln);
+        let total = fn + ln;
+        alert(total);
+    }
+        function min (){
+        let fn = document.getElementById("fn").value;
+        let ln = document.getElementById("ln").value;
+        fn = parseInt (fn);
+        ln = parseInt (ln);
+        let Minus = fn - ln;
+        alert(Minus);
+    }
+        function mul (){
+        let fn = document.getElementById("fn").value;
+        let ln = document.getElementById("ln").value;
+       fn = parseInt (fn);
+        ln = parseInt (ln);
+        let Multiply = fn * ln;
+        alert(Multiply);
+    }
+      
+        function dev (){
+        let fn = document.getElementById("fn").value;
+        let ln = document.getElementById("ln").value;
+       fn = parseInt (fn);
+        ln = parseInt (ln);
+        let Devision = fn / ln;
+        alert(Devision);
+    }
+      
+    
+
+        
+    </script>
+    
+</body>
+</html>

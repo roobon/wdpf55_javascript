@@ -4,21 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>var | let | const</title>
+    <title>Document</title>
 </head>
 <body>
-    
+    <h3>String changes in lowercase</h3>
+    <div id="show"></div>
 
     <script>
-        var x = 9;
-        x= "sakib"; //redeclear the value of x.
+        let message = "Today is Tuesday";
+        let converted = message.toLowerCase();
 
-        document.write(x);
-        document.write("<br>");
-
-        const D= 100;
-        D = 1000;
-        document.write(D);
+        document.getElementById("show").innerHTML = converted;
     </script>
 </body>
 </html>

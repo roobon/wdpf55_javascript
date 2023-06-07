@@ -7,6 +7,8 @@
     <title>function</title>
 </head>
 <body>
+   <h1 id="para"> This is a Heading</h1>
+    <div id="show"></div>
     <!-- <h3>Java script function fullname</h3>
     <script>
         function FullName(Fname, Lname){
@@ -15,14 +17,18 @@
         }
        console.log(FullName("Mamun", "Rashid"))
     </script> -->
-    <h3>Javascript Function Welcome</h3>
+    <!-- <h3>Javascript Function Welcome</h3> -->
+    <button onmouseover="copypaste()">Click Here</button>
     <script>
-        function wellCome(name, address){
-            return "Wellcome to my home :" +name+ " " +address;
-
+      function Welcome(){
+        prompt("enter your text")
+      }
+    </script>
+    <script>
+        function copypaste(){
+           let content= document.getElementById('para').innerHTML;
+           document.getElementById("show").innerHTML=content;
         }
-       document.write( wellCome("Shifat", "Rajarbari"));
-       console.log( wellCome("Mamun","jamader"))
     </script>
 </body>
 </html>

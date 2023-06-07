@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <input type="text" id="firstname" >
+    <input type="text" id="lastname" >
+    <button onclick="getData()">Click here</button>
+    <script>
+        function getData(){
+            let firstname = document.getElementById("firstname").value;
+            let lastname = document.getElementById("lastname").value;
+            alert(firstname + " " + lastname);
+        }
+    </script><br><br>
+
+    <input type="text" id="fvalue" >
+    <input type="text" id="lvalue" >
+    <button onclick="sum()">SUM</button>
+    <button onclick="subtrct()">SUBTRCT</button>
+    <button onclick="multiply()">MULTIPLY</button>
+    <button onclick="division()">DIVISION</button>
+    <script>
+        function sum(){
+        let fvalue = document.getElementById("fvalue").value;
+        let lvalue = document.getElementById("lvalue").value;
+        fvalue = parseInt(fvalue);
+        lvalue = parseInt(lvalue);
+        let total = fvalue + lvalue
+             alert(total);
+        }
+    </script>
+
+<script>
+    function subtrct(){
+    let fvalue = document.getElementById("fvalue").value;
+    let lvalue = document.getElementById("lvalue").value;
+    fvalue = parseInt(fvalue);
+    lvalue = parseInt(lvalue);
+    let total = fvalue - lvalue
+         alert(total);
+    }
+</script>
+
+<script>
+    function multiply(){
+    let fvalue = document.getElementById("fvalue").value;
+    let lvalue = document.getElementById("lvalue").value;
+    fvalue = parseInt(fvalue);
+    lvalue = parseInt(lvalue);
+    let total = fvalue * lvalue
+         alert(total);
+    }
+</script>
+
+<script>
+    function division(){
+    let fvalue = document.getElementById("fvalue").value;
+    let lvalue = document.getElementById("lvalue").value;
+    fvalue = parseInt(fvalue);
+    lvalue = parseInt(lvalue);
+    let total = fvalue / lvalue
+         alert(total);
+    }
+</script>
+</body>
+</html>

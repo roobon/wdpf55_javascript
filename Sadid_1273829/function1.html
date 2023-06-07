@@ -7,25 +7,19 @@
     <title>Function 1</title>
 </head>
 <body>
-    <!-- <input id="fullName" type="text">
-    <button type="button" onclick="getData()">Submit</button>
-    <script>
-        function getData() {
-            let fullName = document.getElementById("fullName").value;
-            alert(fullName)
-        }
-    </script> -->
+    <input type="text" placeholder="First Name" id="fname">
+    <input type="text" placeholder="Last Name" id="lname">
+    <button onclick="valueFunction()">Submit</button>
 
-    <input id="fname" type="text" placeholder="First name">
-    <input id="lname" type="text" placeholder="Last name">
-    <button onclick="getData()">Submit</button>
+
     <script>
-        function getData() {
-            let fname = document.getElementById("fname").value;
-            let lname = document.getElementById("lname").value;
-            let fullName = `Your full name is ${fname} ${lname}`
-            alert(fullName)
+
+        function valueFunction() {
+            let x = document.getElementById("fname").value;
+            let y = document.getElementById("lname").value;
+            alert(`${x} ${y}`);
         }
+        
     </script>
 </body>
 </html>

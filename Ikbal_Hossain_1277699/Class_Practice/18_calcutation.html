@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Calculation</h3> <br>
+    <input type="number" id="fnumber">
+    <input type="number" id="lnumber">
+    <button onclick="sum()">Sum</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="div()">Division</button>
+    <button onclick="mul()">Multiplication</button>
+
+
+    <script>
+        function sum(){
+         let fnumber = document.getElementById("fn").value;
+        let lnumber = document.getElementById("ln").value;
+        fn = parseInt(fn);
+        ln = parseInt(ln);
+        let result = fn + ln;
+        alert(result);
+        }
+    </script>
+
+<script>
+    function sub(){
+     let fnumber = document.getElementById("fn").value;
+    let lnumber = document.getElementById("ln").value;
+    fn = parseInt(fn);
+    ln = parseInt(ln);
+    let result = fn - ln;
+    alert(result);
+    }
+</script>
+</body>
+</html>

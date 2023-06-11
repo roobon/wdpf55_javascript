@@ -30,36 +30,51 @@
     <input type="text" id="numaric">
     <input type="text" id="value">
     <button onclick="sum()">Sum</button>
+    <button onclick="sub()">Sub</button>
+    <button onclick="multiple()">Multiple</button>
+    <button onclick="divition()">Divition</button>
     <script>
          function sum(){
             let numaric = document.getElementById("numaric").value;
             let value = document.getElementById("value").value;
             numaric = parseInt (numaric);
             value = parseInt (value);
-            let total= numaric + value;
-            alert(total);
+            let total = numaric + value
+            document.write(numaric + " + " + value + " = " + total);
+         }
+    </script>
+    
+    <script>
+        function sub(){
+            let numaric = document.getElementById("numaric").value;
+            let value = document.getElementById("value").value;
+            numaric = parseInt (numaric);
+            value = parseInt (value);
+            let total =  numaric - value
+            document.write(numaric + " - " + value + " = " + total);
          }
     </script>
 
-    <!-- <input type="text" id="text1">
-    <input type="text" id="tect2">
-    <button oneclick="Sub()">Click here</button>
-    <script>
-        function Sub(){
-            let text1 = document.getElementById("text1").value;
-            let text2 = document.getElementById("text2").value;
-
-            text1 = perseInt (text1);
-            text2 = perseInt (text2);
-
-            let total = text1 - text2 ;
-
-            alert(total);
-        } -->
-    </script>
-
-
-
+<script>
+    function multiple(){
+        let numaric = document.getElementById("numaric").value;
+        let value = document.getElementById("value").value;
+        numaric = parseInt (numaric);
+        value = parseInt (value);
+        let total =  numaric * value
+        document.write(numaric + " * " + value + " = " + total);
+     }
+</script>
+<script>
+    function divition(){
+        let numaric = document.getElementById("numaric").value;
+        let value = document.getElementById("value").value;
+        numaric = parseInt (numaric);
+        value = parseInt (value);
+        let total =  numaric / value
+        document.write(numaric + " / " + value + " = " + total);
+    }
+</script>
 
 </body>
 </html>

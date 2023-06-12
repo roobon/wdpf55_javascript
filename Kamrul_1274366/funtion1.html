@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #show{
+            font-size: 23px;
+            color: blue;
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <P id = "para"> This is a paragraph</P>
+    <div id="show"></div>
+    <button onclick="Welcome ()">Click Here</button>
+    <button onclick=" copypaste ()">Copy & Past</button>
+    <script>
+        
+    function Welcome(){
+        alert("Welcome to PHP")
+    }
+    </script>
+    <script>
+        function copypaste(){
+            let content = document.getElementById("para").innerHTML;
+            document.getElementById("show").innerHTML = content;
+        }
+    </script>
+   
+</body>
+</html>

@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <script src="js/alert.js"></script>
-    <script>
-        alert('Alert from Head section');
-    </script>
 </head>
 <body>
+
+    <h1 id="text"></h1>
+
     <script>
-        alert("Alert from Body section");
+        var name = prompt("enter your name" , "" )
+
+        // var result = "your name is " + name ;
+
+        document.getElementById('text').innerHTML = "your name is " + name ;
+  
     </script>
 </body>
 </html>

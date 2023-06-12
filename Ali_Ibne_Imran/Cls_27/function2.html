@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="fnumber" name="fnumber">
+    <input type="number" id="lnumber" name="lnumber">
+    <p id="show"></p>
+    <br><br><br>
+    <button type="submit" onclick="add()">Addition</button>
+    <button type="submit" onclick="subs()">Substract</button>
+    <button type="submit" onclick="mul()">Multiply</button>
+    <button type="submit" onclick="div()">Division</button>
+
+    <script>
+        function add(){
+            let fnumber = document.getElementById("fnumber").value;
+            let lnumber = document.getElementById("lnumber").value;
+            fnumber = parseInt(fnumber); 
+            lnumber = parseInt(lnumber); 
+            let total = fnumber + lnumber;
+            document.getElementById("show").innerHTML = total
+        }
+        function subs(){
+            let fnumber = document.getElementById("fnumber").value;
+            let lnumber = document.getElementById("lnumber").value;
+            fnumber = parseInt(fnumber); 
+            lnumber = parseInt(lnumber); 
+            let total = fnumber - lnumber;
+            document.getElementById("show").innerHTML = total
+        }
+        function mul(){
+            let fnumber = document.getElementById("fnumber").value;
+            let lnumber = document.getElementById("lnumber").value;
+            fnumber = parseInt(fnumber); 
+            lnumber = parseInt(lnumber); 
+            let total = fnumber * lnumber;
+            document.getElementById("show").innerHTML = total
+        }
+        function div(){
+            let fnumber = document.getElementById("fnumber").value;
+            let lnumber = document.getElementById("lnumber").value;
+            fnumber = parseInt(fnumber); 
+            lnumber = parseInt(lnumber); 
+            let total = fnumber / lnumber;
+            document.getElementById("show").innerHTML = total
+        }
+        
+    </script>
+</body>
+</html>

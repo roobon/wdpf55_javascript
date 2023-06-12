@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Function to check if the student has passed or failed
+        function checkPassingStatus(marksMCQ, marksDes, marksEvi) {
+            if (marksMCQ >= 80 && marksDes >= 60 && marksEvi >= 60) {
+                return "You have passed.";
+            } else {
+                return "You have failed.";
+            }
+        }
+
+        // Getting marks from the user
+        var marksMCQ = parseInt(prompt("Enter MCQ marks:"));
+        var marksDes = parseInt(prompt("Enter Descriptive marks:"));
+        var marksEvi = parseInt(prompt("Enter Evidence marks:"));
+
+        // Checking passing status and displaying the result
+        var result = checkPassingStatus(marksMCQ, marksDes, marksEvi);
+        document.write(result);
+
+    </script>
+</body>
+
+</html>

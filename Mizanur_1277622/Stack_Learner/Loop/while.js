@@ -9,5 +9,5 @@ let i = 1;
 while (i <=5){
     sum += i;   
     i++;
-}
+}0
 console.log(sum);

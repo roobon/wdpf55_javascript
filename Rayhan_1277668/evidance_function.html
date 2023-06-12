@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- function  -->
+<form action="" name="result">
+  
+  1. MCQ <br>
+  <input type="text" name="m" id="mcq"> <br>
+  2. Descriptive <br>
+  <input type="text" name="des" id="des"> <br>
+  3. Evidence <br>
+  <input type="text" name="evd" id="evd"> </br>
+
+  <button onclick={ckeckResult()}> Check result </button>
+
+</form>
+
+  <script>
+
+    function ckeckResult() {
+
+      let mcq = document.getElementById('mcq').value;
+      // let mcq = document.result.m.value;
+      let mcqNumber = parseInt(mcq);
+      // alert(mcq);
+
+      let des = document.getElementById('des').value;
+      let desNumber = parseInt(des);
+      console.log(des);
+
+      let evi = document.getElementById('evd').value;
+      let eviNumber = parseInt(evi);
+      console.log(evi);
+
+      if (mcqNumber >= 80 && desNumber >= 60 && eviNumber >= 60) {
+        alert('you are passed');
+      }
+      else {
+        alert('you are failed ');
+      }
+
+    }
+
+  </script>
+
+  <!-- ========== -->
+
+
+
+  <!-- prompt  -->
+
+  <!-- <script>
+  let m = prompt ("enter your mcq number" , "") ;
+  let d = prompt ("enter your Descriptive number" , "") ;
+  let e = prompt ("enter your Evidence number" , "") ;
+
+
+  if ( m >= 80 && d>= 60 && e>=60 ) {
+    alert('you are passed') ;
+  }
+  else {
+    alert ('you ase failed ')
+  }
+</script> -->
+
+  <!--  -->
+
+</body>
+
+</html>

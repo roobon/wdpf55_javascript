@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button onclick="foo()"> Result Generator </button>
+
+    <script>
+        function foo() {
+            var myNumber = 10
+            let answer =   prompt ('enter your number' , myNumber)
+            if (answer >= 80) {
+                alert('you are GPA 5')
+            } else  if  (answer >= 70 ){
+                alert('you Got A')
+            }
+            else  if  (answer >= 60 ){
+                alert('you are A-')
+            }
+             else  if  (answer >= 50 ){
+                alert('you are B')
+            }
+             else  if  (answer >= 33 ){
+                alert('you are TTP')
+            }
+            else {
+                alert('You are Failed')
+            }
+        }
+    </script>
+</body>
+
+</html>

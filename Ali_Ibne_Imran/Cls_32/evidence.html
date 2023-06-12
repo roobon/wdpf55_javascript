@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Exam marks evaluate from user input</h3>
+    <form action="" name="result">
+        <input type="text" name="mcq" placeholder="enter mcq"><br><br>
+        <input type="text" name="des" placeholder="enter descriptive"><br><br>
+        <input type="text" name="evd" placeholder="enter evidence"><br><br>
+        <button type="button" onclick="showResult()">Show Result</button>
+    </form>
+
+    <script>
+        function showResult(){
+           let mcq = document.result.mcq.value;
+            let des = document.result.des.value;
+            let evd = document.result.evd.value;
+
+            if(mcq>=80 && des>=60 && evd>=60){
+                alert("You have passed");
+            }else{
+                alert("You have failed");
+            } 
+        }
+    </script>
+    <!-- <script>
+         m = parseInt(prompt("Enter MCG marks", ""));
+         d = parseInt(prompt("Enter Descriptive marks", ""));
+         e = parseInt(prompt("Enter Evidence", ""));
+
+        if(m>=80 && d>=60 && e>=60){
+            document.write("You have passed");
+        }else{
+            document.write("You have failed");
+        }
+    </script> -->
+</body>
+</html>

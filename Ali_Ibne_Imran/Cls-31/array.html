@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>String value</h3>
+    <script>
+        var x;
+
+        const cars = ["Saab", "Volvo", "BMW"];
+        document.write(cars);
+        document.write("<br>");
+        document.write(cars[0]);
+        document.write("<br>");
+        document.write(cars[2]);
+    </script>
+
+    <h3>Number value</h3>
+    <script>
+        const numbers = [5,15,37,57,93,67,82]
+        document.write(numbers);
+        document.write("<br>");
+        document.write(numbers[0]);
+        document.write("<br>");
+        document.write(numbers[3]);
+        document.write("<br>");
+        document.write(numbers[6]);
+    </script>
+
+    <h3>Empty array</h3>
+    <script>
+        const fruits = [] //empty array
+        document.write(fruits);
+
+        fruits[0] = "Mango"
+        fruits[1] = "lichi"
+        fruits[2] = "Apple"
+        fruits[3] = "Orange"
+        fruits[4] = "Lemon"
+
+        document.write(fruits);
+        document.write("<br>")
+        document.write(fruits[2])
+    </script>
+
+    <h3>new Array</h3>
+    <script>
+        const flowers = new Array ("Rose", "Belly", "Waterlily","Cosmos");
+        document.write(flowers)
+
+        document.write("<br>")
+        document.write("Number of element: " + flowers.length)
+    </script>
+    <!-- <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let fruit = fruits[fruits.length - 1];
+        document.write(fruits.length - 1)
+    </script> -->
+</body>
+</html>

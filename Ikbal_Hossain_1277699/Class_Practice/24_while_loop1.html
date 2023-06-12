@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Array with While Loop</h3>
+  <script>
+     let studentsName = ["Masum", "Molla", "Mizanur", "Mahidul", "Mamun"]
+     let i = 0;
+     
+     document.write("<ul>");
+     while(i<studentsName.length){
+        document.write("<li>");
+            document.write(studentsName[i]);
+        document.write("</li>");
+        i++;
+     }
+     document.write("</ul>");
+           
+  </script>
+
+<h3>Array with For Loop</h3>
+<script>
+    let fruitsName = ["Masum", "Molla", "Mizanur", "Mahidul", "Mamun"]
+    
+    document.write("<ul>");
+        for(let x = 0; x<fruitsName.length; x++){
+            document.write("<li>");
+                document.write(fruitsName[x]);
+            document.write("</li>");
+        }
+    document.write("</ul>");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arry in list using for loop</title>
+</head>
+<body>
+    <h3>Students Name</h3>
+    <script>
+        const students = ["Nadia", "Nabila", "Pervaje","Saad", "Sadid","Kamrul"];
+        let x = 0
+        document.write('<ul>')
+            while(x<students.length){
+                document.write("<li>"+ students[x] +"</li>");
+                x++;
+
+            };
+            document.write('</ul>')
+    </script>
+
+    <h3>Fruites Name</h3>
+    <Script>
+        const fruites = [" Mango","Guava","Apple",];
+        document.write('<ul>');
+        for(let y=0; y<fruites.length; y++){
+            document.write("<li>")
+                document.write(fruites[y]);
+            document.write("</li>")
+        }
+        document.write('</ul>')
+    </Script>
+    
+</body>
+</html>

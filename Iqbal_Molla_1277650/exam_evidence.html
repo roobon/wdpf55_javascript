@@ -6,35 +6,26 @@
     <title>Exam Marks</title>
 </head>
 <body>
-    <!-- <h3>User input Exam Marks Evaluete</h3>
-    <script>
-       let mcq = promt("Enter MCQ marks", "");
-       let descriptrive = promt("Enter Descriptrive marks", "");
-       let evidence = promt("Enter Evidence marks", "");
-
-       if(mcq>=80 && descriptrive>=60 && evidence>=60){
-            alert("you are Passed");
-       } else{
-        alert("you are failed");
-       }
-    </script> -->
-    <form action="" name="resul">
-        <input type="text" name="mcq" placeholder="Enter MCQ">
+   
+    <form action="" name="result">
+        <input type="text" name="Mcq" placeholder="Enter MCQ">
         <input type="text" name="Descripted" placeholder="Enter descripted">
         <input type="text" name="Evidence" placeholder="Enter Evidence"> <br>
         <button type="text" onclick="showResult()">Show Result</button>
 
-    </form>
+    </form>    
     <script>
-        let mcq = document.result.mcq.value;
-        let Descripted = document.result.mcq.value;
-        let Evidence = document.result.mcq.value;
-        
-        if(mcq>=80 && descriptrive>=60 && evidence>=60){
+        function showResult(){
+        let Mcq = document.result.Mcq.value;
+        let Descripted = document.result.Descripted.value;
+        let Evidence = document.result. Evidence.value;
+        if(Mcq>=80 && Descripted>=60 && Evidence>=60){
             alert("you are Passed");
        } else{
         alert("you are failed");
-       }
+       } 
+        }
+       
     </script>
 </body>
 </html>

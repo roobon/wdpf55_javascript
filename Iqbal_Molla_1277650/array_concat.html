@@ -7,13 +7,44 @@
 </head>
 <body>
     <h3>Margin 2 arrays</h3>
-    <script>
+    <!-- <script>
         const fruits = ["Mango", " Banana", " Orange", " Grape", " Apple", " Jackfruits"];
         const flowers = [ "Rose", "Tulip", "Belly", "Waterililly"];
 
         const allTogether = fruits.concat(flowers);
         document.write(allTogether);
         alert(typeof(allTogether));
+    </script> -->
+
+
+    <!-- <script>
+          const fruits = ["Mango", " Banana", " Orange", " Grape", " Apple", " Jackfruits"];
+          const flowers = [ "Rose", "Tulip", "Belly", "Waterlilly"];
+
+          let p= fruits.concat(flowers);
+
+        document.write("<ol>")
+            for(let x = 0 ; x<p.length; x++){
+                document.write("<li>")
+                    document.write(p[x]);
+                document.write("</li>")
+            }
+          
+        document.write("</ol>")
+    </script> -->
+    <script>
+        const fruits = ["Mango", " Banana", " Orange", " Grape", " Apple", " Jackfruits"];
+        const flowers = [ "Rose", "Tulip", "Belly", "Waterlilly"];
+
+        let y = fruits.concat(flowers);
+
+        document.write("<ul>")
+            for(let x = 0; x<y.length; x++){
+            document.write("<li>")
+                document.write(y[x]);
+            document.write("</li>")
+            }
+        document.write("</ul>")
     </script>
 </body>
 </html>

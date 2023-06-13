@@ -8,23 +8,23 @@
 <body>
     <!-- <h3>Grading system</h3>
     <script>
-        let MCQ=30;
-        let Description=90;
-        let Evidence=90
+        let MCQ=80;
+        let Description=40;
+        let Evidence=70
         if(MCQ>=80 && Description>=60 && Evidence>=60 ){
             alert("passed");
        }else {
             alert("failed");
         }
-    </script> -->
+    </script>
 
-<!-- 
+
 
     <h3>Grading system</h3>
     <script>
         let M =prompt("Enter MCQ marks","");
         let data=prompt("Enter MCQ marks","");
-        let M =prompt("Enter MCQ marks","");
+        let n =prompt("Enter MCQ marks","");
         if(MCQ>=80 && Description>=60 && Evidence>=60 ){
             alert("passed");
        }else {
@@ -34,7 +34,7 @@
 
 
     <form action="" name="result">
-        <input type="text" name="mcq" placeholder="Enter MCQ"><br><br>
+        <input type="text" name="mcq" placeholder="Enter MCQ" ><br><br>
         <input type="text" name="desc" placeholder="Enter Description"><br><br>
         <input type="text" name="eve" placeholder="Enter Evidence"><br><br>
         <button type="button" onclick="showResult()">Show Result
@@ -49,10 +49,10 @@
             let eve=document.result.eve.value;
 
             if(mcq>=80 && desc>=60 && eve>=60){
-                alert("passed");
+                alert("You have passed");
 
             }else {
-                alert("failed");
+                alert("You have failed");
             }
         }
     </script>

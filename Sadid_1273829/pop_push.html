@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop & Push</title>
+</head>
+<body>
+    <h3>Array Pop</h3>
+    <p>pop() is delete an array item from the last</p>
+    
+    <script>
+        const fruits = ["Mango","Banana", "Orange", "Apple", "Goava", "Grape"]
+        document.write(fruits);
+        document.write("<hr>");
+        
+        fruits.pop();
+        document.write(fruits);
+    </script>
+
+<h3>Array Push</h3>
+<p>push() is added an array item from the last</p>
+
+<script>
+    const fruit = ["Mango","Banana", "Orange", "Apple", "Goava", "Grape"]
+    document.write(fruit);
+    document.write("<hr>");
+    
+    fruit.push("Strawberry");
+    document.write(fruit);
+</script>
+
+<h3>Array Shift</h3>
+<p>Shift() is remove an array item from begining</p>
+
+<script>
+    const f = ["Mango","Banana", "Orange", "Apple", "Goava", "Grape"]
+    document.write(f);
+    document.write("<hr>");
+    
+    f.shift();
+    document.write(f);
+</script>
+
+<h3>Array Unshift</h3>
+<p>unshift() is added an array item from begining</p>
+
+<script>
+    const fr = ["Mango","Banana", "Orange", "Apple", "Goava", "Grape"]
+    document.write(fr);
+    document.write("<hr>");
+    
+    fr.unshift("Strawberry");
+    document.write(fr);
+</script>
+
+<h3>Array join</h3>
+<p>join() convert to a string using seperator</p>
+
+<script>
+    const e = ["Mango","Banana", "Orange", "Apple", "Goava", "Grape"]
+    document.write(e);
+    document.write("<hr>");
+    
+    let txt = e.join("-");
+    document.write(txt);
+</script>
+
+<h3>Array concate</h3>
+<p>concate() Merging two Array</p>
+
+<script>
+    const fruitss = ["Mango","Banana", "Orange", "Apple", "Goava", "Grape"];
+    document.write("<br>");
+    const flowers = ["Rose","Cosmos", "Tulip", "Belly"]
+    document.write(fruitss);
+    document.write(flowers);
+    document.write("<hr>");
+    
+    let elements = fruitss.concat(flowers)
+    document.write(elements);
+</script>
+
+<h3>Array toString</h3>
+<p>toString() converted an array to a string</p>
+
+<script>
+    const g = ["Mango","Banana", "Orange", "Apple", "Goava", "Grape"]
+    document.write(g);
+    document.write("<hr>");
+    
+    let txts = g.toString();
+    document.write(txts);
+    console.log(typeof(txts));
+</script>
+</body>
+</html>

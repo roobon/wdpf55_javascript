@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidence</title>
+</head>
+<body>
+    <form action="#" name="myform">
+        <input type="text" name="mcq" placeholder="MCQ Number">
+        <input type="text" name="des" placeholder="Descriptive Number">
+        <input type="text" name="evi" placeholder="Evidence Number">
+        <button type="button" onclick="myFun()">Show Result</button>
+    </form>
+    <h2 id="demo"></h2>
+
+    <script>
+        function myFun() {
+            let m = document.myform.mcq.value
+            let d = document.myform.des.value
+            let e = document.myform.evi.value
+
+            if (m>=80 && d>=60 && e>=60) {
+                // alert("You are pass")
+                document.getElementById("demo").innerHTML = "You are Passed"
+            } else{
+                // alert("You are fail")
+                document.getElementById("demo").innerHTML = "You are Failed"
+            }
+        }
+    </script>
+</body>
+</html>

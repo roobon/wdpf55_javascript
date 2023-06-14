@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="show"></div>
+    <script>
+        (function(){
+            // alert("Hello world");
+            document.getElementById("show").innerHTML = "Hello world. This is a anonymous function called by itself";
+        })();
+
+        //abc()
+    </script>
+
+    <div id="show1"></div>
+
+<script>
+    (function(name){
+        // alert("Hello world");
+        document.getElementById("show1").innerHTML = "Hello " + name + "This is a anonymous function called by itself";
+    })("Masum");
+
+    //abc()
+</script>
+</body>
+</html>

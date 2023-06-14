@@ -1,1 +1,1 @@
-alert("aler in external folder")
+console.log("console log check")

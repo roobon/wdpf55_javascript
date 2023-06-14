@@ -30,3 +30,7 @@ console.log(`My name is ${names}. I'm ${age} years old.`);
 
 const fruits = ["Mango","Banana", "Orange", "Apple", "Goava", "Grape"]
 fruits.pop();
+
+
+let a = "The name of our \\ country is bangladesh"
+console.log(a);

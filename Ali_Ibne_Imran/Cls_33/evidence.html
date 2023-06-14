@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="result">
+        <input type="text" name="mcq" placeholder="enter mcq number"><br><br>
+        <input type="text" name="des" placeholder="enter descriptive number"><br><br>
+        <input type="text" name="evd" placeholder="enter evidence number"><br><br>
+        <!-- <button type="button" onclick="forChecking()">Check For Comment</button> -->
+        <!-- <input type="button" value="Check" onclick="forChecking()"> -->
+        <input type="submit" value="submit" onclick="forChecking()">
+    </form>
+    <script>
+        function forChecking(){
+            var mcq = document.result.mcq.value;
+            var des = document.result.des.value;
+            var evd = document.result.evd.value;
+            if(mcq>=80 && des>=60 && evd>=60){
+                alert("You have passed");
+            }else{
+                alert("You have Failed");
+            }
+        }
+    
+    </script>
+</body>
+</html>

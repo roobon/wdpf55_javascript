@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students name sort</title>
+</head>
+<body>
+    <h2>Sort by Alphabetic order</h2>
+
+    <script>
+        const Students = ["Mamun", "Kamrul", "Sadid", "Mizan", "Maruf"];
+        Students.sort();
+        document.write(`<ul>`)
+            for(let i=0; i<Students.length; i++){
+                document.write(`<li>${Students[i]}</li>`)        
+            }
+        document.write(`</ul>`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <h3>Match by text</h3>
+    <script>
+        let text = "visit W3School.com or W3school or w3school"
+        let pattern = /w3school/ig;
+        document.write(text.match(pattern))
+    </script>
+    <h3>Match by group text</h3>
+    <script>
+        let text1 = "I love to swim in the river.";
+        let pattern1 = /[a-z]/ig;
+        let result1 = text1.match(pattern1);
+        document.write(result1);
+        console.log(typeof(result1));
+    </script>
+</body>
+</html> 

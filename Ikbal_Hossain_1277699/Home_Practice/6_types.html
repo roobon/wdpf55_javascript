@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     var price = 100;
+    // alert(typeof(price));
+    document.write("<br>");
+
+    var price = '100';
+    // alert(typeof(price));
+
+    var isHappy = true;
+    // alert(typeof(isHappy));
+
+    var romantic;
+    // alert(typeof(romantic));
+
+    var num1 = 0.1;
+    var num2 = 0.2;
+    var sum =  num1 + num2;
+    document.write(sum);  // the result will show 0.30000000000000004
+    document.write("<hr>");
+
+    var num1 = 0.1;
+    var num2 = 0.2;
+    var sum =  num1 + num2;
+    sum = sum.toFixed(2)  // the result will show in a digit what you put in a bracket
+    document.write(sum);  
+
+   </script>
+</body>
+</html>

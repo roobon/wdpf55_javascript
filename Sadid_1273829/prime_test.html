@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime test in JS</title>
+</head>
+<body>
+    <form action="#" name="form" onsubmit="alert(myFun())">
+        <input type="text" name="num" placeholder="Input a positive number">
+        <input type="submit" name="submit" value="Check">
+    </form>
+
+    <!-- <script>
+        function myFun() {
+            let num = document.form.num.value;
+
+            if (num==0) {
+                return "You can't input 0"
+            } else if (num==1) {
+                return "1 is not a prime number"
+            } else if (num==2) {
+                return "2 is not a prime number"
+            } else{
+                for (i=2; i<num; i++) {
+                    if (num % i ==0) {
+                        return `${num} is not a prime number.`
+                    }   
+                }
+                return `${num} is a prime number.`
+            }
+        }
+    </script> -->
+
+    <script>
+        function myFun() {
+            let val= document.form.num.value;
+
+            if (val == 0) {
+                return `you can't input 0`
+            } else if(val == 1){
+                return `1 is not a prime number`
+            } else if(val == 2){
+                return `2 is a prime number`
+            } else{
+                for (let i = 2; i < val; i++) {
+                    if (val % i == 0) {
+                        return `${val} is not a prime number.`
+                    }
+                }
+                return `${val} is a prime number.`
+            }
+        }
+    </script>
+</body>
+</html>

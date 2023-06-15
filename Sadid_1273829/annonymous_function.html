@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annonymous function</title>
+</head>
+<body>
+    <h3>Annonymous Function</h3>
+    <button onclick="(
+        function(){
+            alert('This is an annonymous function, called by itself')
+        }
+    )()">click me</button>
+
+    <script>
+        document.write("<br>")
+        const result = function(m, e, p){
+            mcq = m*p /100;
+            // mc= mcq/100
+            evi = e*p /100;
+            // ev = evi/100;
+            return (mcq + evi)
+        }
+
+        document.write(result(44, 49, 20))
+    </script>
+</body>
+</html>

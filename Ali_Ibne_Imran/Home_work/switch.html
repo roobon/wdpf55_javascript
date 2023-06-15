@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Input a letter and it is vowel or consonant using switch</h4>
+    <script>
+        letter = prompt("Enter any letter : ");
+        letter = letter.toLowerCase(); //converd to lower case
+        switch(letter){
+            case "a":
+            case "e":
+            case "i":
+            case "o":
+            case "u":
+                alert("This is Vowel");
+            break;
+            default:
+                alert("This is Consonant");
+        }
+    </script>
+</body>
+</html>

@@ -30,7 +30,7 @@
         // addition to the same variable shorthand
         // += means adding some value to the existing value
         price1 += 10;
-        document.write(price1);  // 41 + 10
+        document.write(price1);  // 41 + 10 = 51
         document.write("<br>")
 
         price2 = price2 - 5;
@@ -46,14 +46,34 @@
         // shorthand *=
         // *= means multiplying some values from the existing value of the variable
         price1 *= 5;
-        document.write(price1)
+        document.write(price1)  // 51 * 5 = 255
         document.write("<br>")
 
         // shorthand /=
         // /= means dividing some values from the existing value of the variable
         price1 /= 10;
-        document.write(price1);
+        document.write(price1);  // 255 / 10 = 25.5
+        document.write("<br>")
         
+        // Modulus or Remainder //
+
+        // %= means get the remainder value from the existing value of the variable
+        price1 %= 5;  // 25.5 / 5 = quitent 5, remainder .5
+        document.write(price1);
+        document.write("<br>")
+        document.write("The mololus or Remainder is " + price1);
+        document.write("<br>")
+
+        var age = 15;
+        age = age + 1;  // 15 + 1 = 16
+        // ++ means adding 1 to the existing 
+        age ++;  // 16 + 1 = 17
+        document.write(age);
+        document.write("<br>")
+
+        age --;  // means you are deducting 1 from the existing value
+        document.write(age);
+
 
     </script>
 </body>

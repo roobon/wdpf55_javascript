@@ -20,9 +20,6 @@
         <button onclick="checkMarks()">Check Result</button>
         <p id="result"></p>
     </form>
-
-    <!-- ======== -->
-    <!-- show my page -->
     
     <script>
         function checkMarks(){
@@ -35,34 +32,20 @@
         }else{
             document.getElementById("result").innerHTML = "You have failed";
         }
-    }
-
-        //show in alert tab
-
-        // function checkMarks(){
-        //     let mcq = document.result.mcq.value;
-        //     let desc = document.result.desc.value;
-        //     let eve = document.result.eve.value;
-        //     if(mcq>=80 && desc>=60 && eve>=60){
-        //         alert("Your are passed")
-        //     } else {
-        //         alert("your are failed")
-        //     }
-        // }
+        }
     </script>
 
-<!-- write and show alert tabs -->
-
     <!-- <script>
-        let m = prompt("Enter MCQ marks", "");
-        let d = prompt("Enter Discriptive marks", "");
-        let e = prompt("Enter Evidence marks", "");
-
-        if(m>=80 && d>=60 && e>=60){
-            alert("Your passed")
-        }else{
-            alert("Your failed")
-        }
+    //     function checkmarks(){
+    //         let mcq = document.result.mcq.value;
+    //         let desc = document.result.desc.value;
+    //         let eve = document.result.eve.value;
+    //         if(mcq>=80 && desc>=60 && eve>=60){
+    //             alert("Your are passed")
+    //         } else {
+    //             alert("your are failed")
+    //         }
+    //     }
     </script> -->
 </body>
 </html>

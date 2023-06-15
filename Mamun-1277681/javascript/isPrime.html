@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     function isPrime(){
+        var x = document.prime.number.value;
+        if(x==0){
+            return("you can't input 0");
+        }
+        else if(x==1){
+            return('1 is not a prime number')
+        }
+        else if(x==2){
+            return("2 is a prime number")
+        }
+        else{
+            for(i=2; i<x; i++){
+                if(x%i==0){
+                    return x + ("is not a prime number");
+                }
+               
+            }
+            return x + " is a prime number";
+        }
+       
+     }
+   </script>
+   <h2>Prime number testing</h2>
+   <form action="" name="prime" onsubmit="alert(isPrime())">
+    <input type="text" name="number" id=""> <br>
+    <button type="button">Check</button>
+   </form>
+      
+</body>
+</html>

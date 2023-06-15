@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Odd/Even number</h3>
+    <form action="" name="form" onclick="mynumber()">
+        <input type="text" name="number" placeholder="Input your number">
+        <input type="submit" name="submit" value="CHECK">
+    </form>
+    <script>
+        function mynumber(){
+            let number = document.form.number.value;
+            if(number % 2 == 0){
+                alert("Even Number")
+            }else{
+                alert("Odd Number")
+            }
+        }
+    </script>
+    
+</body>
+</html>

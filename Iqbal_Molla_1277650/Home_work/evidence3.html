@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h3>Data with Table using Loop: Table 1</h3>
+     <script>
+        let name = ["Iqbal", "Mizan","kamrul","Rayhan", "Sadid"];
+
+         let table ="<table border=1>";
+        for(let i=0; i<name.length; i++){
+            table += "<tr><td>" + name[i] + "</td></tr>"
+        }
+        table += "</table>"
+        document.write(table);
+     </script> -->
+      <h3>Data with Table using Loop: Table 2</h3>
+      <script>
+         let name = ["Iqbal", "Mizan","kamrul","Rayhan", "Sadid"];
+ 
+          let table ="<table border=1>";
+            table+="<tr><th>SL</th><th>Student Name</th></tr>"
+
+            let x = 1;
+         for(let i=0; i<name.length; i++){
+            table +="<tr><td>" + x + "</td>" ; + x++;
+             table += "<td>" + name[i] + "</td></tr>";
+         }
+         table += "</table>"
+         document.write(table);
+      </script>
+</body>
+</html>

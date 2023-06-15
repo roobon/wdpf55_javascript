@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Shorting of students name</h3>
+    <script>
+        const students = ["Imran","Shakib","Mahadi","Shadid","Mamun","Ikbal","Rayhan","Kamrul","Afzal"];
+        document.write(students);
+        document.write("<hr>");
+        
+        students.sort()
+        document.write("<ol>")
+            for(let x=0; x<students.length; x++){
+           document.write("<li>" +students[x]+ "</li>");
+        }
+        document.write("</ol>")
+    </script>
+</body>
+</html>

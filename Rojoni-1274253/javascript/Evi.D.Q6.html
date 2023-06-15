@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Data with table using loop</h3>
+    <script>
+
+        
+            let cities=["Dhaka","Khulna","Jessore","Sylhet","Rajshahi","Cumilla","Noakhali","Barisal" ];
+            let table ="<table border=1>";
+
+                for (let i = 0; i<cities.length;i++){
+                    table += "<tr><td>" +cities[i] +"</tr></td>"
+
+                }
+           
+
+        
+        table +="</table>"
+        document.write(table);
+        
+    </script>
+
+
+<!-- <script type="text/javascript">
+    function printTable() {
+        var num;
+        num = Number(document.getElementById("txtNumber").value);
+        for (var i = 1; i <= 10; i++) {
+            var pTag = document.getElementById("pPrint");
+            pTag.innerHTML += num * i + "<br/>";
+        }
+    }
+</script> -->
+    
+</body>
+</html>

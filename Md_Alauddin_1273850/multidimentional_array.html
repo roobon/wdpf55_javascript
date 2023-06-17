@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>One Dimentional array</h3>
+    <script>
+        var activities = [
+            ['work', 9], 
+            ['Eat', 1], 
+            ['Commut', 2], 
+            ['Play Game', 1], 
+            ['Sleep', 7, ]
+        ];
+
+        document.write(activities[2][0])
+
+    </script>
+
+<h3>Three Dimentional array</h3>
+<script>
+    var activities = [
+        ['work', 9], 
+        ['Eat', 1], 
+        ['Commut', 2], 
+        ['Play Game', 1], 
+        ['Sleep', 7, ]
+    ];
+
+    document.write(activities[0][1])
+
+</script>
+
+
+    <h3>Three Dimentional array</h3>
+    <script>
+        var activities = [
+            ['work', 9], 
+            ['Eat', 1], 
+            ['Commut', 2], 
+            ['Play Game', 1], 
+            ['Sleep', 7, ["Rose", "Water Lilly", "Sunflower"]]
+        ];
+
+        document.write(activities[4][2][1])
+
+    </script>
+
+        <h3>added element</h3>
+        <script>
+            var activities = [
+            ['work', 9], 
+            ['Eat', 1], 
+            ['Commut', 2], 
+            ['Play Game', 1], 
+            ['Sleep', 7, ]
+        ];
+        
+        activities[1].push(['Study']);
+        document.write(activities[1][2])
+
+        console.table(activities);
+
+        
+        </script>
+    
+</body>
+</html>

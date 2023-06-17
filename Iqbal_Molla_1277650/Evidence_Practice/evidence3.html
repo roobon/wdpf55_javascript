@@ -20,16 +20,26 @@
       <h3>Data with Table using Loop: Table 2</h3>
       <script>
          let name = ["Iqbal", "Mizan","kamrul","Rayhan", "Sadid"];
+         let phone = ["01782158120","01745874154", "01745845125", "017845496541", "016254328558"]
  
           let table ="<table border=1>";
+<<<<<<< HEAD
+            table+="<tr><th>SL</th><th>Student Name</th><th>Contact Number</th><th>District </th></tr>"
+            
+=======
             table+="<tr><th>SL</th><th>Student Name</th><th>Contact</th><th>District</th></tr>"
+>>>>>>> 003ed83256af817f803d79369cf011f1e7eb24fb
 
             let x = 1;
+
          for(let i=0; i<name.length; i++){
 
             
             table +="<tr><td>" + x + "</td>" ; + x++;
              table += "<td>" + name[i] + "</td></tr>";
+            
+            
+            
          }
          table += "</table>"
          document.write(table);

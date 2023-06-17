@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> simple table data </h1>
+
+    <script>
+        let students = [
+            "imran khan",
+            " irfan Khan",
+            " obaidul kader",
+            " Jorg W bush",
+            " solaiman sukhon"
+        ]
+
+
+        let table = "<table border=1>"
+
+        for ( i = 0 ; i < students.length ; i++ ) {
+
+            table += " <tr>  <td> " + students[i] + "</tr>  </td>"
+
+            
+        }
+
+        table += "</table>" ;
+        document.write(table) ;
+    </script>
+</body>
+
+</html>

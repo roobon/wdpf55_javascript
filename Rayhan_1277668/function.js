@@ -5,8 +5,8 @@
 // console.log(Fullname("masum" , "yeasin"));
 
 
-function congo(wel) {
-    return "you got " + wel ;
+function multiply (a, b) {
+    return a * b 
 }
 
-console.log(congo('welcome'));
+console.log(multiply(10, 10));

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const students = ["abul", "kalam", "azad", "imran", "hasmi"]
+        const sorted = students.sort(); 
+        document.write("<ul>")
+        for ( let i=0 ; i < sorted.length ; i++  ) {
+            document.write("<li>")
+                document.write(sorted[i])
+                console.log(sorted);
+            document.write("</li>")
+        }
+        document.write("</ul>")
+    </script>
+
+
+    <!-- <script>
+        const students = ["abul", "kalam", "azad", "imran", "hasmi"]
+        // const sorted = students.sort(); 
+        document.write("<ul>")
+        for ( let i=0 ; i < students.length ; i++  ) {
+            document.write("<li>")
+                document.write(students.sort()[i]) ;
+            document.write("</li>")
+        }
+        document.write("</ul>")
+    </script> -->
+</body>
+</html>

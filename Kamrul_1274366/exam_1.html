@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 1</title>
+</head>
+<body>
+    <form action="#" name="exam">
+        <input type="text" name="m" placeholder="MCQ"><br>
+        <input type="text" name="d" placeholder="Descriptive"><br>
+        <input type="text" name="e" placeholder="Evidence"><br>
+        <input type="button" onclick="Showresult()" value="Show Result">
+    </form>
+    <h1 id="show"></h1>
+   <script>
+    function Showresult(){
+        let m = document.exam.m.value;
+        let d = document.exam.d.value;
+        let e= document.exam.e.value;
+
+        if(m>=80 && d>=60 && e>=60 ){
+         //alert("You are passed")
+         document.getElementById("show").innerHTML = "You are passed"
+         } else {
+         //alert("You are failed")
+         document.getElementById("show").innerHTML = "You are faild"
+        }
+
+        }
+        
+        </script>
+    
+</body>
+</html>

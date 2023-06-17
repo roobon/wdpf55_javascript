@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Normal Funcation</h3>
+     <p id="show"></p>
+
+     <script>
+        
+        function welcome(){
+            return "Welcome to Bangladesh";
+        }
+        const x = welcome();
+        document.write(x);
+
+     </script>
+
+     <h3>Arrow Funcation</h3>
+
+     <script>
+
+        const y = () =>"Welcome to bangaladesh";
+        document.write(y()); 
+        document.write("<hr>"); 
+        
+     </script>
+
+     <script>
+
+        // const z = (name) => name + " , Welcome to bangaladesh";
+        // document.write(z("Sakib"));
+
+     </script>
+
+     <script>
+
+        const a =(fname, lname) => {
+            return "Full name is " + fname + lname;
+        } 
+        document.write(a("Kamrul", "Hasan"))
+        
+     </script>
+</body>
+</html>

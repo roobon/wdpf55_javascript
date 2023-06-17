@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h3>Show the result of the students</h3>
+    <form action="" name="result">
+        <input type="text" name="MCQ" id="" placeholder="Enter mcq marks">
+        <input type="text" name="DESC" id="" placeholder="Enter Descriotion marks">
+        <input type="text" name="EVI" id="" placeholder="Enter Evidance marks">
+        <button type="button" onclick="showResult()">Show Result</button>
+    </form>
+    <script>
+        function showResult(){
+            let mcq = document.result.MCQ.value;
+            let desc = document.result.DESC.value;
+            let evi = document.result.EVI.value;
+            if(mcq>=80 && desc>=60 && evi>=50){
+                alert("you are pass")
+            }
+            else{
+                alert("you are not pass")
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>

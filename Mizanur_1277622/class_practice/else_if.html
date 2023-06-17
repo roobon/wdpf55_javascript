@@ -19,7 +19,7 @@
         }
     </script> -->
 
-    <script>
+    <!-- <script>
         let no = 10;
         if(no>=7){
             document.write("It's Good");
@@ -27,6 +27,19 @@
             document.write("It's Average");
         } else {
             document.write("It's Poor");
+        }
+    </script> -->
+
+    <script>
+        let no = 550;
+        if(no>=500){
+            document.write("Your bill is " + no + "." + " And total bill with vat " + (no + no * .20));
+        } else if(no>=400){
+            document.write("Your bill is " + no + "." + " And total bill with vat " + (no + no * .10));
+        } else if(no>=200){
+            document.write("Your bill is " + no + "." + " And total bill with vat " + (no + no * .5));
+        } else {
+            document.write("Your bill is " + no + "." + " And total bill without vat " + (no + no * 0));
         }
     </script>
 </body>

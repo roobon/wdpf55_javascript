@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h3>Data with Table using loop; Table-1</h3>
+    <script>
+        let cities = ["Dhaka", "Khulna","Jessore","Sylhet","Rajshahi","Cumiila","Noakhali","Barishal"];
+
+        let table ="<table border=1>";
+
+        for(let i = 0; i<cities.length; i++){
+             table += "<tr><td>" + cities[i] + "</td></tr>"
+        }
+       
+
+        table += "</table>";
+
+        document.write(table);
+    </script> -->
+
+
+<h3>Data with Table using loop; Table-2</h3>
+<style>
+    table {background-color: rgb(137, 121, 200);}
+</style>
+<script>
+    let cities = ["Dhaka", "Khulna","Jessore","Sylhet","Rajshahi","Cumiila","Noakhali","Barishal"];
+
+    let table ="<table border=3>";
+      table +=  "<tr><th>SN</th><th>City</th></tr>";
+      let n =1;
+    for(let i = 0; i<cities.length; i++){
+         table += "<tr><td>" + n + "</td>"; n++;
+         table += "<td>" + cities[i] + "</td></tr>"
+    }
+   
+
+    table += "</table>";
+
+    document.write(table);
+</script>
+</body>
+</html>

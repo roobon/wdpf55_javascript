@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array1</title>
+</head>
+<body>
+    <h3>Array with student's name</h3>
+    <script>
+        const name =['Mamun','chagol','Shuvo','Sadid','Ikbal'];
+        document.write(name);
+
+       
+        document.write("<ol>");
+   for( let x =0; x<name.length; x++){
+    document.write("<li>");
+             document.write(name[x]);
+    document.write("</li>");
+
+   }
+   document.write("</ol>");
+
+
+
+
+//   while
+
+let i = 0;
+document.write("<ul>");
+        while(i<name.length){
+        //    document.write( "<li>");
+        //     document.write(name[i]);
+        //     document.write( "</li>");
+
+        document.write("<li>" + name[i] +"</li>")
+            i++;
+
+        }
+        document.write("</ul>");
+        
+
+    </script>
+    
+</body>
+</html>

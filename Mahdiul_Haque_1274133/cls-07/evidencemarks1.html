@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="result">
+        <input type="text" name="mcq" placeholder="Enter Mcq Number"><br>
+        <input type="text" name="eve" placeholder="Enter Evidence Number"><br>
+        <input type="text" name="desc" placeholder="Enter Descriptive Number"><br>
+        <button type="button" onclick="showResult()">Show Result</button>
+    </form>
+
+    <script>
+         function showResult(){
+            let mcq = document.result.mcq.value;
+            let eve = document.result.eve.value;
+            let desc= document.result.desc.value
+
+            if(mcq>=80 && eve>=60 && desc>=60){
+                alert("You are passed")
+            }  else {
+                alert("You are failed")
+            }
+                
+               
+         }
+    </script>
+</body>
+</html>

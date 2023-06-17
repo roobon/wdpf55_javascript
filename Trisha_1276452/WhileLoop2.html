@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Array in list using while loop</h3>
+
+    <script>
+        const students = ["Hasnain", "Sadid", "Sirazi", "Nadia", "Masum"];
+        let x= 0;
+        document.write(`<ul>`)
+            while (x< students.length) {
+                document.write(`<li> ${students[x]} </li>`);
+                x++
+            };
+        document.write(`</ul>`);
+    </script>
+
+    <h3>Array in list using for loop</h3>
+    <script>
+        let fruits = ["Mango", "Orange", "Banana", "Jack-Fruits", "Guava", "Grave"];
+        document.write("<ul>")
+            for(let y = 0; y<fruits.length; y++){
+                document.write(`<li>${fruits[y]}</li>`)
+            }
+            document.write("</ul>")
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h3>Grading system</h3>
+    <script>
+        let MCQ=80;
+        let Description=40;
+        let Evidence=70
+        if(MCQ>=80 && Description>=60 && Evidence>=60 ){
+            alert("passed");
+       }else {
+            alert("failed");
+        }
+    </script>
+
+
+
+    <h3>Grading system</h3>
+    <script>
+        let M =prompt("Enter MCQ marks","");
+        let data=prompt("Enter MCQ marks","");
+        let n =prompt("Enter MCQ marks","");
+        if(MCQ>=80 && Description>=60 && Evidence>=60 ){
+            alert("passed");
+       }else {
+            alert("failed");
+        }
+    </script> -->
+
+
+    <form action="" name="result">
+        <input type="text" name="mcq" placeholder="Enter MCQ" ><br><br>
+        <input type="text" name="desc" placeholder="Enter Description"><br><br>
+        <input type="text" name="eve" placeholder="Enter Evidence"><br><br>
+        <button type="button" onclick="showResult()">Show Result
+
+        </button>
+
+    </form>
+    <script>
+        function showResult(){
+            let mcq =document.result.mcq.value;
+            let desc =document.result.desc.value;
+            let eve=document.result.eve.value;
+
+            if(mcq>=80 && desc>=60 && eve>=60){
+                alert("You have passed");
+
+            }else {
+                alert("You have failed");
+            }
+        }
+    </script>
+    
+</body>
+</html>

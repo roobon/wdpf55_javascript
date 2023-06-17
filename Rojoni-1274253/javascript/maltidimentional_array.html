@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h3>One Dimentional array</h3>
+    <script>
+        let activities = [
+    ['Work', 9],
+    ['Eat', 1],
+    ['Commute', 2],
+    ['Play Game', 1],
+    ['Sleep', 7, ["Rose","WaterLilly","Sunflower"]]
+    ];
+
+document.write(activities[4][0]);
+    </script>
+
+
+
+<h3>Two Dimentional array</h3>
+    <script>
+        let activities1 = [
+    ['Work', 9],
+    ['Eat', 1],
+    ['Commute', 2],
+    ['Play Game', 1],
+    ['Sleep', 7, ["Rose","WaterLilly","Sunflower"]]
+    ];
+
+document.write(activities1[4][2][0]);
+    </script>
+
+
+
+<h3>Three Dimentional array</h3>
+<script>
+    let activities2 = [
+['Work', 9],
+['Eat', 1],
+['Commute', 2],
+['Play Game', 1],
+['Sleep', 7, ["Rose","WaterLilly","Sunflower"]]
+];
+
+
+activities2[1].push("Thursday");
+activities2[2].push("Metro Rail")
+document.write(activities2[2][2]);
+
+
+
+
+console.table(activities2)
+</script>
+    
+</body>
+</html>

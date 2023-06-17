@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- one dimentional array -->
+    <h3>One dimentional array</h3>
+    <script>
+        let flowers = ["Rose", "waterlilly", "Sunflower"]
+        document.write(flowers[1]);
+    </script>
+
+    <!-- two dimentional arary -->
+    <h3>two dimentional array</h3>
+    <script>
+        let activities = [
+    ['Work', 9],
+    ['Eat', 1],
+    ['Commute', 2],
+    ['Play Game', 1],
+    ['Sleep', 7, ["Rose", "waterlilly", "Sunflower"]]
+    
+];
+document.write(activities[4][2][0]);
+    </script>
+
+    <!-- three dimentional arary -->
+    <h3>Three dimentional array</h3>
+    <script>
+var activities3 =[
+    ['Work', 9],
+    ['Eat', 1],
+    ['Commute', 2],
+    ['Play Game', 1],
+    ['Sleep', 7, ["Rose", "waterlilly", "Sunflower"]]
+
+]
+// document.write(activities3[4][2][0]);
+activities3[1].push('thurstday');
+activities3[2].pop;
+// document.write(activities3[2])
+document.write(activities3[2][1])
+
+console.table(activities3)
+    </script>
+    
+</body>
+</html>

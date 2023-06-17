@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table tr td{
+            border: 1px solid black;
+            /* border-collapse: collapse; */
+        }
+    </style>
+</head>
+<body>
+    <h3>Display number in table</h3>
+    <!-- <script>
+        number = [10,20,30,40,50]
+        output = table
+        document.write("<table>")
+        document.write("<tr>");
+        for(let x=0; x<number.length; x++){
+            document.write("<td>" +number[x]+ "</td>");
+        }
+        document.write("</tr>");
+        document.write("</table>")
+        
+    </script> -->
+    <script>
+        city = ["Dhaka","Barisal","Khulna","Chattogram","Rangpur","Rashshahi"]
+        
+        table ="<table border=1>"
+            table += "<tr><th>SN</th><th>City</th><th>Division</th></tr>"
+            let n = 1
+        for(let x=0; x<city.length; x++){
+            table += "<tr><td>" +n+ "</td>"; n++;
+            table += "<td>" +city[x]+ "</td>";
+            table += "<td>" +city[x]+ "</td><tr>";
+        }
+       table += "</table>"
+        document.write(table)
+        
+    </script>
+</body>
+</html>

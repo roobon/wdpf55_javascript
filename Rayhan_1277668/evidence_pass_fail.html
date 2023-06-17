@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" name="result" onsubmit="resultCheker(event)">
+
+        <input type="text" name="mcq" placeholder="mcq marks"> <br>
+        <input type="text" name="des" placeholder="Descriptive marks">  <br>
+        <input type="text" name="evi" placeholder="Evidence marks">  <br>
+         <br>
+         <!-- <button onclick="resultCheker()"> Chech result </button> -->
+        <input type="submit" value="cheach resut">
+
+    </form>
+        <p id="show-result"> <b></b>  </p>
+        
+
+    <script>
+        function resultCheker (event) {
+            //  event.preventDefault()  
+            event.preventDefault();
+
+
+            let mcq = document.result.mcq.value ;
+            let des = document.result.des.value ;
+            let evd = document.result.evi.value ;
+
+            if ( mcq >= 80 && des >= 60 && evd >= 60 ) {
+                document.getElementById('show-result').innerHTML = 'You are passed' ;
+                document.getElementById('show-result').style.color = 'green' ;
+                // alert('passed')
+            } else {
+                document.getElementById('show-result').innerHTML = 'You are Failed' ;
+                document.getElementById('show-result').style.color = 'red' ;
+                // alert('failed')
+            }
+         }
+    </script>
+</body>
+</html>

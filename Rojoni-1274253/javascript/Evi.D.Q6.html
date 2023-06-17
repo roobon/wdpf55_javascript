@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Data with table using loop</h3>
+    <!-- <h3>Data with table using loop// table 1</h3>
     <script>
 
         
@@ -23,19 +23,38 @@
         table +="</table>"
         document.write(table);
         
+    </script> -->
+
+
+
+
+
+    <h3>Data with table using loop// table 1</h3>
+    <script>
+
+        
+            let cities=["Dhaka","Khulna","Jessore","Sylhet","Rajshahi","Cumilla","Noakhali","Barisal" ];
+            let table ="<table border=1>";
+                table  +="<tr><th>SN</th><th>city</th></tr>"
+                let n =1;
+
+                for (let i = 0; i<cities.length;i++){
+
+                   
+                    table +="<tr><td>" + n + "</td>";  n++;
+                    table += "<td>" +cities[i] +"</tr></td>"
+
+                }
+           
+
+        
+        table +="</table>"
+        document.write(table);
+        
     </script>
 
 
-<!-- <script type="text/javascript">
-    function printTable() {
-        var num;
-        num = Number(document.getElementById("txtNumber").value);
-        for (var i = 1; i <= 10; i++) {
-            var pTag = document.getElementById("pPrint");
-            pTag.innerHTML += num * i + "<br/>";
-        }
-    }
-</script> -->
+
     
 </body>
 </html>

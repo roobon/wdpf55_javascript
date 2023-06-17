@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
 
@@ -13,7 +15,7 @@
 
         // variable value update
         tomatoPrice = 30;
-        
+
         // add something to the previous value
         var price1 = 31;
         var price2 = 10;
@@ -25,56 +27,79 @@
         price1 = price1 + 10;
 
         document.write(price1);   // 31 + 10 = 41
-        document.write("<br>")
+        document.write("<hr>")
 
         // addition to the same variable shorthand
         // += means adding some value to the existing value
         price1 += 10;
         document.write(price1);  // 41 + 10 = 51
-        document.write("<br>")
+        document.write("<hr>")
 
         price2 = price2 - 5;
         document.write(price2);  // 10 - 5 = 5
-        document.write("<br>")
+        document.write("<hr>")
 
         // shorthand -=
         // -= means deducting some values form the existing value of the variable
         price2 -= 10;
         document.write(price2);  // 5 - 10 = -5
-        document.write("<br>")
+        document.write("<hr>")
 
         // shorthand *=
         // *= means multiplying some values from the existing value of the variable
         price1 *= 5;
         document.write(price1)  // 51 * 5 = 255
-        document.write("<br>")
+        document.write("<hr>")
 
         // shorthand /=
         // /= means dividing some values from the existing value of the variable
         price1 /= 10;
         document.write(price1);  // 255 / 10 = 25.5
-        document.write("<br>")
-        
+        document.write("<hr>")
+
         // Modulus or Remainder //
 
         // %= means get the remainder value from the existing value of the variable
         price1 %= 5;  // 25.5 / 5 = quitent 5, remainder .5
         document.write(price1);
-        document.write("<br>")
+        document.write("<hr>")
         document.write("The mololus or Remainder is " + price1);
-        document.write("<br>")
+        document.write("<hr>")
 
         var age = 15;
         age = age + 1;  // 15 + 1 = 16
         // ++ means adding 1 to the existing 
-        age ++;  // 16 + 1 = 17
+        age++;  // 16 + 1 = 17
         document.write(age);
-        document.write("<br>")
+        document.write("<hr>")
 
-        age --;  // means you are deducting 1 from the existing value
+        age--;  // means you are deducting 1 from the existing value
         document.write(age);
+        document.write("<hr>")
+
+        // True  False  //
+
+        var x = 300;
+        var y = 200;
+        var result;
+        result = (x == y);
+        console.log(result);
+        document.write("X is equal to Y: " + result)
+        document.write("<hr>")
+
+        result = (x != y);
+        document.write("X is not equal to Y: " + result)
+        document.write("<hr>")
+
+        var mangoes = 19;
+        var person = 7;
+        var remainder = mangoes % person;
+        document.write("The remainder is = " + remainder);
+        document.write("<hr>");
+
 
 
     </script>
 </body>
+
 </html>

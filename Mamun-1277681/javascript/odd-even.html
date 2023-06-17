@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <script>
+     let num1 = parseFloat(prompt("enter first number"))
+    if(num1%2==0){
+        document.write("is a even number")
+    }
+    else{
+        document.write("is odd number");
+    }
+    
+   </script> -->
+   <form action="" name="result">
+    <input type="number" name="num1" id="">
+    <button type="button" onclick="showResult()">check</button>
+   </form>
+   <script>
+    function showResult(){
+        let number = document.result.num1.value;
+        if(number%2==0){
+            alert("is an even number")
+        }
+        else{
+            alert("is a odd number")
+        }
+    }
+   </script>
+</body>
+</html>

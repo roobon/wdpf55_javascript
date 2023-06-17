@@ -22,10 +22,12 @@
          let name = ["Iqbal", "Mizan","kamrul","Rayhan", "Sadid"];
  
           let table ="<table border=1>";
-            table+="<tr><th>SL</th><th>Student Name</th></tr>"
+            table+="<tr><th>SL</th><th>Student Name</th><th>Contact</th><th>District</th></tr>"
 
             let x = 1;
          for(let i=0; i<name.length; i++){
+
+            
             table +="<tr><td>" + x + "</td>" ; + x++;
              table += "<td>" + name[i] + "</td></tr>";
          }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Sum of all elements in an array</h3>
+    <!-- <script>
+        let marks = [5, 10, 15, 20];
+        let sum = 0;
+        marks.forEach(value >= { sum += value });
+        alert(sum);
+    </script> -->
+    <script>
+        function sumOfArrayElements(array) {
+            let totalSum = 0;
+            for (let i = 0; i < array.length; i++) {
+                totalSum += array[i];
+            }
+            return totalSum;
+        }
+        const myArray = [1, 2, 3, 4, 5];
+        const arraySum = sumOfArrayElements(myArray);
+        document.write(arraySum);
+
+
+    </script>
+</body>
+
+</html>

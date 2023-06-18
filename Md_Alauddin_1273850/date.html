@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Date and Time</h3>
+    <script>
+        const d = new Date();
+        document.write(d);
+        document.write("<br>");
+        document.write("Today's Date " + d.getDate() + "<br>");
+        document.write("Today's Day " + d.getDay() + "<br>");
+        document.write("Current Month " + d.getMonth() + "<br>");
+        document.write("Current Year " + d.getFullYear() + "<br>");
+        document.write("Current Time " + d.getHours() + ":" + d.getMinutes() + "<br>");
+        document.write("Current Minutes " + d.getMinutes() + "<br>");
+
+        let days = ["Sunday", "Monday", "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday"];
+
+        document.write("<br>");
+        document.write("Today's Day: " + d.getDay() + "<br>");
+        document.write("Current Month: " + d.getMonth() + "<br>");
+        document.write("Current Year: " + d.getFullYear() + "<br>");
+        document.write("Current Hours: " + d.getHours() + "<br>");
+        document.write("Current Minutes: " + d.getMinutes() + "<br>");
+        document.write("Current Time: " + d.getHours() + ":" + d.getMinutes() + "<br>");
+        document.write("<br>");
+
+        let months = ["Jan", "Feb", "Mar" , "Apl" , "May" , "Jun" , "July", "Aug", "Sep", "Opt", "Nov", "Dec"]; 
+
+        document.write("Current Month " + d.getMonth() + "<br>");
+        document.write("<br>");
+        document.write("Day: " + days[d.getDay()] + "<br>");
+        document.write("Month: " + months[d.getMonth()]);
+
+        document.write("<br>");
+        document.write("Current Time " + d.getTime() + "<br>");
+        
+    </script>
+</body>
+</html>

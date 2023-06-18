@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Concat of all elements in an array with map method</h3>
+
+    <!-- <script>
+        let marks = [5, 10, 15, 20];
+        let sum = 0;
+        marks.forEach(value >= { sum += value });
+        alert(sum);
+    </script> -->
+    <!-- <script>
+        let fruits = ["apple", "Mango", "Orange", "Grape"]
+
+        let text = "";
+        fruits.map((abc) => { text += abc + "<br>" });
+        document.write(text);
+    </script> -->
+    <!-- <script>
+        function checkOddEven(number) {
+            if (number % 2 === 0) {
+                document.write(number + ' is even.');
+            } else {
+                document.write(number + ' is odd.');
+            }
+        }
+
+        // Example usage:
+        const userInput = prompt('Enter a number:');
+        const number = parseInt(userInput);
+
+        if (isNaN(number)) {
+            document.write('Invalid input. Please enter a valid number.');
+        } else {
+            checkOddEven(number);
+        }
+    </script> -->
+
+    <script>
+        function displayMultiplicationTable(number, limit) {
+            for (let i = 1; i <= limit; i++) {
+                const product = number * i;
+                console.log(`${number} x ${i} = ${product}`);
+            }
+        }
+
+        // Example usage:
+        const userInput = prompt('Enter a number:');
+        const number = parseInt(userInput);
+
+        if (isNaN(number)) {
+            console.log('Invalid input. Please enter a valid number.');
+        } else {
+            const limit = 10; // Set the desired limit for the multiplication table
+            displayMultiplicationTable(number, limit);
+        }
+
+    </script>
+</body>
+
+</html>

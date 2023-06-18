@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find & replace</title>
+</head>
+<body>
+    <h3>Find & replace text</h3>
+    <script>
+        let text = "A Quick brown Fox jumps over the lazy dog, Quick brown fox jumps over the lazy dog"
+        console.log(text);
+
+        let replace = text.replace("Quick", "A fast");
+        let replacedAll = text.replaceAll("fox", "cat");
+        let replaced = text.replaceAll(/fox/ig, "cat");
+        console.log(replace);
+        console.log(replacedAll);
+        console.log(replaced);
+    </script>
+</body>
+</html>

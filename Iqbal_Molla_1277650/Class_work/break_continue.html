@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{ color: red;}
+    </style>
+</head>
+<body>
+    <h1>Nested loop</h1>
+    <h3>Break up loop </h3>
+    <script>
+    for(let i = 0; i<=10; i++){
+        if(i==5) break;
+        document.write(i + "<br>");
+    }
+    </script>
+     <h3>Break up loop  continue</h3>
+     <script>
+     for(let i = 0; i<=10; i++){
+         //if(i==5) continue;
+         if(i==5){
+            document.write("Five" + "<br>")
+         }
+         document.write(i + "<br>");
+     }
+     </script>
+</body>
+</html>

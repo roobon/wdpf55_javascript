@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h3>Find and Replace Text</h3>
+    <script>
+        let text = "China is huge population country";
+        let replace=text.replace("China", "Bangladesh")
+
+        document.write(text);
+        document.write("<hr>");
+        document.write(replace)
+    </script> -->
+    <h3>Find and Replace All</h3>
+    <script>
+        let text = "I love cats. Cats are very easy to love. Cats are very popular";
+        text = text.replaceAll(/Cats/g,"Dogs");
+        text = text.replaceAll(/cats/g,"dogs");
+        
+        document.getElementById("demo").innerHTML = text;
+    </script>
+        
+</body>
+</html>

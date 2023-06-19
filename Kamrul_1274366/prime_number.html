@@ -32,25 +32,6 @@
         }
     </script> -->
 
-    <script>
-        function myFun() {
-            let val= document.form.num.value;
-
-            if (val == 0) {
-                return `you can't input 0`
-            } else if(val == 1){
-                return `1 is not a prime number`
-            } else if(val == 2){
-                return `2 is a prime number`
-            } else{
-                for (let i = 2; i < val; i++) {
-                    if (val % i == 0) {
-                        return `${val} is not a prime number.`
-                    }
-                }
-                return `${val} is a prime number.`
-            }
-        }
-    </script>
+    
 </body>
 </html>

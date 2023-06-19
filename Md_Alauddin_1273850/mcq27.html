@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>MCQ 27</h3>
+    <p id="demo"></p>
+    <script>
+        var text;
+        switch (new Date().getDay()){
+            case 0:
+                text = "tody is sunday";
+            break;
+            case 1:
+                text = "tody is monday";
+            break;
+            case 2:
+                text = "Loking forward to the Weekend";
+
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+<h3>MCQ 28</h3>
+<button onclick="myfunction()">Try it</button>
+<p id="demo1"></p>
+<script>
+   function myfunction(){
+    var x=5;
+    document.getElementById("demo1").innerHTML = Boolean(x);
+   } 
+    
+</script>
+
+<h3>MCQ 26</h3>
+
+<script>
+    var i=0;
+    while(false){
+        if (i==4){
+            break
+        }
+        i++;
+    }
+
+    document.write("i="+i)
+    document.write("<br>")
+</script>
+
+<h3>MCQ 25</h3>
+<script>
+    var xyz=5;
+
+    document.write(xyz--);
+    document.write(++xyz);
+    document.write(xyz--);
+
+</script>
+
+</body>
+</html>

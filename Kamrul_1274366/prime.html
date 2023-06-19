@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" name="form" onclick="alert(myfun())">
+        <input type="text" name="number" placeholder="Type your number">
+        <input type="button" name="button" id="" value="chack">
+    </form>
+    <script>
+        function myfun(){
+            let n = document.form.number.value;
+            if(n === 0){
+                return"you can not input 0"; 
+            }else if(n == 1){
+
+                return"1 is not aprime number"
+            }else if(n ==2){
+                return"2 is a prime number"
+            }
+            else{
+              for (let i = 2; i<n ; i++){
+                if (n %i == 0){
+                    return n+ "is not prime number."
+
+                }
+
+            }
+            return n+"is a prime number"
+        }
+        }
+    </script>
+</body>
+</html>

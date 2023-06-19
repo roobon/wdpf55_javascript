@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        (function(a){
+        return (function(){
+          console.log(a);
+          a = 6;
+        })()
+       })(21);
+
+
+    </script> -->
+
+    <!-- <script>
+        (function(){
+        setTimeout(()=> console.log(1),2000);
+            console.log(2);
+            setTimeout(()=> console.log(3),0);
+            console.log(4);
+        })();
+    </script> -->
+
+    <script>
+        function solve(arr, rotations){
+        if(rotations == 0) return arr;
+        for(let i = 0; i < rotations; i++){
+        let element = arr.pop();
+        arr.unshift(element);
+        }
+        return arr;
+        }
+        
+        // solve([44, 1, 22, 111], 5);
+     </script>
+
+     <script>
+    //     var a = 1;  
+    // var b = 0;  
+    // while (a <= 3)  
+    // {  
+    //     a++;  
+    //     b += a * 2;  
+    //     print(b);
+    // }
+    </script>
+
+
+<!-- <script>
+    n=((80%4)==0)?"Hello" : "bye";
+    document.write(n)
+</script> -->
+
+<!-- <script>
+    var mod = function(p,q){
+        return p%q
+    }
+    document.write(mod(11,5))
+</script> -->
+
+<script>
+    var i=1, j=10;
+    do{
+        if(i++>--j)
+        {
+            continue;  
+        }
+    }
+    while(i<5);
+    document.write("i="+i+"and j="+j);
+</script>
+
+<script>
+    var a = 'idb'
+    var b = a.toUpperCase();
+    b.concat('Scholarship');
+
+    document.write("<br>");
+    document.write(b);
+    document.write("<br>");
+</script>
+
+<script>
+    var i=0;
+    while(true){
+        document.write("dhaka");
+        break;
+    }
+    document.write("<br>");
+</script>
+
+<script>
+    function dog(){
+        print("I am a dog");
+    }
+
+    // document.write(dog.sound = "bark");
+</script>
+
+<script>
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidence 15/06/23</title>
+</head>
+<body>
+    <h3>Find the Odd/even Number</h3>
+    <form action="#" name="form">
+        <input type="text" name="num" placeholder="Input a valid positive number">
+        <button type="button" onclick="myFun()">Check</button>
+    </form>
+
+    <table>
+        <tr>
+            <td id="demo"></td>
+        </tr>
+    </table>
+    <script>
+        function myFun() {
+            let num = document.form.num.value;
+
+            if (num % 2 == 0) {
+                alert("Even Number")
+            } else{
+                alert("Odd number")
+            }
+        }
+    </script>
+
+    <h3>Display the table number of a given number</h3>
+    <script>
+        const fruits = ["Mango", "Banana", "Jack Fruits", "Apple", "Pine-apple"]
+
+        let table = "<table border = 1>"
+            for (let i = 0; i < fruits.length; i++) {
+                table += `<tr><td>${fruits[i]}</td></tr>`
+            }
+        table += "</table>"
+        document.write(table);
+
+        function fun(names) {
+            return names            
+        }
+        alert(fun("Sadid"))
+    </script>
+</body>
+</html>

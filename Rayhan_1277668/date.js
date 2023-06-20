@@ -10,4 +10,5 @@ const d = new Date() ;
 console.log("Day: " + weekday[d.getDay()] );
 console.log("Monts: " + monts[d.getMonth()] );
 console.log("Year: " + d.getFullYear());
+console.log("time: " + d.getTime());
 

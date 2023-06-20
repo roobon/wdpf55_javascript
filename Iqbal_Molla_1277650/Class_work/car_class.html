@@ -15,25 +15,27 @@
             }
             age(){
                 const date =new Date();
-               return date.getFullyear() - this.year;
-               car1.age();
+               return date.getFullYear() - this.year;
             }
         }
         
     </script>
     <script>
         const car1 = new car("Toyota", 1975);
-        
         const car2 = new car("BMW", 1970);
-
+        //car 1
         document.write(car1.name);
-        document.write("-");
+        document.write(" - ");
         document.write(car1.year);
-        document.write(",");
-
-        document.write("This car age: " + car1.age());
-       
-
+        document.write(", ");
+        document.write("Age: " +  car1.age());
+        //car2 
+        document.write("<br>");
+        document.write(car2.name);
+        document.write(" - ");
+        document.write(car2.year);
+        document.write(", ");
+        document.write("Age: " +  car2.age());
     </script>
 </body>
 </html>

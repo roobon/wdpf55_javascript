@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="result" onsubmit="alert(prime())">
+        <input type="text" name="number">
+        <input type="submit" name="submit" value="Check">
+      </form>
+      <script>
+        function prime(){
+          x = document.result.number.value;
+          if(x==0){
+            return "Never input 0";
+          }else if(x==1){
+          return "1 is not a prime number"; 
+         } else if(x==2){
+          return "2 is a prime number";
+         }else{
+            for(i=2; i<x; i++){
+              if(x%i ==0){
+                return x + " is not a prime number";
+              }
+            }return x + " is a prime number"
+         }
+        }
+      </script>
+</body>
+</html>

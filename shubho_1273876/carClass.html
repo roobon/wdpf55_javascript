@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function </title>
+</head>
+
+<body>
+
+    <h3>Class</h3>
+    <script>
+        class Car {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+        }
+    </script>
+    <script>
+        const car1 = new Car("BMW", 1999);
+        const car2 = new Car("Bugati", 1990);
+        document.write(car1.name);
+        document.write(" - ");
+        document.write(car1.year);
+    </script>
+    <script>
+        var txt = prompt(parseFloat("enter"));
+        document.write(txt);
+    </script>
+
+    <script>
+        function isPrime(number) {
+            // Check if the number is less than 2
+            if (number < 2) {
+                return false;
+            }
+
+            // Check for divisibility from 2 to the square root of the number
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i === 0) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        // Prompt the user to enter a number
+        const userInput = prompt("Enter a number:");
+
+        // Convert the user input to a number
+        const number = parseInt(userInput);
+
+        // Check if the number is prime and display the result
+        if (isPrime(number)) {
+            document.write(number + " is a prime number.");
+        } else {
+            document.write(number + " is not a prime number.");
+        }
+
+
+    </script>
+
+</body>
+
+</html>

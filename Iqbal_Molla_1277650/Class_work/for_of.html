@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Sum of all eleaments using For/of </h3>
+    <script>
+        let data = [5,10,15,20,26,30,35,38,40]
+        let total = 0;
+        for(let number of data){
+            total+=number;
+        }
+            document.write(total);
+    </script>
+    <h3>Concat all elements using for/of</h3>
+    <script>
+        let month = ["January","February","March","April"];
+        let list = "<ul>";
+            for(let item of month){
+                list +="<li>" + item +  "</li>";
+            }
+            list += "</ul>"
+    </script>
+    <div>
+        <script>
+            document.write(list);
+        </script>
+    </div>
+</body>
+</html>

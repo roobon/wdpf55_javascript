@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = [14,18,12,6,30,20,35,40]
+        let kids = person.filter(allkids)
+        function allkids(age){
+            return age <18;
+        }
+        document.write(kids)
+    </script>
+    <hr>
+    <script>
+        let person1 = [14,18,12,6,30,20,35,40]
+        let kids1 = person1.filter(x=> x<18)
+        document.write(kids1)
+    </script>
+</body>
+</html>

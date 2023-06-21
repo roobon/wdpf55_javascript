@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4> Spread Operator</h4>
+    <script>
+        let numbers = [5, 6, 8, 10];
+        let numbers1 = [...numbers, 12, 15];
+
+        document.write(numbers1);
+        document.write("<hr>");
+
+        numbers1[0] = 100;
+        document.write("Number1 Array: " + numbers1);
+        document.write("<hr>");
+        document.write("Number Array: " + numbers);
+    </script>
+
+    <h4> Convert STRING to Array Index Value </h4>
+    <script>
+        let digits = [..."Hello World"]
+        document.write(digits);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let text = "Mr. Blue has a Blue house";
+        let position = text.search(/Blue/);
+        document.write(position);
+        document.write("<hr>")
+
+        let position1 = text.search(/blue/i);
+        document.write(position1);
+        document.write("<hr>")
+
+        let position2 = text.search(/blue/);
+        document.write(position2);
+        document.write("<hr>")
+    </script>
+</body>
+</html>

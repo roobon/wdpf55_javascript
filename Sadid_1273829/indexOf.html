@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexOf()</title>
+</head>
+<body>
+    <script>
+        let text = "Today is Friday";
+        let result = text.lastIndexOf("s");
+
+        document.write(result);
+
+        const point = {x : 1, y : 1}
+        console.log(point)
+        console.log("toString" in point)
+        console.log("valueOf" in point)
+
+        const numbers = [12, 4, 7, 3, 9, 2, 14, 24, 19]
+        if(8 in numbers){  //=> check index number in numeric array...
+            x = ("yes")
+        } else {
+            x = ("no")
+        }
+        alert(x);
+
+        let userName= "Sadid"
+        let a = "Hello" + " " + (userName ? userName : "there")
+        console.log(a);
+    </script>
+</body>
+</html>

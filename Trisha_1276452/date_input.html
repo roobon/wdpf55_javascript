@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="" name="myform">
+    <input class="form-control" type="date" name="date">
+    <button type="button" onclick="showDate()"> Click here</button>
+
+</form>
+<div id="show"></div>
+<script>
+    function showDate(){
+        let date = document.myform.date.value;
+        let selectedDate = new Date(date);
+        let day= selectedDate.getDay();
+        let days = ["sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        document.getElementById("show").innerHTML= days[day];
+    }
+</script>
+</body>
+</html>

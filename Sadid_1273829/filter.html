@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    <script>
+        const age = [16,25,12,30,26,19,14,17,13];
+        // let x = age.filter(function allKids(ages){
+        //     if (ages<18) {
+        //         return ages;
+        //     }
+        // });
+        // document.write(x)
+
+        let x = age.filter((ages)=>{
+            if (ages>18) {
+                return ages;
+            }
+        })
+        document.write(x)
+    </script>
+</body>
+</html>

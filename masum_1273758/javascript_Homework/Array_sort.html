@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+   
     <h3>The sort() method sorts an array alphabetically</h3>
 <script>
     // const names = ["Masum","Abdul","Rahim","Babul","karim"]
@@ -34,6 +35,29 @@ document.write(fruits.reverse()) -->
     // document.write(points)
 
 </script>
-<h3></h3>
+<!-- <button type="button" onclick="myfuncation1()"> Alphabetically</button>
+<button type="button" onclick="myfuncation2()">  Numerically</button>
+<script>
+    var text1 =["Dhaka","Comilla","Faridpur","noyakhali","maymansing"];
+    function myfuncation1(){
+        var result= text1.sort()
+        document.write(result);
+    }
+    var number = [10,100,50,60,200,30,20,80];
+    function myfuncation2(){
+        var number2 =number.sort(function(a,b){return a-b}) 
+        document.write(number2)
+    } -->
+    
+</script>
+<h3>Array to random</h3>
+<script>
+    var points = [10,35,20,50,80,70,90,6,110];
+    var result = points.sort(function(){return .5 - Math.random()})
+    document.write(result)
+</script>
+<script>
+
+</script>
 </body>
 </html>

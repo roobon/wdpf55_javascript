@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Sum all elements using for/of</h3>
+    <script>
+       let number = [10,20,30,40,50,60,70,80,90], sum = 0;
+       for(let item of number){
+        sum += item
+       }document.write(sum)
+    </script>
+    <hr>
+    <h3>concat all elements using for/of from ul/li</h3>
+    <script>
+        let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        let list = "<ul>"
+            for(let item of months){
+                list += "<li>" + item + "</li>"
+            }
+            list += "</ul>"
+            // document.write(list)
+            
+    </script>
+    <div>
+        <script>
+            document.write(list)
+        </script>
+    </div>
+    <hr>
+    <h3>concat all elements using for/of from Object</h3>
+    <h5>concat property</h5>
+    <script>
+        let obj = {x:10, y:20, z:30}
+        let total = 0;
+        for(let item of Object.keys(obj)){
+            total += item
+        }
+        document.write(total)
+    </script>
+
+    <h5>concat values</h5>
+    <script>
+        let obj1 = {x:10, y:20, z:30}
+        let total1 = 0;
+        for(let item of Object.values(obj1)){
+            total1 += item
+        }
+        document.write(total1)
+    </script>
+    <h5>concat entries</h5>
+    <script>
+        let obj2 = {x:10, y:20, z:30}
+        let total2 = 0;
+        for(let item of Object.entries(obj2)){
+            total2 += item
+        }
+        document.write(total2)
+    </script>
+</body>
+</html>

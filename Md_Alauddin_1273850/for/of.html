@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // let sum = 0;
+        // for(let item of data){
+        //     sum += item;
+        // }
+
+        // document.write(sum);
+    </script>
+
+    <h3>Concat all element using For/of</h3>
+    <script>
+        let months = ["Jan", "Feb", "Mar", "Apr"];
+        let list = "<ul>";
+        for(let item of months){
+            list += "<li>" + item + "</li>";
+        }
+        list += "</ul>"
+    </script>
+    <div>
+        <script>
+            document.write(list);
+        </script>
+    </div>
+
+    <script>
+        // let o = { x: 1, y: 2, z: 3};
+        // for(){
+
+        // }
+    </script>
+
+<h3>Sum all element using For/of from object</h3>
+<script>
+    let obj1 = {x:10, y:20, z:30};
+    let text = "";
+    for(let item of Object.keys(obj1)){  //keys(obj1)  value(obj1)
+        text += item;
+    }
+    document.write(text); //xyz
+</script>
+</body>
+</html>

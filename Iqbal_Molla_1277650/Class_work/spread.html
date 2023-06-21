@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Spread Oparator</h3>
+    <script>
+        let number = [ 5, 6, 7, 8, 10];
+        let number1 =[...number, 12, 15];
+        document.write(number1);
+        document.write("<hr>");
+
+        number1[0]= 50;
+
+        document.write("Number1 Array: " +number1);
+        document.write("<hr>");
+        document.write("Number Array: " + number);
+
+        let digits = [..."ABCDEFG"];
+        document.write("<hr>");
+        document.write(digits);
+
+
+    </script>
+</body>
+</html>

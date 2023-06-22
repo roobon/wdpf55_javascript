@@ -7,7 +7,7 @@
 </head>
 <body>
     <h3>Find out factorial</h3>
-    <script>
+    <!-- <script>
         function factorial (n){
             let product = 1;
             while(n>1){
@@ -17,6 +17,25 @@
             document.write(product);
         }0
         factorial(3)
+    </script> -->
+
+
+    <script>
+    
+        function factorial (x){
+           if (x <= 1)
+           return 1;
+           return  x * factorial(x-1);//recursive
+        }
+        let n = prompt("Put a number"," ");
+        document.write(factorial(n));
+
+        
+
+      document.write ( constantFunc());
+        
+     
+
     </script>
     
 </body>

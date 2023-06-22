@@ -7,16 +7,14 @@
 </head>
 <body>
     <script>
-        function factorial(n){
-            let product = 1;
-            while (n>1){
-                product *= n;
-                n--
+        function sum(...numbers){
+            let sum = 0;
+            for ( let number of numbers){
+                sum += number;
             }
-            document.write(product);
+            return sum;
         }
-        factorial(5)
+        document.write(sum(10, 20, 30, 40, 50));
     </script>
-    
 </body>
 </html>

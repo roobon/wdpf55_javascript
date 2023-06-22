@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Number</title>
+</head>
+<body>
+    <h3>Max Number</h3>
+    <script>
+        function maxNumber() {
+            let max = -Infinity;
+            for (i=0; i<arguments.length; i++){
+                if (arguments[i] > max) {
+                    max=arguments[i]
+                }
+            }
+            return max;       
+        }
+        let max = maxNumber(5,6,7,8,9,3)
+        document.write(max)
+    </script>
+    <script>
+        function total() {
+            let sum = -Infinity;
+            for(i=0;i<arguments.length; i++){
+                if (arguments[i]>sum) {
+                    sum = arguments[i];                    
+                }
+            }
+            return sum;
+        }
+        alert(total(20,25,15,6,32,38,45,4,7,32,9))
+    </script>
+</body>
+</html>

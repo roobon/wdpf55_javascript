@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student = {
+            fname: "Hasnain",
+            lname: "Sadid",
+            address: "Dhaka",
+            age: 25,
+        }
+        function printProps(x) {
+            for(item in x) {
+                // document.write(x[item] + "<br>")
+                document.write(`${item}: ${x[item]}, `)
+            }
+        }
+        printProps(student);
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Some of all elements using For/of</h3>
+    <script>
+        let data = [10,5,12,25,30];
+        let total = 0;
+        for(let item of data){
+            total += item
+        }
+        document.write(total)
+    </script>
+    <script>
+        let months = [ "January" ,"Febuary" ,"March", "April", "May", "June"];
+        let list = "<ul>";
+            for(let item of months){
+                list += "<li>" + item + "</li>";
+            }
+            list += "<ul>"
+                document.write(list)
+    </script>
+    <h3>Concat all properties elements using For/of from object</h3>
+    <script>
+        let obj1 = { x: 10, y: 20, z: 30 };
+        let text = "";
+                for(let item of Object.keys(obj1)) { //values(obj1) kays(obj1)
+               text += item;
+            }
+             document.write(text);
+    </script>
+</body>
+</html>

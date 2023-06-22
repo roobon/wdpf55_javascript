@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4> Sum of all elements using For/of</h4>
+    <script>
+        let data = [10, 5, 12, 15, 20];
+        let total = 0;
+
+        for (let item of data) {
+            total += item;
+        }
+        document.write(total);
+    </script>
+    <h4> Concal all elements using For/of </h4>
+    <script>
+        let months = ["Jan", "Feb", "Mar", "Apr"];
+        let list = "<ul>";
+        for (let item of months) {
+            list += "<li>" + item + "</li>";
+        }
+        list += "</ul>"
+
+            // document.write(list);
+    </script>
+
+    <div>
+        <script>
+            document.write(list);
+        </script>
+    </div>
+
+    <h4> Concat all properties using For/of from Object </h4>
+    <script>
+        let obj = { x: 10, y: 20, z: 30 };
+        let text = "";
+        for(let item of Object.keys(obj)){
+            text += item;
+        }
+        document.write(text);
+    </script>
+
+<h4> Sum of all values using For/of from Object </h4>
+<script>
+    let obj1 = { x: 10, y: 20, z: 30 };
+    let sum = 0;
+    for(let item of Object.values(obj1)){
+        sum += item;
+    }
+    document.write(sum);
+</script>
+
+</body>
+
+</html>

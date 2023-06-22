@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Using normal Function</h3>
+    <script>
+        let student = {fname: "Iqbal",lname: "Hossain",age: 25,address: "Badda"}
+        function prinProps(x){
+            for(let item in x){
+                document.write(item + " : " + x[item]+"<br>")
+            }
+        }
+        prinProps(student)
+    </script>
+    <hr>
+    <h3>Using Backtic</h3>
+    <script>
+        let students = {fname: "Iqbal",lname: "Hossain",age: 25,address: "Badda"}
+        function prinProps(x){
+            for(let item in x){
+                document.write(`${item}: ${x[item]}\n <br>`)
+            }
+        }
+        prinProps(students)
+    </script>
+</body>
+</html>

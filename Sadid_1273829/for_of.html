@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const data = [2,5,4,7,6,3,2,9,8,17];
+        let total = 0;
+
+        for(let item of data) {
+            total += item;
+        }
+        console.log(total);
+
+        const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        let list = "<ul>";
+            for (const x of month) {
+                list += `<li> ${x} </li>`
+            }
+        list += "</ul>"
+        document.write(list);
+
+
+        let obj1 = {x:10, y:20, z:30}
+        let text = "";
+            for (p of Object.keys(obj1)){
+                text += p
+            }
+            document.write(text);
+
+            const a = ["a", "b", "c"]
+            const b = ["d", "e"]
+            let res = a.concat(b);
+            console.log(res)
+    </script>
+</body>
+</html>

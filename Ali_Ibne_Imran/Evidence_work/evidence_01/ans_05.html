@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Q-05 <br> Create an html form to take a date input and show the day of that date in the alert message</h2>
+    <form action="" name="myform">
+        <input type="date" name="date" class="form-control"><br><br>
+        <button type="button" onclick="showDay()">Check Day</button>
+    </form>
+    <div id="show"></div>
+    <script>
+        function showDay(){
+            let date = document.myform.date.value;
+            let currentDate = new Date(date)
+            let day = currentDate.getDay()
+            let days = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            document.getElementById("show").innerHTML = "Today is " + days[day]
+            // alert("Today is " + days[day])
+        }
+    
+    </script>
+</body>
+</html>

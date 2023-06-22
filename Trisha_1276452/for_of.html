@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        let data = [10,5,12,15,20];
+        let total =0 ;
+        for(let item of data){
+            total += item;
+        }
+        document.write(total);
+    </script>
+
+    <h3> all elements uding For/of</h3>
+    <script>
+        let months = ["jan","feb","march","April"];
+        let list = "<ul>";
+            for(let item of months){
+            list += "<li>" + item + "</li>";
+        }
+        document.write(list);
+    </script>
+</body>
+</html>

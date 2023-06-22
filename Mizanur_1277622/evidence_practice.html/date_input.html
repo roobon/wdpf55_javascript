@@ -8,20 +8,20 @@
 <body>
     <form action="" name="myform">
         <input type="date" name="date">
-        <button type="button" onclick="showDate()">Click Here</button>
+        <button type="button" onclick="showDate()">Show Date</button>
     </form>
     <div id="show"></div>
     <script>
         function showDate(){
             let date = document.myform.date.value;
             //alert(date);
-            let selelctedDate = new Date(date);
-            let day = selelctedDate.getDay();
-            let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];         
+            let selectedDate = new Date(date);
+            let day = selectedDate.getDay();
+            let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday"];
             document.getElementById("show").innerHTML = days[day];
+            //document.getElementById("show").innerHTML = date;
         }
+
     </script>
-
-
 </body>
 </html>

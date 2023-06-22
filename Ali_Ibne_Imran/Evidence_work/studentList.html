@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><strong>Q-4</strong><br> Using JavaScript stores five students name in an array. Make them all uppercase then print the student’s name in ordered list. Save in a file named studentList.html</h2>
+    <hr>
+    <h3>For ordered list</h3>
+    <script>
+        const students = ["Raim","Karim","Kamal","Jamal","Abzal"]
+        document.write(students)
+        // students.sort()
+        document.write("<ol>")
+            for(x=0; x<students.length; x++){
+                document.write("<li>" + students[x]+ "</li>")
+            }
+        document.write("</ol>")
+    </script>
+</body>
+</html>

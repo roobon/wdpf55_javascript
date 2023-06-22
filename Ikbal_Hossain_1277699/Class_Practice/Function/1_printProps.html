@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let student = { fname: "Ikbal", lname: "Hossain", age: 22, address: "Mirpur" };
+
+        function printProps(x) {
+            for (let item in x) {
+                document.write(x[item] + "<br>")
+            }
+        }
+        printProps(student);
+        document.write("<hr>")
+
+    </script>
+
+    <script>
+        let student1 = { fname: "Ikbal", lname: "Hossain", age: 22, address: "Mirpur" };
+
+        function printProps(x) {
+            for (let item in x) {
+                document.write(item + ": " + x[item] + "<br>")
+            }
+        }
+        printProps(student);
+        document.write("<hr>")   
+    </script>
+
+    <script>
+        let student2 = { fname: "Ikbal", lname: "Hossain", age: 22, address: "Mirpur" };
+
+        function printProps(x) {
+            for (let item in x) {
+                console.log(item + ": " + x[item]);
+                console.log(`${item}: ${x[item]}\n`)
+            }
+        }
+        printProps(student);
+        document.write("<hr>")   
+    </script>
+</body>
+
+</html>

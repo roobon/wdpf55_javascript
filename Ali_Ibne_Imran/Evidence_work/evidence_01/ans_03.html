@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><strong>Q-3</strong> Write an html document to take three marks entry from user (MCQ, Descriptive, Evidence). If the marks of MCQ>=80, Descriptive>=60 and Evidence>=60 then give a message “You have passed” otherwise give a message “You have failed”.</h2>
+    <hr>
+    <h3>Input your marks & Check your result</h3>
+    <form action="" name="result">
+        <input type="text" name="mcq" placeholder="enter mcq marks"><br><br>
+        <input type="text" name="des" placeholder="enter descriptive marks"><br><br>
+        <input type="text" name="evi" placeholder="enter evidence marks"><br><br>
+        <button type="button" onclick="showResult()">Check</button>
+    </form>
+    <script>
+        function showResult(){
+            var mcq = document.result.mcq.value;
+            var des = document.result.des.value;
+            var evi = document.result.evi.value;
+
+            if(mcq>=80 && des>=60 && evi>=60){
+                alert("You have passed")
+            }else{
+                alert("You have failed")
+            }
+        }
+    </script>
+</body>
+</html>

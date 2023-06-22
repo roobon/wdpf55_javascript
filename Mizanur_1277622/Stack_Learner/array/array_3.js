@@ -3,21 +3,24 @@ const n = arr[3];
 const m = arr[2];
 const x = 1;
 const y = 0;
-// console.log(m, n, arr[x], arr[y],arr[x] + arr[y], arr[x + y +1]);
+console.log(m, n, arr[x], arr[y],arr[x] + arr[y], arr[x + y + 1]);
+//console.log(arr[x])
+// console.log(arr[y])
+// console.log(arr[1])
 //Calling array
-// for (let i=0; i<arr.length; i++){
-//     console.log(arr[i]) //test array output
-// }
+for (let i=0; i<arr.length; i++){
+    //console.log(arr[i]) //test array output
+}
 
 //array sum
 let sum =0;
 for (let i = 0; i<arr.length; i++){
     sum = sum + arr[i]
 }
-console.log(sum) //sum calculate
+//console.log(sum) //sum calculate
 
 //Finding Avg of Numbers
-console.log(sum/ arr.length)
+//console.log(sum/ arr.length)
 
 //Finding Largest Number
 let largeNum = arr[0];
@@ -26,7 +29,7 @@ for(let i = 0; i<arr.length; i++){
         largeNum = arr[i]
     }
 }
-console.log(largeNum)
+//console.log(largeNum)
 //Finding Smallest Number
 let SmallNum = arr[0];
 for (let i = 0; i<arr.length; i++){
@@ -34,4 +37,4 @@ for (let i = 0; i<arr.length; i++){
         SmallNum = arr[i]
     }
 }
-console.log(SmallNum)
+//console.log(SmallNum)

@@ -8,16 +8,25 @@
 <body>
     <h3>Find out Factorial</h3>
     <script>
-        function factorial(n){
-        let product = 1;
-        while(n>1){
-           product *= n;
-           n--; 
+    //     function factorial(n){
+    //     let product = 1;
+    //     while(n>1){
+    //        product *= n;
+    //        n--; 
+    //     }
+    //     document.write(product);
+    // }
+    // let n = prompt("Put a number", "");
+    // factorial(n);
+    </script>
+
+    <script>
+        function factorial(x) {
+        if (x <= 1) return 1;
+        return x * factorial(x-1); // recursive
         }
-        document.write(product);
-    }
-    let n = prompt("Put a number", "");
-    factorial(n);
+        let n = prompt("Put a number", "");    
+        document.write(factorial(n));
     </script>
 </body>
 </html>

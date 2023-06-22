@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for of</title>
+</head>
+<body>
+    <h3>find the sum of array using for of</h3>
+    <script>
+        let data = [23, 45, 564, 657, 4534, 234];
+        let sum = 0;
+        for (let element of data){
+            sum +=element;
+        }
+        document.write(sum)
+    </script>
+    <!-- <script>
+        let number = [23, 45, 564, 657, 4534, 234];
+        let total = 0;
+        for (let index of number){
+            total +=index;
+        }
+        document.write(total)
+    </script> -->
+    <h3>
+        concat all element using for/of
+    </h3>
+    <script>
+        let monts = ["jan", "feb" , "Mar", "Apr"];
+        let list = "<ul>";
+            for (let element of monts){
+                list += "<li>" + element +"</li>"
+            }
+                list += "</ul>";
+                document.write(list)
+          
+    </script>
+    <!-- <div>
+        <script>
+              document.write(list)
+        </script>
+    </div> -->
+
+
+
+    <h3>concat all elements of object using for of</h3>
+    <script>
+        let o = {x:1, y:23, z:45};
+        let text = "";
+        for (let item of Object.keys(o)){
+            text+=item;
+        }
+        document.write(text)
+    </script>
+    <h3>concat all valuess of object using for of</h3>
+    <script>
+        let obj = {x:1, y:23, z:45};
+        let total = 0;
+        for (let item of Object.values(o)){
+           total+=item;
+        }
+        document.write(total)
+    </script>
+    
+</body>
+</html>

@@ -7,16 +7,25 @@
 </head>
 <body>
    <h3>Find out Factorial</h3> 
+   <!-- <script>
+        function factorial(n){
+            let product  = 1;
+            while(n>1){
+                // product *= n;
+                product = product*n
+                n--;
+            }document.write(product)
+        } let n = prompt("Put a number")
+        factorial(n)
+   </script> -->
+   <hr>
    <script>
-    function factorial(n){
-        let product  = 1;
-        while(n>1){
-            // product *= n;
-            product = product*n
-            n--;
-        }document.write(product)
-    } let n = prompt("Put a number")
-    factorial(n)
-   </script>
+        function factorial(x){
+            if(x<=1)return 1;
+            return x*  factorial(x-1)
+        } 
+        let x = prompt("Put a number")
+        document.write(factorial(x))
+    </script>
 </body>
 </html>

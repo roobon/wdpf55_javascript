@@ -1,4 +1,14 @@
-
+var a = 7;
+var b = a;
+var a = 10;
+console.log(b)
+// var a = 4;
+// console.log(a++);
+// console.log(++a);
+// console.log(++a);
+// console.log(--a);
+// console.log(++a);
+// console.log(++a);
 
 // var i =1; j=10;
 // do{

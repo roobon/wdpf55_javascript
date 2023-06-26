@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            background-color: rgb(47, 42, 42);
+            color: darkcyan;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .form {
+            background-color: rgb(197, 195, 195);
+            padding: 15px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h3>Login | Register</h3>
+        <form action="" onsubmit="return validateForm()">
+            <label for="email">Email</label><br>
+            <input type="text" id="email" required><br><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" required><br><br>
+
+            <input type="submit" value="Login" style=" width: 170px; background-color: darkcyan; border: none; padding: 5px 0; border-radius: .2rem; color: aliceblue; margin: 0 auto;">
+
+        </form>
+    </div>
+
+    <script>
+        function validateForm(){
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password");
+
+            //Email validation using a regular expression
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(!emailRegex.test(email)){
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            //Password length validation
+            if(password.length < 6){
+                alert("Password should be at least 6 characters long.");
+                return false;
+            }
+
+            //Successful validation
+            alert("Login form submitted successfully.");
+            return true;
+        }
+    </script>
+</body>
+</html>

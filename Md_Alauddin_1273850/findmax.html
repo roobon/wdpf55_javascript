@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Find Maximum from given numbers</h3>
+    <script>
+        function findMax(){
+            let max = -1;
+            for(let i=0; i<arguments.length; i++){
+                if(arguments[i]>max){
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        let max = (30, 5, 60, 45, 70);
+        document.write(max);
+    </script>
+</body>
+</html>

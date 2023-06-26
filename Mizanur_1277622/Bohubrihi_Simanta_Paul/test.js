@@ -1,5 +1,5 @@
 function sleep(name){
-    console.log(name + "is waiting for your reply")
+    console.log(name + " is waiting for your reply")
 }
 
 sleep("Jasim")

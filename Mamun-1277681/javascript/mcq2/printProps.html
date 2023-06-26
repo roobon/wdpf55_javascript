@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>printProps</title>
+</head>
+<body>
+    <script>
+        let student = {fName : "Iqbal",
+                    lName : "Hossain",
+                    Age: 22, 
+                    Address : "Mirpur"
+                    }
+                    function printProps(x){
+                        for(let item in x){
+                            // document.write(item+": "+x[item] +"<br>")
+                            console.log(`${item}:${x[item]}\n`)
+                        }
+                    }
+                    printProps(student)
+
+    </script>
+</body>
+</html>

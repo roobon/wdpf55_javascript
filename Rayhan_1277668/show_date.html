@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <form action="" name="myform">
+        <input type="date" name="myinput" placeholder="type the date">
+        <button type="button" onclick="showDate()">  Sumbit </button>
+    </form>
+
+    <h1 id="showDate"></h1>
+
+    <script>
+        function showDate() {
+            // event.preventDefault();
+            let date = document.myform.myinput.value ;
+            let selectedDate = new Date(date) ;
+
+            let day = selectedDate.getDay() ;
+            const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+            let month = selectedDate.getMonth() ;
+            
+            const monts = ["Jan","feb","Mar","April","May","June","July", "Aug", "sept", "Oct" , "Nov" , "Dec"];
+
+            let year = selectedDate.getFullYear()
+
+           document.getElementById("showDate").innerHTML =   weekday[day] + " , " + monts[month] + " ,"  + year ;
+
+        }
+
+    </script>
+   
+</body>
+</html>

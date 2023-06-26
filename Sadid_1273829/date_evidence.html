@@ -25,26 +25,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div id="demo"></div>
     <form action="#" name="form">
         <input type="date" name="inputDate">
@@ -54,10 +34,10 @@
         function myfun() {
             let p = document.form.inputDate.value;
             let d = new Date(p);
-            let days = d.getDay();    //print number
-            let day = ["sunday", "monday", "tuesday", "wednessday", "thursday", "friday", "saturday"]
+            let day = d.getDay();    //print number
+            let days = ["sunday", "monday", "tuesday", "wednessday", "thursday", "friday", "saturday"]
 
-            document.getElementById("demo").innerHTML = day[days];
+            document.getElementById("demo").innerHTML = days[day];
         }
     </script>
 </body>

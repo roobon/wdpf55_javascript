@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="result" >
+        <input type="text" name="mcq" placeholder="Inter here"><br><br>
+        <input type="text" name="des" placeholder="Inter here"><br><br>
+        <input type="text" name="eve" placeholder="Inter here"><br><br>
+        <button onclick="check()">Checkbox</button>
+    </form>
+
+    <script>
+        function check(){
+            let mcq = document.result.mcq.value;
+            let des = document.result.des.value;
+            let eve = document.result.eve.value;
+        
+
+        if(mcq>=80 && des>=60 && eve>=60){
+            alert("You have passed");
+        }else{
+            alert("You have failed");
+        }
+    }
+    </script>
+    
+</body>
+</html>

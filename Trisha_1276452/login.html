@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login From</title>
+</head>
+<body>
+
+    <script>
+        function validate(){
+            let  user = document.loginform.username.value;
+            let  password = document.loginform.password.value;
+
+           
+            // alert(user);
+            // alert(password);
+            if (user.length<6 && password.length>8){
+                alert("invalid username or password");
+            } else {
+                alert ("valid username and password");
+            }
+        }
+    </script>
+    <h3>Login Form</h3>
+    <form action="" name="loginform">
+        <input type="text" name="username" placeholder="Enter username"> <br> <br>
+        <input type="password" name="password" placeholder="enter password"> <br> <br>
+        <button onclick="validate()">LOGIN</button>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform">
+        <label for="mcq">MCQ</label><br>
+        <input type="number" name="mcq" id="mcq" placeholder="Enter Your Marks"><br><br>
+
+        <label for="descriptive">Descriptive</label><br>
+        <input type="number"  name="desc" id="descriptive" placeholder="Enter Your Marks"><br><br>
+
+        <label for="evidence">Evidence</label><br>
+        <input type="number" name="evi" id="evidence" placeholder="Enter Your Marks"><br><br>
+
+        <button onclick="checkMarks()" type="button">Check Result</button>
+
+        <p id="result"></p>
+    </form>
+    <script>
+        function checkMarks(){
+            let mcq = document.myform.mcq.value;
+            let desc = document.myform.desc.value;
+            let evi = document.myform.evi.value;
+
+            if( mcq>=80 && desc>=80 && evi>=60){
+                alert("You have passed");
+            } else {
+                alert("You have failed");
+            }
+        }
+
+       
+
+        // function checkMarks(){
+        //     var mcq = parseFloat(document.getElementById("mcq").value);
+        // var descriptive = parseFloat(document.getElementById("descriptive").value);
+        // var evidence = parseFloat(document.getElementById("evidence").value);
+
+        // if(mcq >=80 && descriptive >= 60 && evidence >= 60){
+        //     // document.getElementById("result").innerHTML = "You have passed";
+        //     alert("Your pass")
+        // }else{
+        //     // document.getElementById("result").innerHTML = "You have failed";
+        //     alert("Your fail")
+        // }
+        // }
+    </script>
+</body>
+</html>

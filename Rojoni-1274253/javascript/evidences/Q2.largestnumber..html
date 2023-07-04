@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>largest number</h3>
+    <script>
+        // let number = findlarge(9,66,35,88,99);
+        
+    function findlarge(){
+        let large = -1;
+        for(let i=0;i<arguments.length;i++){
+           if(arguments[i]>large){
+            large = arguments[i];
+
+           }
+        }
+        return large;
+    }
+    let first =prompt("Enter 1st number","");
+    first = parseInt(first);
+    let second =prompt("Enter2nd number","");
+    first = parseInt(second);
+    let third =prompt("Enter 3rd number","");
+    first = parseInt(third);
+    // alert(findlarge(first,second,third));
+    let large =findlarge(first,second,third)
+    document.write("The largest number is" + large);
+   
+    </script>
+    
+</body>
+</html>

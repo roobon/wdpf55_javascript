@@ -27,15 +27,25 @@
          </script>
          <h3>Array to map</h3>
          <script>
-            const number2 = [20,40,60,40,40,50,40,60];
-            const result = number2.map(myfuncation);
-            function myfuncation(value){
-                return value *3
-            }
-    document.write(result)
+    //         const number2 = [20,40,60,40,40,50,40,60];
+    //         const result = number2.map(myfuncation);
+    //         function myfuncation(value){
+    //             return value *3
+    //         }
+    // document.write(result)
 
            
             
+         </script>
+         <script>
+            const ShortName = ["Rayan","Mizan","Ikbal","Nadia","saida","Allauddhin"];
+           var output  = "<ol>";
+                for (i=0; i<ShortName.length; i++){
+                    output+= "<li>" + ShortName[i]+"</li>"
+                }
+                output+="</ol>";
+                document.write(output)
+                console.log(output);
          </script>
     
 </body>

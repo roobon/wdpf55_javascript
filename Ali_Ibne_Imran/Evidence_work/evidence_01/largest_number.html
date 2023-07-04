@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        function largest(){
+            let max = 0;
+            let min = 0;
+            for(let i = 0; i<arguments.length; i++){
+                if(arguments[i]>max){
+                    max = arguments[i];
+                }
+            }return max ;
+        }
+        // let number = largest(20,52,35,62,45,60)
+        // document.write(number)
+
+        let num1 = prompt("enter number 1")
+        let num2 = prompt("enter number 2")
+        let num3 = prompt("enter number 3")
+        
+        document.write(largest(num1,num2,num3))
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Find Maximum and minimumfrom given numbers</h3>
+    <!-- <script>
+        function findMax(){
+            let max = 0;
+            let min = 0;
+            for(let i=0; i<arguments.length; i++){
+                if(arguments[i]>max){
+                    max = arguments[i];
+                }
+                if(arguments[i]<min){
+                    min = arguments[i];
+                }
+            }
+            return{
+                max: max;
+                min: min
+            }
+        }
+        // let max = (30, 5, 60);
+
+        var first = prompt("Enter 1st Number", "");
+        first = parseInt(first);
+        var second = prompt("Enter 2nd Number", "");
+        second = parseInt(second);
+        var third = prompt("Enter 3rd Number", "");
+        third = parseInt(third);
+        let max = findMax(first, second, third);
+
+        
+        document.write("The maximum number is " + max);
+        document.write("The maximum number is " + min);
+    </script> -->
+
+    <script>
+    //   const array = [1, 2, 5, 8, 15];
+
+    //   let max = array[0];
+    //   let min = array[0];
+
+    //   for (let i = 0; i < array.length; i++) {
+    //     if (array[i] > max) {
+    //       max = array[i];
+    //     }
+    //     if (array[i] < min) {
+    //       min = array[i];
+    //     }
+    //   }
+
+    //   document.write("<h1> max = " + max + "</h1>");
+    //   document.write("<h1> min = " + min + "</h1>");
+
+
+
+      function findMaxAndMin(numbers) {
+        if (numbers.length === 0) {
+          return {
+            max: null,
+            min: null,
+          };
+        }
+
+        var max = numbers[0];
+        var min = numbers[0];
+
+        for (var i = 1; i < numbers.length; i++) {
+          if (numbers[i] > max) {
+            max = numbers[i];
+          }
+
+          if (numbers[i] < min) {
+            min = numbers[i];
+          }
+        }
+
+        return {
+          max: max,
+          min: min,
+        };
+      }
+
+      // Example usage:
+      var numbers = [5, 8, 3, 12, 4];
+      var result = findMaxAndMin(numbers);
+      console.log("Maximum number: " + result.max);
+      console.log("Minimum number: " + result.min);
+    </script>
+  </body>
+</html>

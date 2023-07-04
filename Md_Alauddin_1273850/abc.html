@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <title>Login Form</title>
@@ -33,6 +33,47 @@
 
     <label for="password">Password:</label>
     <input type="password" id="password" ><br><br>
+
+    <input type="submit" value="Login">
+  </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <script>
+    function validateForm() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Username length validation
+      if (username.length < 6) {
+        alert("Username should be at least 6 characters long.");
+        return false;
+      }
+
+      // Password length validation
+      if (password.length > 8) {
+        alert("Password should be a maximum of 8 characters long.");
+        return false;
+      }
+
+      // Successful validation
+      alert("Login form submitted successfully.");
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <h1>Login Form</h1>
+  <form onsubmit="return validateForm()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required><br><br>
 
     <input type="submit" value="Login">
   </form>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Show Result</h3>
+
+    <script>
+        let mcq = parseFloat(prompt("Enter mcq number"))
+        let descripted = parseFloat(prompt("Enter descripted number"))
+        let evidence = parseFloat(prompt("Enter evidence number"))
+
+        if(mcq>=80 && descripted>=60 && evidence>=60){
+            document.write("You are passed");
+        }else{
+            document.write("You are Failed")
+        }
+    </script>
+</body>
+</html>

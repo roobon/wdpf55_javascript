@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h3>Odd Even Test</h3>
+
+    <h3 id="test"> Odd Even Test </h3>
     <script>
-        let num = parseInt(prompt("Enter your Number"));
-        if(num % 2 == 0){
-            alert("This is even number");
+        let num = parseInt(prompt("Enter your Number", ""));
+        if (num % 2 == 0) {
+            // document.write(num + " is even number");
+            document.getElementById("test").innerHTML = num + " is an even number";
         } else {
-            alert("This is odd number");
+            // document.write(num + " is odd number");
+            document.getElementById("test").innerHTML = num + " is an even number";
         }
     </script>
+
+
 </body>
+
 </html>

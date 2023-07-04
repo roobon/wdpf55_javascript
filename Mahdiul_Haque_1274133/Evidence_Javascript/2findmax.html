@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Max</title>
+</head>
+<body>
+    <script>
+         
+        function largest(){
+            let maximum = -1
+            for(let i = 0; i<arguments.length; i++){
+              if(arguments[i]>maximum){
+                maximum = arguments[i];
+              }
+            }return maximum
+        }
+        let first = prompt("Enter 1st number" , "");
+        first = parseInt(first);
+        let second = prompt("Enter 2nd number" , "");
+        first = parseInt(second);
+        let third = prompt("Enter 3rd number" , "");
+        third = parseInt(third);
+        alert(largest(first, second, third));
+
+        
+       
+        
+    </script>
+</body>
+</html>

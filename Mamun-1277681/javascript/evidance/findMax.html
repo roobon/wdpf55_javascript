@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Find Max</h3>
+    <!-- <script>
+        function findMax(){
+            let max = -1;
+            for (let i =0; i<arguments.length; i++){
+                if(arguments[i]>max){
+                    max = arguments[i];
+                }
+                }
+                return max
+            }
+       
+        let numbers=  findMax(2,34,43,65,4,98);
+        document.write(numbers)
+    </script> -->
+    <script>
+        function FindLargest(){
+            let max = -1;
+            for(let i = 0; i<arguments.length; i++){
+                if(arguments[i]>max){
+                    max = arguments[i];
+                }
+              
+            }
+            return max
+        }
+        let numbers = FindLargest(12, 43, 54, 65, 78, 456, 76);
+        document.write(numbers)
+        // let first = prompt("enter first number");
+        // first = parseInt(first);
+        // let second = prompt("enter second number");
+        // second = parseInt(second);
+        // let third = prompt("enter first number");
+        // third= parseInt(third);
+        // let max = findMax(first, second, third)
+
+        // document.write("maximum number is " +max);
+       
+
+        document.write("maximum number is " +numbers);
+    </script>
+
+ 
+    
+</body>
+</html>

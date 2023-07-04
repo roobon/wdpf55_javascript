@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Student name sorted</h3>
+    <Script>
+        let studentName = ["Masum", "Al_hasan", "Iqbal", "Babul","Nizam"];
+
+        document.write(studentName);
+        document.write("<hr>");
+        studentName.sort()
+        document.write(studentName);
+
+        let output = "<ol>";
+       
+       for(let i=0; i<studentName.length; i++){
+           output += "<li>" + studentName[i] + "</li>";
+
+       }
+       output += "</ol>";
+       document.write(output);
+    //    document.write(studentName[0])
+
+    </Script>
+</body>
+</html>

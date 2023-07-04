@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Login Form</h3>
+
+    <form action="" name="email">
+       UserName:<input type="text" name="Username" placeholder="Enter Username"> <br> <br>
+       Password :<input type="text" name="Password" placeholder="Enter Password"> <br> <br>
+        <button name="button" onclick="validate()">Submit</button>
+    </form>
+    <script>
+        function validate(){
+           let validate = true;
+            let user = document.email.Username.value;
+            let passw = document.email.Password.value;
+            if(user.length<=6 ||user==""){
+                validate = false;
+            }else{
+                validate = true;
+            }
+            if(passw.length<=8 ||passw==""){
+                validate = false;
+            }else{
+                validate = true;
+            }
+            if(validate){
+                alert("Validated")
+            }else{
+                alert("Not Validated")
+            }
+        }
+    </script>
+</body>
+</html>

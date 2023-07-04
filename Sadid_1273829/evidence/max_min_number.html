@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Number</title>
+</head>
+<body>
+    <h3>Find Maximum from given numbers</h3>
+    <p id="show"></p>
+
+    <script>
+        let display = document.getElementById("show")
+        let num1 = parseInt(prompt("Number 1"))
+        let num2 = parseInt(prompt("Number 2"))
+        let num3 = parseInt(prompt("Number 3"))
+
+        const array = [num1, num2, num3];
+
+        let max = array[0];
+        let min = array[0];
+
+            for (let i=0; i<array.length; i++) {
+                if (array[i]>max) {
+                    max = array[i];
+                }
+                if (array[i]<min) {
+                    min = array[i];
+                }
+            }
+
+        display.innerHTML = `The numbers were ${num1}, ${num2} and ${num3}. The maximum number is ${max} & the minimum number is ${min}`
+    </script>
+</body>
+</html>

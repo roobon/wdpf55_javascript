@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Normal View</h3>
+    <script>
+        let student = ["Imran","Shakib","Shafin","Rayhan","Masum","Mizan","Nadia","Rijoni","Iqbal","Shuvo","Molla"]
+        document.write(student)
+
+
+        document.write("<h3>Sorted View</h3>")
+
+        student.sort()
+        document.write("<ol>")
+            for(x = 0; x<student.length; x++){
+                document.write("<li>" + student[x] + "</li>")
+            }
+        document.write("</ol>")
+    </script>
+</body>
+</html>

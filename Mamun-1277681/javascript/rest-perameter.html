@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest perameter</title>
+</head>
+<body>
+    <script>
+        function sum(...numbers){
+            let sum= 0;
+            for(let number of numbers){
+                sum+=number;
+            }
+            
+            return sum;
+        }
+        
+        let output=sum(23, 43, 6, 54, 456, 34, 765);
+       alert(output)
+    </script>
+</body>
+</html>

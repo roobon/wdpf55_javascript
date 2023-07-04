@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form Validation</title>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h2>Login Form</h2>
+  <form id="loginForm" onsubmit="validateForm(event)">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+      <span id="usernameError" class="error"></span>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <span id="passwordError" class="error"></span>
+    </div>
+    <div>
+      <input type="submit" value="Login">
+    </div>
+  </form>
+
+  <script>
+    function validateForm(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Clear previous error messages
+      document.getElementById("usernameError").textContent = "";
+      document.getElementById("passwordError").textContent = "";
+
+      // Get form values
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Validate username
+      if (username === "") {
+        document.getElementById("usernameError").textContent = "Username is required";
+        return;
+      }
+
+      // Validate password
+      if (password === "") {
+        document.getElementById("passwordError").textContent = "Password is required";
+        return;
+      }
+
+      // If all validations pass, you can proceed with form submission or further processing
+      console.log("Login successful");
+      // Here, you can submit the form or perform additional tasks
+    }
+  </script>
+</body>
+</html>

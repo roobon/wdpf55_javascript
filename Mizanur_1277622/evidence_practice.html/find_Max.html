@@ -18,9 +18,10 @@
         }
         document.write(findMax(10,150,20,10));
     </script> -->
-    <script>
+    <h1> Finding Maximum Value</h1>
+    <!-- <script>
         function findMax(){
-            let max = -1;
+            let max = 0;
             for (let i=0; i<arguments.length; i++){
                 if(arguments[i]>max){
                     max = arguments[i]
@@ -28,7 +29,32 @@
             }
             return max;
         }
-        document.write(findMax(10,150,20,10));
+        //document.write(findMax(10,150,200,10));
+        let first = parseInt(prompt("Enter first number"));
+        let second = parseInt(prompt("Enter second number"));
+        let third = parseInt(prompt("Enter third number"));
+        let maximum = (findMax(first, second, third))
+        document.write(`Your numbers is = ${first} , ${second} , ${third} and Max number is: ${maximum}`)
+        
+    </script> -->
+    <h1>Finding Minimum Value</h1>
+    <script>
+        function findMin(){
+            let min = Infinity;
+            for (let i=0; i<arguments.length; i++){
+                if(arguments[i]<min){
+                    min = arguments[i]
+                }
+            }
+            return min;
+        }
+        //document.write(findMax(10,150,200,10));
+        let first = parseInt(prompt("Enter first number"));
+        let second = parseInt(prompt("Enter second number"));
+        let third = parseInt(prompt("Enter third number"));
+        let minimum = (findMin(first, second, third))
+        document.write(`Your numbers is = ${first} , ${second} , ${third} and Min number is: ${minimum}`)
+        
     </script>
 </body>
 </html>

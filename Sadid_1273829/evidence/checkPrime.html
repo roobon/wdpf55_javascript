@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Prime</title>
+  </head>
+  <body>
+    <h3>Check Prime</h3>
+    <p id="prime"></p>
+
+    <script>
+      let num = parseInt(prompt("Input a number"));
+      function fun() {
+        if (num == 0) {
+          val = "0 is not allowed";
+        } else if (num == 1) {
+          val = "1 is a prime number";
+        } else if (num == 2) {
+          val = "2 is a prime number";
+        } else {
+          for (let i = 0; i < num; i++) {
+            if (num % i == 0) {
+              val = `${num} is a prime number`;
+            }
+        }
+            return val = `${num} is not a prime number`;
+        }
+      }
+      document.getElementById("prime").innerHTML = fun();
+    </script>
+  </body>
+</html>

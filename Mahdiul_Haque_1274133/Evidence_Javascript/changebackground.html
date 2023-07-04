@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function changeColor(x){
+        let color = x.value;
+        // alert(color);
+        document.body.style.backgroundColor = color;
+    }
+    </script>
+    <form action="">
+        <select name="" id="" onchange="changeColor(this)">
+            <option value="">Select One</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="pink">Pink</option>
+            <option value="yellow">Yellow</option>
+            <option value="black">Black</option>
+            <option value="brown">Brown</option>
+            <option value="orange">Orange</option>
+            <option value="indigo">Indigo</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="violet">Violet</option>
+        </select>
+    </form>
+</body>
+</html>

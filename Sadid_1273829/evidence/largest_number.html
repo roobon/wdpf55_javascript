@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Number</title>
+</head>
+<body>
+    <h3>Find Maximum from given numbers</h3>
+    <p id="show"></p>
+
+    <script>
+        let display = document.getElementById("show")
+        let num1 = parseInt(prompt("Number 1"))
+        let num2 = parseInt(prompt("Number 2"))
+        let num3 = parseInt(prompt("Number 3"))
+
+        function largestNumber() {
+        let max = -Infinity;
+
+            for (let i = 0; i < arguments.length; i++) {
+                if (arguments[i]>max) {
+                    max = arguments[i];
+                }                
+            }
+            return max;
+        }
+        display.innerHTML = `The numbers were ${num1}, ${num2} and ${num3}. The largest number is ${largestNumber(num1, num2, num3)}`
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Login Form Email Validation</h3>
+    <form action="" name="email">
+        UserName: <input type="text" name="UserName" placeholder="Enter User Name"> <br> <br>
+        Password: <input type="text" name="Password" placeholder="Enter Your Password"> <br> <br>
+        <button name="submit" onclick="validate()">Submit</button>
+    </form>
+    <script>
+        function validate(){
+            let validate = true;
+            let user = document.email.UserName.value;
+            let pass = document.email.Password.value;
+            if(user.length<=6 ||user==""){
+                validate =false;
+            }
+        }
+    </script>
+</body>
+</html>

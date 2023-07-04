@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = {fname:"Iqbal", lname:"Hossain", age:22, address:"Mirpur"};
+
+        document.write(student.fname);
+
+        function printProps(x){
+            for(let item in x){
+                console.log(item  + ": " + x[item]);
+
+                console.log(`${item}: ${x[item]}\n`)
+            }
+        }
+        printProps(student);
+
+        const constantFunc = () => 42;
+        document.write(constantFunc());
+    </script>
+
+</body>
+</html>

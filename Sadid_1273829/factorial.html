@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Factorial</title>
-</head>
-<body>
+  </head>
+  <body>
     <h3>Find Factorial</h3>
     <script>
-        function factorial(n) {
-            let product = 1;
-            while (n>1) {
-                product *= n;
-                n--;
-            }
-            console.log(product);
+      function factorial(n) {
+        let product = 1;
+        while (n > 1) {
+          product *= n;
+          n--;
         }
-        factorial(7);
+        console.log(product);
+      }
+      factorial(7);
     </script>
-</body>
+
+    <script>
+        function facorial(x){
+            if(x<=1){return 1}
+            return x * facorial(x-1);
+        }
+        let n = prompt("Put a number");
+        document.write(facorial(n));
+    </script>
+  </body>
 </html>

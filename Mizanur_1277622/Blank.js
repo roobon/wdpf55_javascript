@@ -1,12 +1,24 @@
-var i =1; j=10;
-do{
-if(i++>--j)
-{
-continue;
-}
-}
-while(i<5);
-console.log("i="+i+"and j="+j)
+var a = 7;
+var b = a;
+var a = 10;
+console.log(b)
+// var a = 4;
+// console.log(a++);
+// console.log(++a);
+// console.log(++a);
+// console.log(--a);
+// console.log(++a);
+// console.log(++a);
+
+// var i =1; j=10;
+// do{
+// if(i++>--j)
+// {
+// continue;
+// }
+// }
+// while(i<5);
+// console.log("i="+i+"and j="+j)
 
 
   //const result = func();

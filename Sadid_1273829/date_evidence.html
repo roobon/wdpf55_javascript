@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo"></p>
+    <form action="#" name="myForm">
+        <input type="date" name="date">
+        <button type="button" onclick="ShowDate()">show</button>
+    </form> -->
+    <!-- <script>
+        function ShowDate() {
+            let date = document.myForm.date.value;
+            let selectDate = new Date(date);
+            let day = selectDate.getDay();
+            let days = ["sunday", "monday", "tuesday", "wednessday", "thursday", "friday", "saturday"]
+
+            document.getElementById("demo").innerHTML = days[day];
+        }
+    </script> -->
+
+
+
+
+    <div id="demo"></div>
+    <form action="#" name="form">
+        <input type="date" name="inputDate">
+        <button type="button" onclick="myfun()">Show</button>
+    </form>
+    <script>
+        function myfun() {
+            let p = document.form.inputDate.value;
+            let d = new Date(p);
+            let day = d.getDay();    //print number
+            let days = ["sunday", "monday", "tuesday", "wednessday", "thursday", "friday", "saturday"]
+
+            document.getElementById("demo").innerHTML = days[day];
+        }
+    </script>
+</body>
+</html>

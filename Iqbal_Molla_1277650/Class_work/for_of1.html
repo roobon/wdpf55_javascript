@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Concat all eleaments using for/of from object</h3>
+    <script>
+        let object = {x:10, y:20, z:30};
+        let text ="";
+        for(let item of object.keys(object)){
+            text += item;
+        }
+        document.write(text);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3 style="background-color: aquamarine;"> Sorted of five students information </h3>
+    <p id="array"></p>
+    <p id="sorted"></p>
+
+    <script>
+        var studentsName = ["Molla", "Sadid", "Ikbal", "Rayhan", "Alauddin"];
+        document.getElementById("array").innerHTML = studentsName;
+
+        studentsName.sort();
+        for (let i = 0; i < studentsName.length; i++) {
+            document.write("<li>");
+            // document.getElementById ("sorted").innerHTML = studentsName[i];
+            document.write(studentsName[i]);
+            document.write("</li>");
+        }
+
+
+    </script>
+</body>
+
+</html>

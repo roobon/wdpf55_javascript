@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Display Sorted Number</h3>
+    <script>
+        let numbers = [95,25,34,15,85,5,45,10,65]
+        document.write("My Numbers = " + numbers)
+        document.write("<br>")
+        let sorted = numbers.sort()
+        document.write("Sorted = " + sorted)
+        document.write("<ul>")
+            for(x=0; x<numbers.length; x++){
+                document.write("<li>" + sorted[x] + "</li>")
+            }
+        document.write("</ul>")
+    </script>
+</body>
+</html>

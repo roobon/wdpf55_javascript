@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Find Largest Number</h3>
+    <script>
+        let num1 = parseInt(prompt("Enter 1st number"))
+        let num2 = parseInt(prompt("Enter 2nd number"))
+        let num3 = parseInt(prompt("Enter 3rd number"))
+
+        function largest(){
+            let large = -1;
+            for(let x=0; x<arguments.length; x++){
+                if(arguments[x]>large){
+                    large = arguments[x]
+                }
+            }return large
+        }
+        document.write(largest(num1,num2,num3))
+    </script>
+</body>
+</html>

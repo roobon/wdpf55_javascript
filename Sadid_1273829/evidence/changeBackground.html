@@ -7,5 +7,21 @@
 </head>
 <body>
     <h3>Change color</h3>
+    <form>
+        <select onchange="changeColor(this)">
+            <option value="">select one</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="blue">Blue</option>
+        </select>
+    </form>
+
+    <script>
+        function changeColor(x) {
+            let color = x.value
+            document.body.style.backgroundColor = color;
+        }
+    </script>
 </body>
 </html>

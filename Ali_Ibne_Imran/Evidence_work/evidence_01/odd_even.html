@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Odd/Even</h3>
+    <div id="demo"></div>
+    <script>
+        let number = prompt("Enter Number")
+        if(number % 2 == 0){
+            // alert(number + " is Even")
+            document.getElementById("demo").innerHTML = number + " is Even";
+        }else{
+            // alert(number + " is Odd")
+            document.getElementById("demo").innerHTML = number + " is Odd";
+        }
+    </script>
+</body>
+</html>

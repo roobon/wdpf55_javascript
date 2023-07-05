@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let array = [28, 45, 69, 20, 15, 7, 98,105,5]; 
+
+    //    let min = array[0], max = array[0]; 
+    //    for (let i = 1; i < array.length; i++) { 
+    //       if (array[i] > max) 
+    //          max = array[i]; 
+    //       if (array[i] < min) 
+    //          min = array[i]; 
+    //     } 
+
+    let min = Math.min.apply(null, array);
+    let max = Math.max.apply(null, array);
+    document.write("Maximum number is " + max + "<br>" + "Minimum number is " + min)
+    </script>
+</body>
+</html>

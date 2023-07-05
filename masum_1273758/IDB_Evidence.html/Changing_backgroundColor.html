@@ -21,7 +21,7 @@
                 document.body.style.backgroundColor =color;
             }
         </script> -->
-<form action="">
+<!-- <form action="">
     <select name="" id="" onchange="changeColor(this)">
         <option value="">Select One</option>
         <option value="Green">Green</option>
@@ -40,6 +40,22 @@
             document.body.style.background= color;
         }
     </script>
+</form> -->
+<form action="">
+    <select name="" id="" onchange="changeColor(this)">
+<option value="">Secelect One</option>
+<option value="Green">Green</option>
+<option value="Red">Red</option>
+<option value="Yellow">Yellow</option>
+    </select>
 </form>
+    <script>
+        function changeColor(x){
+            let color = x.value;
+            document.body.style.backgroundColor =color;
+        }
+        
+    </script>
+
 </body>
 </html>

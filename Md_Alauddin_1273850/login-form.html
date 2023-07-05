@@ -40,26 +40,37 @@
     </script> -->
 
     <script>
-        function validate(){
-            var email = document.login.email.value;
-            var pass = document.login.password.value.length;
-            var pattern = email.search(/[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,3}/);
-            var status = false;
-
-            if(pattern==-1){
-                alert("Enter address is invalid");
-                return false;
-            }
-        }
+       function validate(){
+			var email = document.login.email.value;
+			var pass = document.login.password.value.length;
+			var pattern = email.search(/[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,3}/);
+			var status = false;
+			
+			if(pattern==-1){
+				alert ("Email address is invalid");
+			 	return false;
+			 } else {
+			 	status = true;
+			 }
+			if(pass<5){
+				alert ("Password must be 5 character");
+			 	return false;
+			 } else {
+			 	status =  true;
+			 }
+			 if(status==true){
+			 	alert ("All data are validted");
+			 }
+		}
     </script>
-    <form action="">
-        <label for=""></label>
-        <input type="email">
+    <form action="" name="login">
+        <label>Email Adress </label><br>
+        <input type="text" name="email" placeholder="Enter valid Email"><br><br>
 
-        <label for=""></label>
-        <input type="password">
+        <label>Password </label><br>
+        <input type="password" name="password" placeholder="Enter password"><br><br>
 
-        <button type="submit">Login</button>
+        <input type="button" name="submit" value="Login"  onclick="validate()">
     </form>
 </body>
 </html>

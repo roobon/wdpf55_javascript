@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Among Three Number</title>
+</head>
+<body>
+    <script>
+        // let number =[9,10,12,17,20,23]
+        function findlarge(){
+            let large = -1;
+            for(let i=0;i<arguments.length;i++)
+            if(arguments[i]>large){
+                large =arguments[i];
+            }
+            return large;
+        }
+        let first = prompt("Enter first number","");
+        first = parseInt(first);
+        let second = prompt("Enter second number","");
+        second = parseInt(second);
+        let third = prompt("Enter third number","");
+        third = parseInt(third);
+
+        let large =findlarge(first,second,third);
+        document.write("The largest number is " + large)
+
+
+
+        
+        
+        
+        
+
+    </script>
+    
+</body>
+</html>

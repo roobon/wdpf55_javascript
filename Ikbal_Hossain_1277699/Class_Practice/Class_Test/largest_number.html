@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Find largest among three numbers </h3>
+    <script>
+        let firstNumber = parseFloat(prompt("Enter 1st Number"));
+        let secondNumber = parseFloat(prompt("Enter 2nd Number"));
+        let thirdNumber = parseFloat(prompt("Enter 3rd Number"));
+
+        if (firstNumber > secondNumber && firstNumber > thirdNumber) {
+            alert(firstNumber + " is a largest number")
+        } else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+            alert(secondNumber + " is a largest number")
+        } else {
+            alert(thirdNumber + " is a largest number")
+        }
+    </script>
+</body>
+
+</html>

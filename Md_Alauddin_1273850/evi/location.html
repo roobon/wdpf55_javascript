@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Window Location</h3>
+
+    <script>
+        let path = window.location.href;
+
+        document.write("HREF: " + path + "<br>");
+        let host = window.location.hostname;
+        document.write("HostName: " + host + "<br>");
+        let domain = window.location.domain;
+        document.write("Domain Name: " + domain + "<br>");
+        let pathname = window.location.pathname;
+        document.write("path Name: " + pathname + "<br>");
+        let port = window.location.port;
+        document.write("port Number: " + port + "<br>"); //80 / 443
+        let protocol = window.location.protocol;
+        document.write("protocol Number: " + protocol + "<br>"); //http
+        let assign = window.location.assign("https://www.prothomalo.com");
+        document.write("assign Number: " + assign + "<br>");
+    
+    </script>
+</body>
+</html>

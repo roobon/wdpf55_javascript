@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Email Validation</h3>
+    <form action="" name="login">
+        Email : <input type="email" name="email">
+        Password : <input type="password" name="password">
+        <button type="button" onclick="validate()">Check</button>
+    </form>
+    <script>
+        function validate(){
+            let email = document.login.email.value;
+            let password = document.login.password.value.length;
+            let pattern = email.search(/[a-zA-Z0-9]+\@[a-zA-Z]+\.[a-zA-Z]{2,3}/);
+            let status = false;
+           if(pattern == -1){
+            alert("Email address is invalid");
+            return false
+           }else{
+            status = true
+           }
+           if(password<8){
+            alert("Password must be 8 character");
+            return false
+           }else{
+            status = true
+           }
+           if(status == true){
+            alert("All data are valid")
+           }
+        }
+    </script>
+</body>
+</html>

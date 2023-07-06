@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" name="myform">
+        <label for="mcq">MCQ</label><br>
+        <input type="number" name="mcq"><br>
+
+        <label for="descriptive">Descriptive</label><br>
+        <input type="number" name="descriptive"><br>
+
+        <label for="evidence">Evidence</label><br>
+        <input type="number" name="evidence"><br><br>
+
+        <input type="button" value="Check Here" onclick="CheckMarks()">
+    </form>
+
+    <script>
+       function CheckMarks(){
+        var mcq = document.myform.mcq.value;
+        var desc = document.myform.descriptive.value;
+        var evi = document.myform.evidence.value;
+
+        if ( mcq>=30 && desc>=30 && evi>=50){
+            alert("You are Passed");
+        } else{
+            alert("You are Failed")
+        }
+       }
+    </script>
+</body>
+</html>

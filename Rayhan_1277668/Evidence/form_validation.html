@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myForm">
+        <input type="text" name="userName" placeholder="Enter User name" required> <br>
+        <input type="password" name="password" placeholder="Enter password" required> <br>
+
+        <button type="button" onclick="validate()"> Submit </button>
+    </form>
+
+    <h3 id="show-uName">  </h3>
+    <h3 id="show-uPass">  </h3>
+
+
+    <!-- user name must is at least 6 character long -->
+    <!-- password is maximum 8 character long -->
+
+    <script>
+        function validate () {
+            let validate = false ;
+            const uName = document.myForm.userName.value;
+            const uPass = document.myForm.password.value;
+            
+            // document.getElementById("show-uName").innerHTML = uName ;
+            // document.getElementById("show-uPass").innerHTML = uPass ;
+
+            if (uName.length < 6 || user == '') {
+                validate = false ;
+            } else {
+                validate = true ;
+            }
+            if ( uPass.length>8 || uPass == '' ){
+                validate = false
+            } else {
+                validate = true ;
+            }
+
+            if (validate) {
+                alert("validate")
+            } else {
+                alert("noty validate")
+            }
+            
+        }
+    
+       
+    </script>
+</body>
+</html>

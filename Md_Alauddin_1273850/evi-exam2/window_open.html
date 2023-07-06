@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Cleck the button to open a new window form</h3>
+    <form action="#" name="myform">
+        <label for="fname">First name</label><br>
+        <input type="text" name="fname" placeholder="First Name"><br>
+
+        <label for="lname">Last name</label><br>
+        <input type="text" name="lname" placeholder="Last Name"><br>
+
+        <label>Gender</label><br>
+        <input type="radio" name="gendar" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" name="gendar" value="Female">
+        <label for="female">Female</label><br>
+
+        <label for="">Address</label><br>
+        <textarea name="address" cols="30" rows="10"></textarea><br>
+
+        <label for="district">District</label>
+        <select name="district" id="">
+            <option>Dhaka</option>
+            <option>Comilla</option>
+            <option>Noakhali</option>
+            <option>Chandpur</option>
+            <option>Chittagoang</option>
+            <option>Barishal</option>
+        </select><br>
+
+        <label for="subject">Programming Languages:</label>
+        <input type="checkbox" name="php" value="PHP" class="langs">
+        <label for="Gave">PHP</label>
+        <input type="checkbox" name="react" value="React" class="langs">
+        <label for="WDPF">React</label>
+        <input type="checkbox" name="angular" value="Angular" class="langs">
+        <label for="NET">Angular</label><br><br>
+
+        <button onclick="myFunction()">Look at</button>
+    </form>
+    
+
+    <script>
+        function myFunction(){
+            var fname = document.myform.fname.value;
+            var lname = document.myform.lname.value;
+            var gendar = document.myform.gendar.value;
+            var address = document.myform.address.value;
+            var district = document.myform.district.value;
+            const langs = document.getElementsByClassName("langs");
+            //alert(languages[0].value)
+            let languages = "";
+            // for(let x in langs){
+            //     languages += x + ",";
+            // }
+            for(let i=0; i<langs.length; i++){
+                if(langs[i].checked){
+                    languages += langs[i].value + ",";
+                }
+            }
+
+            var myWindow = window.open("","My Window","width=450,heigth=300");
+
+            var message = "";
+            message += "Full Name: " + fname + " " + lname +"<br>";
+            message += "Gendar: " + gendar + "<br>";
+            message += "Address: " + address + "<br>";
+            message += "District: " + district + "<br>";
+            message += "Programming Languages: " + languages + "<br>";
+            // myWindow.document.write(`<p> This a New Window <p> <br>
+            //     First Name :        $(fname)
+            //     )
+
+            myWindow.document.write(message);
+        }
+    </script>
+</body>
+</html>

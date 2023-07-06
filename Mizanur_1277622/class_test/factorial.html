@@ -6,15 +6,18 @@
     <title>Document</title>
 </head>
 <body>
+    <h3>Factorial</h3>
     <script>
-        
+        let num = parseInt(prompt("Enter Your number"));
         function factorial(x){
-            if (x <=1) return 1;
-            return x * factorial(x-1); // recursive
+            let product = 1;
+            while(num>1){
+                product *= num;
+                num--
+            }
+            document.write(product);
         }
-        let n = prompt("Put a Number", "");
-        document.write(factorial(x));
-        
+        factorial(num);
     </script>
 </body>
 </html>

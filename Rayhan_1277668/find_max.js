@@ -1,6 +1,6 @@
 function findMax() {
-    // var max = -Infinity ;  ( for negative value )
-    var max = -1 ;
+    var max = -Infinity ;  //( for negative value )
+    // var max = -1 ;
     for ( let i = 0 ; i< arguments.length; i++ ){
         if ( arguments[i] > max ) {
             max = arguments[i] ;

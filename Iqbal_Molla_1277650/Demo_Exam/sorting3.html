@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <h3>Sorting</h3>
+     <script>
+          let mynum =[80,50,40,60,30,20,70]
+
+          document.write(mynum);
+          document.write("<br>");
+          mynum.sort();
+          document.write(mynum);
+
+          let output = "<ol>"
+               for(i=0; i<mynum.length; i++){
+                    output += "<li>" + mynum[i] + "</li>" 
+               }
+               output += "</ol>"
+               document.write(output)
+
+          
+     </script>
+</body>
+</html>

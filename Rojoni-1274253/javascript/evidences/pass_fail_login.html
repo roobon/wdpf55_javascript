@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <head>Students Result</head>
+    <form action="" name="result">
+        <input type="text" name="mcq" placeholder="Enter Mcq"><br><br>
+        <input type="text" name="des" placeholder="Enter DESCRIPTION"><br><br>
+        <input type="text" name="evi" placeholder="Enter EVIDENCE"><br><br>
+        <button type="button" onclick="StudentResult()">Click Here</button>
+
+    </form>
+    <script>
+        function StudentResult(){
+            let mcq=document.result.mcq.value;
+            let des=document.result.des.value;
+            let evi=document.result.evi.value;
+
+            if(mcq>=30 && des>=30 && evi>=50){
+                alert("Pass")
+
+            }else{
+                alert("Fail")
+            }
+        }
+    </script>
+    
+</body>
+</html>

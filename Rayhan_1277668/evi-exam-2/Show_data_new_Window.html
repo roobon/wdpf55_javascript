@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window Open</title>
+
+    <style>
+        button:active {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+
+<body>
+    <form action="" name="form">
+        <input type="text" name="fName" placeholder="first-Name"> <br>
+        <input type="text" name="lName" placeholder="last-Name"> <br>
+        Gender: <br>
+        Male: <input type="radio" name="gender" value="male">
+        Female: <input type="radio" name="gender" value="Female"> <br>
+
+        <textarea name="address" id="" cols="20" rows="5" placeholder="Type your Address"></textarea> <br>
+
+
+        District : 
+        <select name="district">
+            <option>Dhaka</option>
+            <option>Khulna</option>
+            <option>Rajshahi</option>
+            <option>BarishaL</option>
+            <option>Noakhali</option>
+        </select> <br>
+
+        <br>
+        Subjects : <br>
+
+         <input class="lang" type="checkbox" name="web" id="" value="web">Web Design
+        <input class="lang" type="checkbox" name="graphic" id="" value="graphic">Graphics Design 
+         <input class="lang" type="checkbox" name="digital" id="" value="digital">Digital Marketing
+         <input class="lang" type="checkbox" name="ai" id="" value="AI">AI for Beginners
+
+        <br>
+        <br>
+        <Button type="button" onclick="myFunction()"> Show in a new Window </Button>
+    </form>
+    
+
+    <script>
+        function myFunction() {
+            let fName = document.form.fName.value ;
+            let lName = document.form.lName.value ;
+            let gender = document.form.gender.value ;
+            let address = document.form.address.value ;
+            let district = document.form.district.value ;
+            const subjects = document.getElementsByClassName("lang");
+            // console.log(subjects[0].value);
+            let sub = "" ;
+            for ( let i=0; i <subjects.length; i++ ){
+                if (subjects[i].checked){
+                    sub += subjects[i].value + "," ;
+                    
+                }
+            }
+
+           
+
+
+            var myWindow = window.open("", "my Window", "width=400,height=300");
+
+            myWindow.document.write(` <p> This is a New window  </p>  <br> 
+                          First Name  :  ${fName}    <br>
+                          Last Name  : ${lName}      <br>  
+                          Gender : ${gender}    <br>
+                          Address : ${address}   <br>
+                          District : ${district}  <br>
+                          Subjects : ${sub}  
+                           
+                          `)
+        }
+    </script>
+
+</body>
+
+</html>

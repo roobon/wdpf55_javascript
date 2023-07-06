@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window Open</title>
+</head>
+
+<body>
+    <form action="" name="form">
+        <input type="text" name="fName" placeholder="First Name"> <br>
+        <input type="text" name="lName" placeholder="Last Name"> <br>
+    </form>
+    <button type="button" onclick="openNewWindow()">Click Me</button>
+
+    <script>
+        function openNewWindow() {
+            var fName = document.form.fName.value;
+            var lName = document.form.lName.value;
+
+            var myWindow = window.open("", "my Window", "width=400,height=300");
+            myWindow.document.write(`
+                <form name="newForm">
+                    <input type="text" name="newFName" placeholder="New First Name"> <br>
+                    <input type="text" name="newLName" placeholder="New Last Name"> <br>
+                    <button type="button" onclick="window.opener.updateMainPage()">Submit</button>
+                </form>
+            `);
+            myWindow.updateMainPage = updateMainPage;
+        }
+
+        function updateMainPage() {
+            var newFName = window.opener.document.newForm.newFName.value;
+            var newLName = window.opener.document.newForm.newLName.value;
+
+            // Update the main page's document with the new data
+            window.opener.document.write(`
+                <p> Data from the New window </p> <br> 
+                New First Name: ${newFName} <br>
+                New Last Name: ${newLName}
+            `);
+
+            // Close the new window
+            window.close();
+        }
+    </script>
+</body>
+
+</html>

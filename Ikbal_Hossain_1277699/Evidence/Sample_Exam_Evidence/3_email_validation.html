@@ -8,14 +8,14 @@
 <body>
     <h4> JavaScript Emait Validation</h4>
     <form action="" name="myform">
-        <input type="text" name="email" placeholder="Enter email">
+        <input type="text" name="email" placeholder="Enter email address">
         <button type="button" onclick="validate()">VALIDATE</button>
     </form>
     <script>
         function validate() {
             let email = document.myform.email.value;
             //   alert(email);
-            let pattern = /([a-zA-Z])+\@([a-zA-Z])+\.([a-zA-Z]{2,4})/;
+            let pattern = /([a-zA-Z0-9])+\@([a-zA-Z])+\.([a-zA-Z]{2,4})/;
             if (email.match(pattern)) {
                 alert("validated");
             } else {

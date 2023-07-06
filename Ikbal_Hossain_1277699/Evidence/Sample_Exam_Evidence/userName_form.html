@@ -8,27 +8,27 @@
 </head>
 
 <body>
-    <h3> User Name & Password </h3>
+    <h3> Login Form </h3>
     <script>
         function validate() {
             let username = document.loginform.username.value;
             let password = document.loginform.password.value;
+            // alert(username);
+            // alert(password);
 
-            if (username.lenght >= 6 && password.length <= 8) {
-                alert("Valid username and password");
+            if (username.length >= 6 && password.length <= 8) {
+                alert("Valid username & password");
             } else {
-                alert("Invalid username and password")
+                alert("Invalid username & password");
             }
         }
+
     </script>
-
     <form action="" name="loginform">
-        <input type="text" name="username" placeholder="Enter username"> <br>
-        <input type="password" name="password" placeholder="Enter password"> <br>
-        <input type="button" value="Login" onclick="validate()">
-
+        <input type="text" name="username" placeholder="Enter username"><br>
+        <input type="text" name="password" placeholder="Enter password"> <br>
+        <input type="button" onclick="validate()" value="Login">
     </form>
-
 </body>
 
 </html>

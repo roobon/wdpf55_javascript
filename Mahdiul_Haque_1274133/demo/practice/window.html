@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform">
+        First Name : <input type="text" name="fname" placeholder="First Name"><br>
+        Last Name : <input type="text" name="lname" placeholder="Last Name"><br>
+        Male : <input type="radio" name="gender" value="Male">
+        Female : <input type="radio" name="gender" value="Female">
+        Address : <textarea name="address" id="" cols="25" rows="5"></textarea><br>
+        Divison : <select name="divison">
+             <option value="">Select</option>
+             <option name="divison">Dhaka</option>
+             <option name="divison">Rajshahi</option>
+             <option name="divison">Khulna</option>
+        </select>
+        <button type="button" onclick="display()">Try it</button>
+    </form>
+
+    <script>
+        function display(){
+            let fname = document.myfrom.fname.value;
+            let lname = document.myfrom.lname.value;
+            let address = document.myfrom.address.value;
+            let gender = document.myform.gender.value;
+            let mywindow = window.open("", "","height=300, width=400");
+           let message = "";
+           message +="<h1>Name: " + fname + " " + lname + "</h1>";
+           message +="<p>Address:" + address + "</p>";
+           message +="<p>Gender: " + gender + "</p>";
+        }
+    </script>
+</body>
+</html>

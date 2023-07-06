@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         let numbers = [100,154,124,251,254,45,30,60]
         document.write("Numbers  = "  + numbers)
         document.write("<br>")
@@ -15,6 +15,19 @@
         document.write("<ul>")
             for(x=0; x<numbers.length; x++){
             document.write("<li>" + sort[x] + "</li>")
+            }
+            document.write("</ul>")
+    </script> -->
+
+    <script>
+        let numbers = [152,145,145]
+        document.write("Numbers = " + numbers)
+        document.write("<br>")
+        let sort = numbers.sort()
+        document.write("Sort = " + sort)
+        document.write("<ul>")
+            for(x=0; x<numbers.length; x++){
+                document.write("<li> " + sort[x] + "</li>")
             }
             document.write("</ul>")
     </script>

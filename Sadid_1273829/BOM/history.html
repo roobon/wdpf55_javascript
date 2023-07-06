@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history</title>
+</head>
+<body>
+    <h3>Window history property</h3>
+    <button type="button" onclick="goBack()">back</button>
+    <button type="button" onclick="goForward()">forward</button>
+    <script>
+        function goBack(){
+            window.history.back()
+        }
+
+        function goForward(){
+            window.history.forward()
+        }
+    </script>
+</body>
+</html>

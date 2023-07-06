@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <h3>Array sorting student</h3>
+     <script>
+          let person =["Maruf Billah","Abu sufian","Nahid","Ohidul", "Yasin","Sofiq"]
+          document.write(person);
+          document.write("<hr>");
+          person.sort();
+          document.write(person);
+
+          let output = "<ol>";
+               for(let i=0; i<person.length; i++){
+                    output += "<li>" + person[i] + "</li>";
+               }
+          output += "</ol>";
+
+          document.write(output);
+
+     </script>
+</body>
+</html>

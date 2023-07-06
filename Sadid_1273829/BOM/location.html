@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window.location</title>
+</head>
+<body>
+    <h3>Window location</h3>
+    <button type="button" onclick="clicked()">prothom alo</button>
+
+    <script>
+        let href = window.location.href;
+        let hostname = window.location.hostname;
+        let path = window.location.pathname;
+        let protocol = window.location.protocol;
+        let port = window.location.port;
+        // let assign = window.location.assign("https://www.prothomalo.com");
+
+        document.write(`href is ${href} <br>`)
+        document.write(`hostname is ${hostname} <br>`)
+        document.write(`pathname is ${pathname} <br>`)
+        document.write(`protocol is ${protocol} <br>`)
+        document.write(`port is ${port} <br>`)
+
+        function clicked() {
+            window.location.assign("https://www.prothomalo.com");
+        }
+
+    </script>
+</body>
+</html>

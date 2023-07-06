@@ -7,14 +7,12 @@
 </head>
 <body>
     <script>
-        
+        var x = parseInt(prompt("Put your number", ""));
         function factorial(x){
-            if (x <=1) return 1;
-            return x * factorial(x-1); // recursive
+            if( x <=1 ) return 1;
+                return x * factorial(x-1); //recursive
         }
-        let n = prompt("Put a Number", "");
-        document.write(factorial(x));
-        
+        alert(factorial(x));
     </script>
 </body>
 </html>

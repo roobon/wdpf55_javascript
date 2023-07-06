@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4> JavaScript Emait Validation</h4>
+    <form action="" name="myform">
+        <input type="text" name="email" placeholder="Enter email">
+        <button type="button" onclick="validate()">VALIDATE</button>
+    </form>
+    <script>
+        function validate() {
+            let email = document.myform.email.value;
+            //   alert(email);
+            let pattern = /([a-zA-Z])+\@([a-zA-Z])+\.([a-zA-Z]{2,4})/;
+            if (email.match(pattern)) {
+                alert("validated");
+            } else {
+                alert("Not Validated")
+            }
+        }
+    </script>
+</body>
+</html>

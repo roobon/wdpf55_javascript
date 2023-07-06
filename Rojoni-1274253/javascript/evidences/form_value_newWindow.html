@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Form</h3>
+    <form action="" name="myform">
+        <input type="text" name="name" placeholder="Name"><br>
+        <input type="text" name="contact" placeholder="Contact"><br>
+
+        Gender <br>
+        Male: <input type="radio" name="gender" value="Male">
+        Female: <input type="radio" name="gender" value="Female"><br>
+        <textarea name="address" id="" cols="30" rows="10"></textarea><br>
+        <select name="district" id="">
+            <option value="">Selest one</option>
+            <option >Banani</option>
+            <option >Dhanmondi</option>
+            <option >Mirpur</option>
+        </select><br>
+        <!-- Programming Language <br>
+        <input type="checkbox" name="NT" value="NT" class="langs">Nt <br>
+        <input type="checkbox" name="IAD" value="IAD" class="langs">IAD <br>
+        <input type="checkbox" name="DDD" value="DDD" class="langs">DDD <br>
+        <input type="checkbox" name="ESAD" value="ESAD" class="langs">ESAD <br> -->
+
+
+        <button type="button" onclick="display()">Show in a new window</button>
+    </form>
+
+    <script>
+        function display(){
+          let name=  document.myform.name.value;
+          let contact=  document.myform.contact.value;
+          let address = document.myform.address.value;
+          let gender = document.myform.gender.value;
+          let district = document.myform.district.value;
+        //  const Langs= document.getElementByClassName("langs").value;
+
+        //  let Languages = "";
+        //  for(x in lags.value){
+        //     Languages += x + ",";
+
+        //  }
+
+
+          let mywindow = window.open("","","height=300,width=400");
+
+          let message = "";
+          message += "<p>Name:" + name + "</p>";
+          message += "<p>Contact:" + contact + "</p>";
+          message += "<p>Address:" + address + "</p>";
+          message += "<p>Gender:" + gender + "</p>";
+          message += "<p>District:" + district + "</p>";
+        //   message += "<p>Languages:" + languages + "</p>";
+
+
+
+         mywindow.document.write(message)
+
+        }
+    </script>
+    
+</body>
+</html>

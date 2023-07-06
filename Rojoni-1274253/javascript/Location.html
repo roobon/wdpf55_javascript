@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Window Location</h3>
+    <script>
+      let path =  window.location.href;
+
+      document.write("HREF;" + path + "<br>");
+      let host = window.location.hostname;
+      document.write("Host Name;" + host + "<br>");
+      let domain = window.location.domain;
+      document.write("Domain;" + domain + "<br>");
+      let pathname = window.location.pathname;
+      document.write("Path Name;" + host + "<br>");
+      let port = window.location.portnumber;
+      document.write("Port Number;" + host + "<br>");
+      let protocol= window.location.protocol;
+      document.write("Protocol Number;" + host + "<br>");
+    </script>
+
+
+
+
+     <button onclick="goBack()">Back</button>
+    <button onclick="goForword()">Forword</button>
+
+
+    <script>
+        function goBack(){
+            window.history.back();
+        }
+         function goForword(){
+            window.history.forward();
+         }
+    </script>
+    
+</body>
+</html>

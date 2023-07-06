@@ -98,6 +98,90 @@ document.write(fruits.reverse()) -->
 
        
 </script>
+<script>
+    // const number = [300,10,20,80,50,500];
+   
+    // // number.sort(function(a,b){ return b-a});
+    // // document.write(number.length -1)
+    // document.write(number[0])
+    // console.log(number);
+</script>
+<h3>Random Number</h3>
+<p id="demo"></p>
+<button type="button" onclick="myFuncation()">CLICK</button>
+<script>
+//      const number = [4,20,40,50,80,100,5,10];
+//     //  document.getElementById("demo").innerHTML =number
+//     function myFuncation()
+//     {
+// number.sort(function(){return 0.6 - Math.random()});
+// document.getElementById("demo").innerHTML= number
+// console.log(number);
+//  }
+ 
+</script>
+<h3>Highest Value and lowest value</h3>
+<!-- <script>
+    const number =Math.max(100,20,90,300,400,500,70,80,900);
+ 
+    document.write(number)
+
+    console.log(number); -->
+
+    
+    <!-- // function myFuncation (arr){
+    //     return Math.max.apply(null,arr)
+    // }
+   
+    // console.log(number); -->
+</script>
+<!-- <p id="demo"></p>
+<script>
+    const number = [4,10,50,70,80,100,500,600,];
+    document.getElementById("demo").innerHTML= myArrayMax(number);
+    function myArrayMax(){
+        return Math.max()
+       
+    }
+    console.log(myArrayMax);
+</script>
+<h1>JavaScript Array Sort</h1>
+
+<p>The highest number is <span id="demo"></span>.</p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = myArrayMax(points);
+
+function myArrayMax(arr) {
+  return Math.max(null, arr);
+} -->
+</script>
+<script>
+    // const student  =[
+    //     {name:"Rayan",Birth:2007},
+    //     {name:"Kamrul", Birth:2020},
+    //     {name:"Hasan",Birth:2005},
+    //     {name:"sumon",Birth:2006},
+    //     {name:"nadia",Birth:2003}
+    // ];
+    // student.sort(function(a,b){return a.Birth-b.Birth})
+    // document.write(student[0].name +"  "+student[0].Birth+"<br>"+ student[1].name+"  "+student[1].Birth+"<br>"+ student[2].name +"  " + student[2].Birth +"<br>"+ student[3].name+" "+student[3].Birth+"<br>"+student[4].name+" "+student[4].Birth)
+</script>
+<script>
+        const student =[
+        {name:"Rayan",Birth:2007},
+        {name:"Kamrul", Birth:2020},
+        {name:"Hasan",Birth:2005},
+        {name:"sumon",Birth:2006},
+        {name:"nadia",Birth:2003},
+        {name:"abul",Birth:2002}
+    ];
+    student.sort(function(a,b){let x=a.name.toLocaleLowerCase();
+    let y=b.name.toLocaleLowerCase();
+    if(x<y){return -1} if(x>y){return 1}return 0});
+    document.write(student[0].name+" "+ student[0].Birth+"<br>"+student[1].name+" "+student[1].Birth+"<br>"+student[2].name+" "+ student[2].Birth+"<br>"+student[3].name+" "+student[3].Birth+"<br>"+student[4].name+" "+student[4].Birth+"<br>"+student[5].name+" "+student[5].Birth)
+</script>
 
 
 

@@ -44,6 +44,24 @@
     // let max =findMax(first,second,third);
     // document.getElementById("max").innerHTML ="The largest Number is :" + max ;
 </script>
+<p id="demo"></p>
+<script>
+    function findMax(){
+        let max = -Infinity;
+        for(var i = 0; i<arguments.length; i++){
+            if(arguments[i]>max){
+                max=arguments[i]
+            }
+            
+        }
+        return max
+    }
+    let first = parseInt(prompt("Enter your First Number",""));
+    let second = parseInt(prompt("Enter your Second Name",""));
+    let third = parseInt(prompt("Enter your third Name",""));
+    let max = findMax(first,second,third);
+    document.getElementById("demo").innerHTML = ("The leargest Number is:"+max)
+</script>
 
 </body>
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="#" name="myform">
+        <label for="email">Email Address</label><br>
+        <input type="text" name="email"><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" name="password"><br><br>
+
+        <button type="button" onclick="validate()">Login</button>
+    </form> -->
+
+    <script>
+        // var email = document.myform.email.value;
+        // var pass = document.myform.password.value.length;
+        // var pattern = email.search(/[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,3}/);
+		// var status = false;
+
+        // if(pattern==-1){
+        //     alert("Email address is invalid");
+        //     return false;
+        // } else {
+        //     status = true;
+        // } 
+        // if(pass<8){
+        //     alert("password must be 8 character");
+        //     return false;
+        // } else {
+        //     status = true;
+        // } 
+        // if(status==true){
+        //     alert("All is valid")
+        // }
+
+        
+    </script>
+
+<script>
+    function validate(){
+        let email = document.myform.email.value;
+        //alert (email);
+        let pattern = /([a-zA-Z0-9])+\@([a-zA-Z])+\.([a-zA-Z]{2,4})/;
+        if(email.match(pattern)){
+            alert("Validated");
+        }else {
+            alert("Not Validated")
+        }
+    }
+</script>
+<h2>Email validation</h2>
+<form action="#" name="myform">
+    <label for="email">Email</label><br>
+    <input type="text" name="email" placeholder="Enter email"><br><br>
+    <button type="button" onclick="validate()">Validate</button>
+</form>
+</body>
+</html>

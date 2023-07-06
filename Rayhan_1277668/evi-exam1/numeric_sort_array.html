@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1 id="show" ></h1>
+
+    <script>
+        let myArray = [ 10 , 20 , 30 , 40 , 2 , 5 , 7 , 1 , 14, 24  ]
+        const sortedArray = myArray.sort() ;
+
+        document.write("<ul>")
+        for( i = 0 ; i < myArray.length; i++ ){
+            document.write("<li>")
+            document.write(sortedArray[i])
+            document.write("</li>")
+        }
+        document.write("</ul>")
+        
+        // alert(sortedArray)
+
+        // document.getElementById("show").innerHTML = sortedArray;
+
+    </script>
+</body>
+</html>

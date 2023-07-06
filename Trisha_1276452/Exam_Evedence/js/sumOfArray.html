@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>sum of array</title>
+</head>
+<body>
+     <h3>Display the array elements and sum of the elements</h3>
+     <p id="array"></p>
+     <p id="sum"></p>
+
+     <script>
+          const array = [5,7,3,9,6];
+          document.getElementById("array").innerHTML = "The elements of the array is = " + array;
+          let text = 0
+          for (let i = 0; i < array.length; i++) {
+               text += array[i]
+          }
+          document.getElementById("sum").innerHTML = "The sum of the elements is = "+text;
+     </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" name="myForm">
+        <input type="text" name="mcq" placeholder="mcq marks"> <br> <br>
+        <input type="text" name="des" placeholder="Descriptive marks"> <br>  <br>
+        <input type="text" name="evi" placeholder="evidence marks"> <br><br>
+
+        <button type="button" onclick="checkResult()"> Check Result </button>
+    </form>
+
+    <h4 id="pass-fail"></h4>
+
+    <script>
+        function checkResult() {
+
+            const mcq = document.myForm.mcq.value;
+            const des = document.myForm.des.value;
+            const evi = document.myForm.evi.value;
+
+            if ( mcq >=80 && des >=60 && evi>=60 ){
+                 document.getElementById("pass-fail").innerHTML = " you are passed..!! "
+                 document.getElementById("pass-fail").style.color = "green" ;
+            } else {
+                 document.getElementById("pass-fail").innerHTML = " You are failed. " 
+                 document.getElementById("pass-fail").style.color = "red" ;
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

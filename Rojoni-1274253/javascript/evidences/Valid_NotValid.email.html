@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Email Validation</h3>
+    <form action="" name="myform">
+        <input type="text" name="email" placeholder="Enter email">
+        <button type="button" onclick="Validate()" >Check</button>
+
+    </form>
+    <script>
+        function Validate(){
+            let email = document.myform.email.value;
+            let pattern=/([a-zA-Z0-9_\-\.])+\@([a-zA-Z0-9_\-\.])+\.([a-zA-Z]){2,4}/;
+            if(email.match(pattern)){
+                alert("Validated")
+
+            }else{
+                alert("Not Validated")
+            }
+        }
+    </script>
+    
+</body>
+</html>

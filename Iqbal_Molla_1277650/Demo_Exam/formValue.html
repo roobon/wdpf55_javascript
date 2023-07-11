@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Form value</h3>
+    <form action="" name="myform">
+        <input type="text" name="fname" placeholder="First name"> <br> <br>
+        <input type="text" name="lname" placeholder="Last name"> <br> <br>
+        Male :<input type="radio" name="gender" value="Male">
+        Female :<input type="radio" name="gender" value="Female"> <br> <br>
+        <textarea name="address" id="" cols="30" rows="10"></textarea> <br> <br>
+         <select name="Dropdown" id="" >
+            <option value="Select One">Select One</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Madaripur">Madaripur</option>
+            <option value="Barishal">Barishal</option>
+         </select> <br> <br>
+         Progamming Language: <br> <br>
+         PHP : <input type="checkbox" name="php" value="PHP" class="lang"> <br>
+         REACT : <input type="checkbox" name="react" value="REACT" class="lang"> <br>
+         GAVE : <input type="checkbox" name="gave" value="GAVE" class="lang"> <br> <br>
+        <button type="button" onclick="display()" >Show in a new Window</button>
+    </form>
+    <script>
+        function display(){
+            let fname = document.myform.fname.value;
+            let lname = document.myform.lname.value;
+            let gender = document.myform.gender.value;
+            let address = document.myform.address.value;
+            let dropdown = document.myform.dropdown.value;
+            const lang = document.getElementsByClassName("lang")
+
+            let languages = "";
+
+            for(let i=0; i<lang.length; i++){
+                if(lang[i].checked){
+                    languages += lang[i].value + "," ;
+                }
+            }
+            
+            let mywindow = window.open("", "","height=400, width=600");
+            let massage ="" ;
+             massage += "Full Name: " + fname + " " + lname  + "<br>"
+             massage += "Gender: " + gender + "<br>"
+             massage += "Address: " + address + "<br>"
+             massage += "Dropdown: " + dropdown + "<br>"
+             massage += "Dropdown: " + Dropdown + "<br>"
+             massage += "Languages: " + languages + "<br>"
+
+            
+            
+
+          mywindow.document.write(massage)
+        }
+
+    </script>
+</body>
+</html>

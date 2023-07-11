@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Form validation</h3>
+
+    <form action="" name="loginform">
+        <input type="email" name="email" placeholder="Enter email"> <br> <br>
+        <input type="password" name="password" placeholder="Password"> <br> <br>
+        <button type="button">Submit</button>
+    </form>
+
+        
+    <script>
+        class validation {
+            constractor(email,password){
+                this.email = email;
+                this.password = password;
+            }
+            checkData(){
+                let valid = false;
+                let pattern = /([a-zA-Z0-9])+\@([a-zA-Z0-9])\.+([a-z]{2,4})/
+                if(this.email.match(pattern)){
+                    valid = false;
+                    alert("Email format invalid");
+                    return false;
+                } else {
+                    valid = true;
+                }
+                let pswpattern = /[a-zA-z0-9]{6,8}/
+                if(!this.password.match(pswpattern)){
+                    valid = false;
+                    alert("Password must be 4 to 8 charecter");
+                }
+            }
+        }
+
+        let email = document.loginform.email.value;
+        let password = document.loginform.password.value;
+
+        const myform = new validation(email , password);
+        myForm.checkData();
+    </script>
+</body>
+</html>

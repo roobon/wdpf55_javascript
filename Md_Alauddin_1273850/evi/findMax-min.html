@@ -87,8 +87,15 @@
       }
 
       // Example usage:
-      var numbers = [5, 8, 3, 12, 4];
+      var numbers = [5, 8, 3, 12, 1, 4];
       var result = findMaxAndMin(numbers);
+
+      document.write("Array values: " + numbers.join(", "));
+      document.write("<br>");
+      document.write("Maximum number: " + result.max);
+      document.write("<br>");
+      document.write("Minimum number: " + result.min);
+
       console.log("Maximum number: " + result.max);
       console.log("Minimum number: " + result.min);
     </script>

@@ -6,22 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <h3>Find Out Factorial</h3>
+    <h3>Find Factorial number</h3>
     <script>
-        function factorial(n) {
+        let mynumber = parseInt(prompt("Input number", ""));
+
+        function factorial(n){
             let product = 1;
-            while(n>1){
-                product *= n;
-                n--;
+            while(mynumber>1){
+                product *= mynumber;
+                mynumber--;
             }
             document.write(product);
         }
-
-      let n = prompt("Put A Number" , "")
-
-        factorial(n)
-    </script> -->
-
-    
+        factorial(mynumber)
+        
+    </script>
 </body>
-</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Exam Result</h3>
+    <form action="" name="result">
+        MCQ : <input type="text" name="mcq"><br><br>
+        Des : <input type="text" name="des"><br><br>
+        Evd : <input type="text" name="evd"><br><br>
+        <button type="button" onclick="check()">Result</button>
+    </form>
+    <script>
+        function check(){
+            let mcq = document.result.mcq.value;
+            let des = document.result.des.value;
+            let evd = document.result.evd.value;
+          
+            if(mcq >=30 && des >=30 && evd>=50){
+                alert("You have passed")
+            } else {
+                alert("You have failed")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Form Validation</h1>
-<form action="" name="loginForm">
-    <input type="email" name="email" placeholder="Enter Email"><br>
-    <input type="password" name="password" placeholder="Enter Password"><br>
-    <button type="button" onclick="newForm.checkData()">SUBMIT</button>
-</form>    
+  <body>
+    <h1>Form Validation</h1>
+    <form action="" name="loginForm">
+      <input type="email" name="email" placeholder="Enter Email" /><br />
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter Password"
+      /><br />
+      <button type="button" onclick="newForm.checkData()">SUBMIT</button>
+    </form>
 
-<script>
-class Validation {
-  constructor(email, password) {
-    this.email = email;
-    this.password = password;
-  }
-  checkData() {
-    let valid = false;
-    let pattern  = /([a-zA-Z0-9])+\@([a-zA-Z0-9])+\.([a-z]{2,4})/;
-    if(this.email.match(pattern)){
-        valid = true;
+    <script>
+      class Validation {
+        checkData() {
+          this.email = document.loginForm.email.value;
+          this.password = document.loginForm.password.value;
 
-        alert(this.email);
-    // } else {
-    //     //alert("Email format invalid");
-    //     valid = false;
-    // }
-    // let pswdpattern  = /[a-zA-Z0-9]{4,8}/
-    // if(this.password.match(pswdpattern)){
-    //     valid = true;
-    // } else {
-    //    // alert("Password must be 4 to 8 character");
-    //     valid = false;
-    // }
-    
-    // if(valid){
-    //     alert("All Data are validated");
-    // }
-       
-  }
-}
-}
-let email = document.loginForm.email.value;
-let password = document.loginForm.password.value;
+          let valid = false;
+          let pattern = /[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,3}/;
+          if (this.email.match(pattern)) {
+            valid = true;
+            //     alert(this.email);
+          } else {
+            alert("Email format invalid");
+            valid = false;
+            return false;
+          }
+          let pswdpattern = /[a-zA-Z0-9]{4,8}/;
+          if (this.password.match(pswdpattern)) {
+            valid = true;
+          } else {
+            alert("Password must be 4 to 8 character");
+            valid = false;
+            return false;
+          }
 
-const newForm = new Validation(email, password);
-</script>
+          if (valid) {
+            alert("All Data are validated");
+          }
+        }
+      }
 
-</body>
+      const newForm = new Validation();
+    </script>
+  </body>
 </html>

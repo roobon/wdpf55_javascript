@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 21.59cm;
+        height: 27.94cm;
+        background-color: gray;
+        font-family: "Playfair Display", serif;
+        font-weight: 100;
+      }
+
+      .main {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header {
+        width: 100%;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      header h2 {
+        color: #2196f3;
+        margin: 0;
+        font-weight: bolder;
+      }
+
+      .info {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .info div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header h6 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        margin: 3px;
+      }
+
+      section {
+        width: 100%;
+      }
+
+      section h4 {
+        margin-top: 6px;
+        margin-bottom: 6px;
+        color: #2196f3;
+      }
+
+      a {
+        color: black;
+        font-style: italic;
+      }
+
+      .content {
+        margin-left: 20px;
+      }
+
+      .content h5 {
+        margin-top: 6px;
+        margin-bottom: 6px;
+        font-size: 1em;
+        font-weight: 500;
+        text-decoration: underline;
+      }
+
+      .content p {
+        margin: 4px 0px 4px 0px;
+      }
+
+      .project .summary {
+        font-size: 0.85em;
+      }
+
+      .project ul {
+        margin: 0;
+        font-size: 0.8em;
+      }
+
+      .github {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 0.8em;
+      }
+
+      .skills {
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .skills ul {
+        padding-left: 20px;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <div class="info">
+          <h2>Shafin Ashraf</h2>
+          <div>
+            <img src="github.png" width="20px">
+            <h6>github.com/Shafin098</h6>
+          </div>
+        </div>
+        <div class="info">
+          <div>
+            <img src="phone.png" width="20px">
+            <h6>01572254150</h6>
+          </div>
+          <div>
+            <img src="email.png" width="20px">
+            <h6>shafinashraf074@gmail.com</h6>
+          </div>
+          <div>
+            <img src="linkedin.png" width="20px">
+            <h6>linkedin.com/in/shafin-ashraf-07b67a200</h6>
+          </div>
+        </div>
+      </header>
+
+        <section>
+        <h4>Work Experience</h4>
+        <hr />
+        <div class="content">
+          <div class="project">
+            <h5>Shikho</h5>
+            <p class="summary">
+              Backend Developer Intern (July 2021 - September 2021)
+            </p>
+            <p class="summary">
+              <span style="text-decoration: underline;">Tech stack: </span>
+              <span style="font-style: italic;">Go, GraphQL, gRPC, ArangoDB, PostgreSQL</span>
+            </p>
+            <ul>
+              <li>Implemented graphql subscription specification to send realtime event to users</li>
+              <li>Worked with rabbitmq to handle asynchronous data processing</li>
+              <li>Automated a lot of database migration and deployment process</li>
+              <li>Worked on user authentication through websocket</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h4>Skills</h4>
+        <hr />
+        <div class="content">
+          <div class="skills">
+            <div>
+              <span style="text-decoration: underline;">Languages: </span>
+              <span style="font-style: italic;">Go, Rust, Javascript, Typescript, Java</span>
+            </div>
+            <div>
+              <span style="text-decoration: underline;">Technologies: </span>
+              <span style="font-style: italic;">
+                Git, NodeJs, React, ElectronJs, Rabbitmq, Vim, SQL, ArangoDB, Html, CSS
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h4>Notable Personal Projects</h4>
+        <hr />
+        <div class="content">
+          <div class="project">
+            <h5>Pakhi Bhasha</h5>
+            <p class="summary">
+              Pakhi is a dynamically typed garbage collected bangla prigramming
+              language
+            </p>
+            <ul>
+              <li>Implemented a mark-sweep garbage collector</li>
+              <li>
+                Designed and implemented a module a system to support modular
+                programming
+              </li>
+              <li>Learned a new programming language, rust</li>
+              <li>Worked on unit test and integration test</li>
+              <li>Learned a lot about proper software desgin</li>
+            </ul>
+            <div class="github">
+              <p>Github repository:</p>
+              <pre></pre>
+              <a href="https://github.com/Shafin098/pakhi-bhasha"
+                >https://github.com/Shafin098/pakhi-bhasha</a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <h5>Signature Recognizer with Machine Learning</h5>
+            <p class="summary">
+              Signature recognizer is a zero dependecy machine learning project
+              that can recognize signature
+            </p>
+            <ul>
+              <li>
+                Implemented a complete neural net without any external ml
+                library
+              </li>
+              <li>
+                Gathered and cleaned training data and trained a neural net
+                model
+              </li>
+              <li>Created a image pre-processing data pipeline</li>
+              <li>
+                Worked on model persistence to serial and deserialize java
+                objects
+              </li>
+            </ul>
+            <div class="github">
+              <p>Github repository:</p>
+              <a href="https://github.com/Shafin098/signature_recognizer"
+                >https://github.com/Shafin098/signature_recognizer</a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <h5>Autograd</h5>
+            <p class="summary">
+              Autograd is a computational graph librabry that can automatically
+              calculate calculus gradients
+            </p>
+            <ul>
+              <li>
+                Learned how computational graph works and implemented in java
+              </li>
+            </ul>
+            <div class="github">
+              <p>Github repository:</p>
+              <pre></pre>
+              <a href="https://github.com/Shafin098/autograd-java"
+                >https://github.com/Shafin098/autograd-java</a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <h5>Chorui</h5>
+            <p class="summary">
+              Chorui is a code editor for pakhi programming language with first
+              class bangla language support
+            </p>
+            <ul>
+              <li>Implemented syntax highligting for pakhi programming language</li>
+              <li>Worked on multi tab editing system</li>
+            </ul>
+            <div class="github">
+              <p>Github repository:</p>
+              <pre></pre>
+              <a href="https://github.com/Shafin098/chorui"
+                >https://github.com/Shafin098/chorui</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h4>Education</h4>
+        <hr />
+        <div class="content">
+          <h5>Dhaka Polytechnic Institute</h5>
+          <div style="font-size: 0.8em">Diploma in computer technology</div>
+          <div style="font-size: 0.6em">2017 - 2022 (expected)</div>
+        </div>
+      </section>
+      <section>
+        <h4>Activities</h4>
+        <hr />
+        <div class="content">
+          <ul style="font-size: 0.8em; padding-left: 20px">
+            <li>
+              Participated in Standard Chartered Bangladesh-Prothom Alo Inter
+              School and College Programming Contest 2018
+            </li>
+            <li>Participated in WYSD-2019 programming contest</li>
+            <li>Achieved best web based project in a class project</li>
+            <li>Participates in Advent of Code every year</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

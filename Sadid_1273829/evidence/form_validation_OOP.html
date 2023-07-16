@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+</head>
+<body>
+    <h1>Form validation</h1>
+    <form action="" name="my_form">
+        <input type="email" name="email" placeholder="email here"> <br>
+        <input type="password" name="password" placeholder="passwordhere">
+        <button type="button" onclick="newForm.checkData()">Submit</button>
+    </form>
+
+    <script>
+
+        class formValidation{
+            constructor(email, password) {
+                this.email = email;
+                this.password = password;
+            }
+            checkData(){
+                let valid = false;
+                let pattern = /([a-zA-z0-9_\-\.])+\@([a-zA-z0-9])+\.([a-zA-z0-9]{2,4})/;
+                if(!this.email.match(pattern)){
+                    valid = false;
+                    alert("Invalid Email");
+                    return false;
+                }else{
+                    valid = true;
+                }
+
+                let passPattern = /([A-Za-z0-9]{4,8})/;
+                if (!this.password.match(passPattern)) {
+                    valid = false;
+                    return false;
+                } else {
+                    alert("Password must be 4 to 8 character");
+                    valid = true;
+                }
+
+                if (valid) {
+                    alert("All data validated")
+                }
+            }
+        }
+        let email = document.my_form.email.value;
+        let password = document.my_form.password.value;
+        const newForm = new formValidation(email, password);
+
+    </script>
+</body>
+</html>

@@ -3,8 +3,10 @@ const a = new Array();
 console.log(a.length);
 const a1 = new Array(5);
 console.log(a1.length);
-const a2 = new Array(1,2,3,4,5);
+const a2 = new Array(1,2,3,4);
 console.log(a2.length);
+
+console.log("Break");
 
 // //factory pattern
 const b = Array();

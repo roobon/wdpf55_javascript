@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="form">
+        First Name : <input type="text" name="fname"><br><br>
+        Last Name : <input type="text" name="lname"><br><br>
+        Gender : <input type="radio" name="gender" value="male">Male
+                 <input type="radio" name="gender" value="female">Female
+                 <br><br>
+        Hobby : <input type="checkbox" name="cricket" value="Cricket" class="hobby">  Cricket 
+                <input type="checkbox" name="football" value="Football" class="hobby"> Football  
+                <input type="checkbox" name="kabadi" value="Kabadi" class="hobby"> Kabadi  
+                <br><br>    
+        Division : <select name="division">
+                        <option value="">Select</option>
+                        <option>Dhaka</option>
+                        <option>Barisal</option>
+                        <option>Khulna</option>
+                    </select><br><br>
+        Email : <input type="email" name="email"><br><br>
+        Address : <textarea name="address"></textarea><br><br>
+        <button type="button" onclick="myFunction()">Try it</button>
+    </form>
+    
+
+<script>
+function myFunction() {
+    let fname = document.form.fname.value;
+    let lname = document.form.lname.value;
+    let gender = document.form.gender.value;
+
+    const hobby = document.getElementsByClassName("hobby");
+        let hobbies = ""
+        for(let i=0; i<hobby.length; i++){
+            if(hobby[i].checked){
+                hobbies += hobby[i].value + ","
+            }
+        }
+
+    let division = document.form.division.value;
+    let email = document.form.email.value;
+    let address = document.form.address.value;
+    
+    let myWindow = window.open("", "", "width=600,height=500");
+  myWindow.document.write("Your name is = " +fname +" "+ lname + "<br>");
+  myWindow.document.write("Your gender is = " +gender+ "<br>");
+  myWindow.document.write("Your hobby is = " +hobbies+ "<br>");
+  myWindow.document.write("Your division is = " +division+ "<br>");
+  myWindow.document.write("Your email is = " +email+ "<br>");
+  myWindow.document.write("Your address is = " +address+ "<br>");
+}
+</script>
+</body>
+</html>

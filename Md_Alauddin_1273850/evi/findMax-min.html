@@ -40,24 +40,22 @@
     </script> -->
 
     <script>
-    //   const array = [1, 2, 5, 8, 15];
+      //   const array = [1, 2, 5, 8, 15];
 
-    //   let max = array[0];
-    //   let min = array[0];
+      //   let max = array[0];
+      //   let min = array[0];
 
-    //   for (let i = 0; i < array.length; i++) {
-    //     if (array[i] > max) {
-    //       max = array[i];
-    //     }
-    //     if (array[i] < min) {
-    //       min = array[i];
-    //     }
-    //   }
+      //   for (let i = 0; i < array.length; i++) {
+      //     if (array[i] > max) {
+      //       max = array[i];
+      //     }
+      //     if (array[i] < min) {
+      //       min = array[i];
+      //     }
+      //   }
 
-    //   document.write("<h1> max = " + max + "</h1>");
-    //   document.write("<h1> min = " + min + "</h1>");
-
-
+      //   document.write("<h1> max = " + max + "</h1>");
+      //   document.write("<h1> min = " + min + "</h1>");
 
       function findMaxAndMin(numbers) {
         if (numbers.length === 0) {
@@ -87,8 +85,15 @@
       }
 
       // Example usage:
-      var numbers = [5, 8, 3, 12, 4];
+      var numbers = [5, 8, 3, 12, 1, 4];
       var result = findMaxAndMin(numbers);
+
+      document.write("Array values: " + numbers.join(", "));
+      document.write("<br>");
+      document.write("Maximum number: " + result.max);
+      document.write("<br>");
+      document.write("Minimum number: " + result.min);
+
       console.log("Maximum number: " + result.max);
       console.log("Minimum number: " + result.min);
     </script>

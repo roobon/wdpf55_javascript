@@ -3,7 +3,7 @@ const n = arr[3];
 const m = arr[2];
 const x = 1;
 const y = 0;
-console.log(m, n, arr[x], arr[y],arr[x] + arr[y], arr[x + y + 1]);
+//console.log(m, n, arr[x], arr[y],arr[x] + arr[y], arr[x + y + 1]);
 //console.log(arr[x])
 // console.log(arr[y])
 // console.log(arr[1])

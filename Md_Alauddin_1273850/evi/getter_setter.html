@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Class Getter/Setter</h1>
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(brand) {
+    this.carname = brand;
+  }
+  get getnam() {
+    return this.carname;
+  }
+  set setnam(x) {
+    this.carname = x;
+  }
+}
+
+const myCar = new Car("Ford");
+
+document.getElementById("demo").innerHTML = myCar.getnam;
+myCar.setnam = "BMW";
+let newName = myCar.getnam;
+document.write(newName);
+</script>
+
+</body>
+</html>

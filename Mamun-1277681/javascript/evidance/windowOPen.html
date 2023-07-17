@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="" name="myForm"> 
+        <input type="text" name="fName" id="" placeholder="fName:"> <br>
+        <input type="text" name="lName" id="" placeholder="lName"> <br>
+        <input type="number" name="number" id="" placeholder="Number"> <br>
+        <textarea name="messages" id="" cols="30" rows="10"></textarea> <br>
+        <button type="button" onclick="windowOPen()">Submit</button>
+    </form>
+    <script>
+        function windowOPen(){
+            let fName = document.myForm.fName.value;
+            let lName = document.myForm.lName.value;
+            let number = document.myForm.number.value;
+            let messages = document.myForm.messages.value;
+            let myWindow = window.open("", "", "width=300,height=400");
+            let mess = ""
+            mess +="first name:" +fName +"<br>";
+            mess+="Last Name:" +lName +"<br>"
+            mess+="Type your  message here:" +messages; "<br>"
+            mess+="your Number:" +number;
+            myWindow.document.write(mess)
+        }
+        
+
+    </script> -->
+    <form action="" name="myForm">
+        <input type="text" name="fName" id="" placeholder="Write First Name"> <br>
+        <input type="text" name="lName" id="" placeholder="Write Last Name"> <br>
+
+        gender <br>
+       Male: <input type="radio" name="gender" id="" value="male"> <br>
+        female:<input type="radio" name="gender" id="" value="female"> <br>
+        <textarea name="contact" id="" cols="30" rows="10" ></textarea> <br>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select> <br>
+
+
+          Cars:
+          I have Mercedes: <input type="checkbox" name="checkbox" id=""> <br>
+          I have Iphone: <input type="checkbox" name="checkbox" id=""> <br>
+          I have Mackbook: <input type="checkbox" name="checkbox" id=""> <br>
+          I have Apple Watch: <input type="checkbox" name="checkbox" id=""> <br>
+        <button type="button" name="button" onclick="showWindow()">Submit</button>
+    </form>
+    <script>
+        function showWindow(){
+            let fName= document.myForm.fName.value;
+            let lName= document.myForm.lName.value;
+            let contact= document.myForm.contact.value;
+            let cars= document.myForm.cars.value;
+            let button= document.myForm.button.value;
+            let gender= document.myForm.gender.value;
+            let checkbox = document.myForm.checkbox.value;
+            let mess = "";
+            mess+="Fname:"+ fName + lName+"<br>"
+            mess+="Cars:"+ cars +"<br>"
+            mess+="contact:"+ contact +"<br>"
+            mess+="button:"+ button +"<br>"
+            mess+="gender:"+ gender +"<br>"
+            mess+="Select Multiple:"+checkbox +"<br>"
+            let myWindow = window.open("","", "width=300, height=500");
+            myWindow.document.write(mess)
+        }
+    </script>
+</body>
+</html>

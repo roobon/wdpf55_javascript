@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritence</title>
+</head>
+<body>
+    
+    <script>
+        class Car{
+            constructor(name, model){
+                this.name = name;
+                this.model = model;
+            }
+
+            showCar(){
+                return `The name of car is ${this.name} & it's model is ${this.model}.`
+            }
+        }
+        
+        class Ford extends Car{
+            constructor(name, model, price){
+                super(name, model);
+                this.price = price;
+            }
+            showPrice(n){
+                let price = 4550050
+                let total = price * n;
+                
+                return `You have to pay ${total} for ${n}car(s)`
+            }
+
+            showDetails(){
+                return `The name of car is ${this.name} & it's model is ${this.model}. ${this.showPrice(3)}`
+            }
+        }
+        const ford = new Ford("Ford", "Z107YQ",  );
+        console.log(ford.showDetails());
+        // console.log(ford.showPrice());
+    </script>
+</body>
+</html>

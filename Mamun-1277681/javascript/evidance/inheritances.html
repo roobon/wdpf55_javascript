@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Car {
+            constructor(name, model,){
+                this.name= name;
+                this.model= model;
+            }
+            showCar (){
+                return(` the name of the car is ${this.name} and the model is ${this.model}`)
+            }
+        }
+        class Ford extends Car{
+            constructor (name, model, price){
+               super(name, model);
+                this.price= price;
+            }
+            showCarPrice(n){
+                let price = 23000;
+                let total = price*n;
+                return (`the price is ${total} of the ${n} cars`)
+            }
+            price(){
+                return(` the price of the ${this.name} and model ${this.model} its price is  ${this.showCarPrice(3)}`)
+            }
+        }
+        const myCar = new Car("Mercedes", "MV2");
+
+
+    //   console.log(myCar.showCar());
+      console.log(myCar.price());
+    </script>
+</body>
+</html>

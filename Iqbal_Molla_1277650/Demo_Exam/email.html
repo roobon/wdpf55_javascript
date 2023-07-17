@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <h2>Email Validation</h2>
+     <form action="" name="loginForm">
+          <input type="text" name="email" placeholder="Enter your email"> <br> <br>
+          <input type="text" name="password" placeholder="Enter your password"> <br> <br>
+          <button type="button" onclick="newform.checkdata()">Submit</button>
+     </form>
+     <script>
+          class Validation{
+               checkData(){
+                   this.email = document.loginform.email.value;
+                   this.password = document.loginform.password.value;
+               }
+          }
+     </script>
+</body>
+</html>

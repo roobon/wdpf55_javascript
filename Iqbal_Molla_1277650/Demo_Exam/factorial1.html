@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <h2>Find Factorial Number</h2>
+     <script>
+        let mynumber = parseInt(prompt("Input Number"));
+
+        function factorial(n){
+               let product =1;
+               while(mynumber>1){
+                    product *= mynumber;
+                     mynumber--;
+               }
+               document.write(product);    
+        }
+          factorial(mynumber);
+     </script>
+</body>
+</html>

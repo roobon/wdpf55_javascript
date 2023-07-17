@@ -1,54 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>Form Validation</h2>
-    <form action="" name="myForm">
-        <input type="email" name="email" placeholder="Enter Your Email"> <br>
-        <input type="password" name="password" placeholder="Enter Password"><br>
-        <button type="submit">Submit</button>
+<html>
+  <body>
+    <h1>Form Validation</h1>
+    <form action="" name="loginForm">
+      <input type="email" name="email" placeholder="Enter Email"> <br>  <br>
+      <input type="password" name="password" placeholder="Enter Password"> <br> <br>
+      <button type="button" onclick="newForm.checkData()">SUBMIT</button>
     </form>
 
     <script>
-        class Validation {
-            constructor (email, password){
-                this.email = email;
-                this.password = password;
-            }
-            checkData(){
-                let valid = false;
-                let pattern = /([a-zA-z0-9])+\@([a-zA-z0-9])+\.([a-zA-z]){2,4}/;
-                if(!this.email.match(pattern)){
-                    valid = false;
-                    alert("Invalid Email")
-                    return false;
-                }else {
-                    valid = true;
-                }
-                let passPattern = /[a-zA-z0-9]{6,8}/;
-                if(!this.password.match(passPattern)){
-                    valid = false;
-                    return false;
-                }else{
-                    valid = true;
-                }
+      class Validation {
+        checkData() {
+          this.email = document.loginForm.email.value;
+          this.password = document.loginForm.password.value;
 
-                if(valid){
-                    alert("All Data are validate")
-                }
-            }
+          let valid = false;
+          let pattern = /[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,3}/;
+          if (this.email.match(pattern)) {
+            valid = true;
+            //     alert(this.email);
+          } else {
+            alert("Email format invalid");
+            valid = false;
+            return false;
+          }
+          let pswdpattern = /[a-zA-Z0-9]{4,8}/;
+          if (this.password.match(pswdpattern)) {
+            valid = true;
+          } else {
+            alert("Password must be 4 to 8 character");
+            valid = false;
+            return false;
+          }
+
+          if (valid) {
+            alert("All Data are validated");
+          }
         }
+      }
 
-        let email = document.myForm.email.value;
-        let password = document.myForm.password.value;
-
-        const myForm = new Validation(email, password);
-        myForm.checkData();
-
+      const newForm = new Validation();
     </script>
-</body>
+  </body>
 </html>

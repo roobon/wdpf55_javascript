@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> Using BREAK formula within for loop </h3>
+    <h4> Show output 1 to 20 </h4>
+    <script>
+        for (var i = 1; i <= 20; i++) {
+            document.write(i + "<br>");
+            if (i > 5) {
+                break;
+            }
+        }
+    </script>
+
+    <h4> Show output 1 to 20 </h4>
+
+    <script>
+        for (var i = 1; i <= 20; i++) {
+            if (i > 5) {
+                break;
+            }
+            document.write(i + "<br>");
+        }
+    </script>
+
+
+    <h3> Using BREAK formula within for loop </h3>
+    <script>
+        var rostGiven = 1;
+        while (rostGiven < 10) {
+            document.write("Rost Den, gift item ansi" + "<br>");
+            rostGiven++;
+            if (rostGiven > 5) {
+                break;
+            }
+        }
+    </script>
+
+    <h3> Using BREAK formula within for loop </h3>
+    <script>
+        var rostGiven = 1;
+        while (rostGiven < 10) {
+            document.write("Rost Den, gift item ansi" + "<br>");
+            if (rostGiven > 5) {
+                break;
+            }
+            rostGiven++;
+          
+        }
+    </script>
+
+
+</body>
+
+</html>

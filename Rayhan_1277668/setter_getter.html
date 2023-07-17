@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(brand) {      // constructor is a method .
+    this.carname = brand;  //this.carname = property ,  brand = parameter
+  } 
+  get getNam() {
+    return this.carname;
+  }
+  set setNam(x) {
+    this.carname = x;
+  }
+}
+
+const myCar = new Car("Ford");
+
+document.getElementById("demo").innerHTML = myCar.getNam;
+
+myCar.setNam = "BMW";
+let newName = myCar.getNam ;
+document.getElementById("demo").innerHTML = myCar.getNam;
+
+</script>
+
+</body>
+</html>

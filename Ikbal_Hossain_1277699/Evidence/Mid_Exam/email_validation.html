@@ -1,39 +1,49 @@
-<script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Validation</title>
+</head>
+<body>
+  <script>
 
-// EmailValidator class
-class EmailValidator {
-  constructor() {
-    this.email = '';
-  }
-
-  setEmail(email) {
-    this.email = email;
-  }
-
-  validateEmail() {
-    // Regular expression for email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(this.email);
-  }
-}
-
-// Prompt the user for an email
-const email = prompt('Enter your email address:');
-
-// Create an instance of EmailValidator
-const validator = new EmailValidator();
-
-// Set the email in the validator
-validator.setEmail(email);
-
-// Validate the email
-const isValid = validator.validateEmail();
-
-// Display the result
-if (isValid) {
-  alert('Email Address is correct');
-} else {
-  alert('Email Address is Wrong');
-}
-
-</script>
+    // EmailValidator class
+    class EmailValidator {
+      constructor() {
+        this.email = '';
+      }
+    
+      setEmail(email) {
+        this.email = email;
+      }
+    
+      validateEmail() {
+        // Regular expression for email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(this.email);
+      }
+    }
+    
+    // Prompt the user for an email
+    const email = prompt('Enter your email address:');
+    
+    // Create an instance of EmailValidator
+    const validator = new EmailValidator();
+    
+    // Set the email in the validator
+    validator.setEmail(email);
+    
+    // Validate the email
+    const isValid = validator.validateEmail();
+    
+    // Display the result
+    if (isValid) {
+      alert('Email Address is correct');
+    } else {
+      alert('Email Address is Wrong');
+    }
+    
+    </script>
+</body>
+</html>

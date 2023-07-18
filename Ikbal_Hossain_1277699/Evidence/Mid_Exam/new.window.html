@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainee Data Form</title>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="traineeForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" required>
+
+        <label for="remarks">Remarks:</label>
+        <textarea id="remarks" rows="4"></textarea>
+
+        <label for="sex">Sex:</label>
+        <label><input type="radio" name="sex" value="Male" required> Male</label>
+        <label><input type="radio" name="sex" value="Female" required> Female</label>
+
+        <label for="courses">Courses:</label>
+        <label><input type="checkbox" name="courses" value="NT"> NT</label>
+        <label><input type="checkbox" name="courses" value="IAD"> IAD</label>
+        <label><input type="checkbox" name="courses" value="DDD"> DDD</label>
+        <label><input type="checkbox" name="courses" value="ESAD"> ESAD</label>
+
+        <label for="location">Location:</label>
+        <select id="location" required>
+            <option value="">Select location</option>
+            <option value="Banani">Banani</option>
+            <option value="Dhanmondi">Dhanmondi</option>
+            <option value="Mirpur">Mirpur</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        class TraineeData {
+            constructor(name, contact, remarks, sex, courses, location) {
+                this.name = name;
+                this.contact = contact;
+                this.remarks = remarks;
+                this.sex = sex;
+                this.courses = courses;
+                this.location = location;
+            }
+        }
+
+        const formElement = document.querySelector('#traineeForm');
+
+        formElement.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.querySelector('#name').value;
+            const contact = document.querySelector('#contact').value;
+            const remarks = document.querySelector('#remarks').value;
+            const sex = document.querySelector('input[name="sex"]:checked').value;
+            const courses = Array.from(document.querySelectorAll('input[name="courses"]:checked')).map(checkbox => checkbox.value);
+            const location = document.querySelector('#location').value;
+
+            const traineeData = new TraineeData(name, contact, remarks, sex, courses, location);
+
+            const popupWindow = window.open('', '_blank', 'width=600,height=400');
+            popupWindow.document.write('<html><head><title>Trainee Data</title></head><body>');
+            popupWindow.document.write('<h1>Trainee Data</h1>');
+            popupWindow.document.write('<p><strong>Name:</strong> ' + traineeData.name + '</p>');
+            popupWindow.document.write('<p><strong>Contact:</strong> ' + traineeData.contact + '</p>');
+            popupWindow.document.write('<p><strong>Remarks:</strong> ' + traineeData.remarks + '</p>');
+            popupWindow.document.write('<p><strong>Sex:</strong> ' + traineeData.sex + '</p>');
+            popupWindow.document.write('<p><strong>Courses:</strong> ' + traineeData.courses.join(', ') + '</p>');
+            popupWindow.document.write('<p><strong>Location:</strong> ' + traineeData.location + '</p>');
+            popupWindow.document.write('</body></html>');
+            popupWindow.document.close();
+        });
+    </script>
+</body>
+
+</html>

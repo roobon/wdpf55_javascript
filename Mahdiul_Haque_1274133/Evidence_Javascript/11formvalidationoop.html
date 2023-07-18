@@ -19,7 +19,7 @@
           this.password = document.loginForm.password.value;
 
           let valid = false;
-          let pattern = /[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,3}/;
+          let pattern = /^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$/;
           if (this.email.match(pattern)) {
             valid = true;
             //     alert(this.email);
@@ -28,7 +28,7 @@
             valid = false;
             return false;
           }
-          let pswdpattern = /[a-zA-Z0-9]{4,8}/;
+          let pswdpattern = /^[a-zA-Z0-9]{4,8}$/;
           if (this.password.match(pswdpattern)) {
             valid = true;
           } else {

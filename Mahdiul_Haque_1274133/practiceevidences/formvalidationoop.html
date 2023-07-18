@@ -6,7 +6,7 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Form Validation</h1>
+  <!-- <h1>Form Validation</h1>
 <form action="" name="loginForm">
   <input type="email" name="email" placeholder="Enter Email" /><br />
   <input
@@ -49,6 +49,32 @@
   }
 
   const newForm = new Validation();
+</script> -->
+
+<h1>Form Validation</h1>
+<form action="" name="loginForm">
+  <input type="email" name="email" placeholder="Enter Your Email Here"><br>
+  <input type="password" name="password" placeholder="Enter Your Password Here"><br>
+  <button type="button" onclick="newform.checkData()">Submit</button>
+</form>
+
+<script>
+  class Validation{
+    checkData() {
+      this.email = document.loginForm.email.value;
+      this.password = document.loginForm.password.value;
+
+      let valid = false;
+      let pattern = /[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,3}/;
+      if(this.email.match(pattern)) {
+        valid = true;
+      }  else {
+        alert ("Email Format Invalid");
+        valid = false;
+        return  false;
+      }
+    } letpswdpattern = /[a-zA-Z]
+  }
 </script>
 </body>
 </html>

@@ -8,7 +8,7 @@ function showResult() {
       let courses = ""
       for(let i=0; i<course.length; i++){
         if(course[i].checked){
-          courses += course[i].value + ","
+          courses += course[i].value + ".";
         }
       }
 

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> Show me the number 0 to 10 using while loop </h3>
+    <script>
+        var number = 0;  // loop variable
+
+        while (number <= 10) {  // condition inside while or loop condition
+            document.write(number + "<br>");  // loop body
+            // document.write("<br>");
+            number++;  // increment or decrement loop variable
+        }
+    </script>
+
+
+    <h3> Show me the number 0 to 10 all EVEN number using while loop </h3>
+    <script>
+        var number = 0;
+
+        while (number <= 10) {
+            document.write(number + "<br>");
+            // number = number +2;
+            number += 2;
+        }
+    </script>
+
+
+    <h3> Show me the number 0 to 10 all ODD number using while loop </h3>
+    <script>
+        var number = 1;
+
+        while (number <= 10) {
+            document.write(number + "<br>");
+            number += 2;
+        }
+    </script>
+
+
+    <h3> Summation of 1 to 100 using while loop </h3>
+    <script>
+        var sum = 0;
+        var number = 1;
+
+        while (number <= 100) {
+            // document.write(sum);
+            sum += number;
+            number++;
+        }
+        document.write("The sum of numbers from 1 to 100 is: " + sum);
+    </script>
+
+
+    <h3> Summation of 1 to 100 using while loop </h3>
+    <script>
+        var sum = 0;
+        var number = 1;
+
+        while (number <= 100) {
+            // document.write(sum);
+            number++;
+            sum += number;
+        }
+        document.write("The sum of numbers from 1 to 100 is: " + sum);
+
+
+        // In this modified code, the line num++ comes before sum += num; within the while loop.As a result, the value of num will be incremented before it is added to the sum variable.
+
+        // Therefore, the code will calculate the sum of numbers from 2 to 101 instead of 1 to 100. The final output displayed by console.log() would be the sum of numbers from 2 to 101, not including 1. and the result will be 5150.
+    </script>
+</body>
+
+</html>

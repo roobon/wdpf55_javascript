@@ -8,13 +8,39 @@
 <body>
     <p id="demo"></p>
     <script>
-        let myNumber=prompt("Enter your Number:" ,"") ;
-        if(myNumber%2==0){
-            document.getElementById("demo").innerHTML = ("The even Number is:"+myNumber)
+        // let myNumber=prompt("Enter your Number:" ,"") ;
+        // if(myNumber%2==0){
+        //     document.getElementById("demo").innerHTML = ("The even Number is:"+myNumber)
+        // }
+        // else {
+        //     document.getElementById("demo").innerHTML = ("The odd Number:"+myNumber)
+        // }
+    </script>
+    <form action="" name="myform">
+<input type="text" name="email" placeholder="Enter your Email"><br>
+<input type="password" name="password" placeholder="Enter your password"><br>
+<button type="button"onclick="newForm.display()">SUBMIT</button>
+    </form>
+    <script>
+        class Validation{
+            display(){
+                let email=document.myform.email.value;
+                let password=document.myform.password.value;
+                let valied=false;
+                let pattern=/[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]{2,3}/;
+                if(this.email.match(pattern)){
+                    valided=true;
+                     }
+                     else{
+                        alert("Email formte invalied");
+                        valied =false;
+                        return false;
+                     }
+                if(valied);
+                alert("All Data valied");   
+            }
         }
-        else {
-            document.getElementById("demo").innerHTML = ("The odd Number:"+myNumber)
-        }
+        let newForm=new Validation();
     </script>
 </body>
 </html>

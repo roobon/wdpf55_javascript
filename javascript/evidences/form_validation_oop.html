@@ -21,7 +21,7 @@
           let validate = false;
           let pattern = /[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,3}/;
 
-          if (this.email.match(pattern)) {
+          if (email.match(pattern)) {
             validate = true;
             //     alert(this.email);
           } else {
@@ -30,7 +30,7 @@
             return false;
           }
           let pswdpattern = /[a-zA-Z0-9]{4,8}/;
-          if (this.password.match(pswdpattern)) {
+          if (password.match(pswdpattern)) {
             validate = true;
           } else {
             alert("Password must be 4 to 8 character");

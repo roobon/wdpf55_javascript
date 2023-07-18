@@ -19,23 +19,23 @@
           this.password = document.loginForm.password.value;
 
           let valid = false;
-          let pattern = /[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,3}/;
-          if (this.email.match(pattern)) {
-            valid = true;
-            //     alert(this.email);
-          } else {
-            alert("Email format invalid");
-            valid = false;
-            return false;
-          }
-          let pswdpattern = /[a-zA-Z0-9]{4,8}/;
-          if (this.password.match(pswdpattern)) {
-            valid = true;
-          } else {
-            alert("Password must be 4 to 8 character");
-            valid = false;
-            return false;
-          }
+          let pattern = /[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,}/;
+            if (this.email.match(pattern)) {
+              valid = true;
+              //     alert(this.email);
+            } else {
+              alert("Email format invalid");
+              valid = false;
+              return false;
+            }
+          let pswdpattern = /^[a-zA-Z0-9]{4,8}/;
+            if (this.password.match(pswdpattern)) {
+              valid = true;
+            } else {
+              alert("Password must be 4 to 8 character");
+              valid = false;
+              return false;
+            }
 
           if (valid) {
             alert("All Data are validated");

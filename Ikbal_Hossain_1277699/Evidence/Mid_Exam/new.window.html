@@ -22,7 +22,7 @@
         <input type="text" id="contact" required>
 
         <label for="remarks">Remarks:</label>
-        <textarea id="remarks" rows="4"></textarea>
+        <textarea id="remarks" rows="4" cols="20"></textarea>
 
         <label for="sex">Sex:</label>
         <label><input type="radio" name="sex" value="Male" required> Male</label>
@@ -71,7 +71,7 @@
 
             const traineeData = new TraineeData(name, contact, remarks, sex, courses, location);
 
-            const popupWindow = window.open('', '_blank', 'width=600,height=400');
+            const popupWindow = window.open('', '_blank', 'width=500,height=300');
             popupWindow.document.write('<html><head><title>Trainee Data</title></head><body>');
             popupWindow.document.write('<h1>Trainee Data</h1>');
             popupWindow.document.write('<p><strong>Name:</strong> ' + traineeData.name + '</p>');

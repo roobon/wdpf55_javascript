@@ -85,13 +85,35 @@
     </script>
 
 
-    <h3>Question-3: You are given three numbers 13, 79 and 45. Write a program that will print the largest number using if-else.</h3>
+    <h3>Question-3: You are given three numbers 13, 79 and 45. Write a program that will print the largest number using
+        if-else.</h3>
     <script>
         var num1 = 13;
         var num2 = 79;
         var num3 = 45;
 
-        if(num1>num2 && num2>num3)
+        if (num1 > num2 && num2 > num3) {
+            document.write(num1 + " is the largest number");
+        } else if (num2 > num1 && num2 > num3) {
+            document.write(num2 + " is the largest number");
+        } else {
+            document.write(num3 + " is the largest number");
+        }
+    </script>
+
+
+    <h3>Question-3: You are given triangle with the sides 9, 8, 9. Write a program to check whether a triangle is
+        Isosceles or not using if-else.</h3>
+    <script>
+        var side1 = 9;
+        var side2 = 8;
+        var side3 = 9;
+
+        if (side1 == side2 || side1 == side3 || side2 == side3) {
+            document.write("Isosceles Triangle");
+        } else {
+            document.write("It's not a Isosceles Triangle");
+        }
     </script>
 </body>
 

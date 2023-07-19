@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>Question-01: You are given an array: <br> fruits = ["Apple", "Banana", "Orange"];</h3>
+    <h4> a) Find the index of "Banana" and replace "Banana" with "Mango". <br>
+        b) Remove "Orange" and add "Watermelon". </h4>
+
+    <script>
+        var fruits = ["Apple", "Banana", "Orange"];
+        var bananaIndex = fruits.indexOf("Banana");
+        document.write("Index of Banana = " + bananaIndex);
+        document.write("<br>" + "<br>");
+
+        fruits[1] = "Mango"
+        document.write("Replace Banana with Mango: " + fruits);
+        document.write("<br>" + "<br>");
+
+        //or
+
+        // fruits[bananaIndex] = "Mango"
+        // document.write(fruits);
+        // document.write("<br>");
+
+        fruits.pop();
+        document.write("Remove 'Orange' from array: " + fruits);
+        document.write("<br>" + "<br>");
+
+        fruits.push("Watermelon");
+        document.write("Add 'Watermelon' in array: " + fruits);
+        document.write("<br>" + "<br>"); 
+    </script>
+
+
+    <h3>Question-2: You and your friends Tom, Jane, Peter and John got their final exam result. Your total score is 85,
+        Tom's total score is 66, Jane's total score is 95, Peter's total score is 56 and John's total score is 40. The
+        grading chart is</h3>
+    <p> 80 or above A grade <br> 60 or above B grade <br> 50 or above C grade <br> 40 or above D grade <br> 39 or less
+        => F grade</p>
+    <p>Write a program to find your and your friend's grades using if-else.</p>
+
+    <script>
+        // Function to calculate grades
+        function calculateGrade(score) {
+            if (score >= 80) {
+                return "A";
+            } else if (score >= 60) {
+                return "B";
+            } else if (score >= 50) {
+                return "C";
+            } else if (score >= 40) {
+                return "D";
+            } else {
+                return "F";
+            }
+        }
+
+        // Exam scores
+        const yourScore = 85;
+        const tomScore = 66;
+        const janeScore = 95;
+        const peterScore = 56;
+        const johnScore = 40;
+
+        // Calculate and display grades
+        const yourGrade = calculateGrade(yourScore);
+        const tomGrade = calculateGrade(tomScore);
+        const janeGrade = calculateGrade(janeScore);
+        const peterGrade = calculateGrade(peterScore);
+        const johnGrade = calculateGrade(johnScore);
+
+        // Displaying the results
+        Document.write("Your grade:", yourGrade);
+        Document.write("Tom's grade:", tomGrade);
+        Document.write("Jane's grade:", janeGrade);
+        Document.write("Peter's grade:", peterGrade);
+        Document.write("John's grade:", johnGrade);
+    </script>
+
+
+    <h3>Question-3: You are given three numbers 13, 79 and 45. Write a program that will print the largest number using if-else.</h3>
+    <script>
+        var num1 = 13;
+        var num2 = 79;
+        var num3 = 45;
+
+        if(num1>num2 && num2>num3)
+    </script>
+</body>
+
+</html>

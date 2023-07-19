@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from data</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+
+    
+
+    <form name="myForm" action="">
+        <!-- name & conatct -->
+        <input type="text" name="fName" placeholder="Enter Your Name"> <br>
+        <input type="number" name="contact" placeholder="contact no.">  <br>
+
+          <!-- text Area -->
+          Remarks : <br>
+          <textarea name="remarks" id="" cols="30" rows="5"></textarea>  <br>
+
+
+        <!-- radio -->
+        Gender:  <br>
+        Male : <input type="radio" name="gender" value="Male"> 
+        Female : <input type="radio" name="gender" value="Female"> 
+        <br>
+
+        <!-- checkbox -->
+             subjects : <br>
+             <input class="lang" type="checkbox" name="NT" id="" value="NT">Networking Technologies
+        <input class="lang" type="checkbox" name="IAD" id="" value="Auto CAD">Auto CAD
+         <input class="lang" type="checkbox" name="DDD" id="" value="Database Design ">Database Design 
+         <input class="lang" type="checkbox" name="ESAD" id="" value="ESAD">ESAD
+    
+        <br> 
+        <!-- dropdown -->
+        Location <br>
+        <select name="location">
+            <option value=""> Select one  </option>
+            <option>  Dhaka </option>
+            <option>  Chittagong </option>
+            <option>  Rjashahi </option>
+            <option>  Khulna </option>
+            <option>  Barisal </option>
+
+        </select>
+
+
+
+
+
+
+
+        <br>
+        <br>
+        <button onclick="myObj.newWindow()" type="button"> sumbit </button>
+    </form>
+
+
+
+    <script>
+        class OpenNewWindow {
+
+             newWindow() {
+                console.log("new window clicked");
+            // name
+            let fName = document.myForm.fName.value 
+            let contact = document.myForm.contact.value 
+
+            // text area
+            let remarks = document.myForm.remarks.value ;
+            
+            //radio
+            let gender = document.myForm.gender.value
+
+
+            // Dropdown
+            let location = document.myForm.location.value ;
+
+            // checkbox 
+            const subjects = document.getElementsByClassName("lang");
+            // console.log(subjects[0].value);
+            let sub = "" ;
+            for ( let i=0; i <subjects.length; i++ ){
+                if (subjects[i].checked){
+                    sub += subjects[i].value + "," ;
+                    
+                }
+            }
+
+
+            // open new window
+           var myWindow =  window.open("" , "my_window" , "height=500,width=800,")
+
+           myWindow.document.write( ` <h1> This is a new window </h1>
+           
+            Name : ${fName} <br>
+            Contact : ${contact} <br> 
+           Gender : ${gender} <br> 
+           Remarks : ${remarks} <br> 
+           District : ${location} <br> 
+           Courses : ${sub}
+           
+           ` )
+
+
+           
+        }
+
+        
+
+    }
+
+    const myObj = new OpenNewWindow() ;
+
+    </script>
+</body>
+</html>

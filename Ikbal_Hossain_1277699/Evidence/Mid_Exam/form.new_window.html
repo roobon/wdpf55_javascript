@@ -1,62 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trainee Data Form</title>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <form action="" name="form">
-        Name : <input type="text" name="name"><br><br>
-        Contact : <input type="number" name="contact"><br><br>
-        Gender : <input type="radio" name="gender" value="Male">Male
-        <input type="radio" name="gender" value="Female">Female
-        <br><br>
-        Hobby : <input type="checkbox" name="cricket" value="Cricket" class="hobby"> Cricket
-        <input type="checkbox" name="football" value="Football" class="hobby"> Football
-        <input type="checkbox" name="kabadi" value="Kabadi" class="hobby"> Kabadi
-        <br><br>
-        Division : <select name="division">
-            <option value="">Select</option>
-            <option>Dhaka</option>
-            <option>Barisal</option>
-            <option>Khulna</option>
-        </select><br><br>
-        Email : <input type="email" name="email"><br><br>
-        Address :<br> <textarea name="address" cols="30" rows="10"></textarea><br><br>
-        <button type="button" onclick="myFunction()">Try it</button>
+    <form id="traineeForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" required>
+
+        <label for="remarks">Remarks:</label>
+        <textarea id="remarks" rows="4" cols="20"></textarea>
+
+        <label for="sex">Sex:</label>
+        <label><input type="radio" name="sex" value="Male" required> Male</label>
+        <label><input type="radio" name="sex" value="Female" required> Female</label>
+
+        <label for="courses">Courses:</label>
+        <label><input type="checkbox" name="courses" value="NT"> NT</label>
+        <label><input type="checkbox" name="courses" value="IAD"> IAD</label>
+        <label><input type="checkbox" name="courses" value="DDD"> DDD</label>
+        <label><input type="checkbox" name="courses" value="ESAD"> ESAD</label>
+
+        <label for="location">Location:</label> <br>
+        <select id="location" required>
+            <option value="">Select one</option>
+            <option value="Banani">Banani</option>
+            <option value="Dhanmondi">Dhanmondi</option>
+            <option value="Mirpur">Mirpur</option>
+        </select> <br> <br>
+
+        <button type="submit">Submit</button>
     </form>
 
-
     <script>
-        function myFunction() {
-            let fname = document.form.fname.value;
-            let contact = document.form.contact.value;
-            let gender = document.form.gender.value;
-
-            const hobby = document.getElementsByClassName("hobby");
-            let hobbies = ""
-            for (let i = 0; i < hobby.length; i++) {
-                if (hobby[i].checked) {
-                    hobbies += hobby[i].value + ","
-                }
+        class TraineeData {
+            constructor(name, contact, remarks, sex, courses, location) {
+                this.name = name;
+                this.contact = contact;
+                this.remarks = remarks;
+                this.sex = sex;
+                this.courses = courses;
+                this.location = location;
             }
-
-            let division = document.form.division.value;
-            let email = document.form.email.value;
-            let address = document.form.address.value;
-
-            let myWindow = window.open("", "", "width=600,height=500");
-            myWindow.document.write("Your name is = " + name + "<br>");
-            myWindow.document.write("Your contact is = " + contact + "<br>");
-            myWindow.document.write("Your gender is = " + gender + "<br>");
-            myWindow.document.write("Your hobby is = " + hobbies + "<br>");
-            myWindow.document.write("Your division is = " + division + "<br>");
-            myWindow.document.write("Your email is = " + email + "<br>");
-            myWindow.document.write("Your address is = " + address + "<br>");
         }
+
+        const formElement = document.querySelector('#traineeForm');
+
+        formElement.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.querySelector('#name').value;
+            const contact = document.querySelector('#contact').value;
+            const remarks = document.querySelector('#remarks').value;
+            const sex = document.querySelector('input[name="sex"]:checked').value;
+            const courses = Array.from(document.querySelectorAll('input[name="courses"]:checked')).map(checkbox => checkbox.value);
+            const location = document.querySelector('#location').value;
+
+            const traineeData = new TraineeData(name, contact, remarks, sex, courses, location);
+
+            const popupWindow = window.open('', '_blank', 'width=500,height=300');
+            popupWindow.document.write('<html><head><title>Trainee Data</title></head><body>');
+            popupWindow.document.write('<h1>Trainee Data</h1>');
+            popupWindow.document.write('<p><strong>Name:</strong> ' + traineeData.name + '</p>');
+            popupWindow.document.write('<p><strong>Contact:</strong> ' + traineeData.contact + '</p>');
+            popupWindow.document.write('<p><strong>Remarks:</strong> ' + traineeData.remarks + '</p>');
+            popupWindow.document.write('<p><strong>Sex:</strong> ' + traineeData.sex + '</p>');
+            popupWindow.document.write('<p><strong>Courses:</strong> ' + traineeData.courses.join(', ') + '</p>');
+            popupWindow.document.write('<p><strong>Location:</strong> ' + traineeData.location + '</p>');
+            popupWindow.document.write('</body></html>');
+            popupWindow.document.close();
+        });
     </script>
 </body>
 

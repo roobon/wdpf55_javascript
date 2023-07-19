@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Email Validation</h3>
+     <script>
+            class EmailValidator {
+                constructor(email) {
+                    this.email = email;
+                }
+
+                validateEmail() {
+                    if (this.email.includes("@") && this.email.includes(".")) {
+                        return "Email Address is correct";
+                    } else {
+                        return "Email Address is wrong";
+                    }
+                }
+                }
+
+                let email = prompt("Enter your email address:");
+                let validator = new EmailValidator(email);
+                let result = validator.validateEmail();
+                alert(result);
+
+     </script>
+    
+</body>
+</html>

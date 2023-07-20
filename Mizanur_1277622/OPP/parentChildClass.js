@@ -9,8 +9,8 @@ class Person {
     }
 }
 class PersonSkill extends Person{
-    constructor(skill){
-        super()
+    constructor(name, age, district, skill){
+        super(name, age, district,age)
         this.skill = skill
     }
     showSkill(){
@@ -18,7 +18,6 @@ class PersonSkill extends Person{
     }
 }
 
-
-
-const person = new Person("Mizanur Rahman", 25, "Narayanganj", "Web Development")
-
+const person = new PersonSkill("Mizanur Rahman", 25, "Narayanganj", "Web Development")
+console.log(person.showSkill())
+//console.log(person)

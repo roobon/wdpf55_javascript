@@ -19,8 +19,8 @@
         }
     </script>
 
-    <h4> Show output 1 to 20 </h4>
 
+    <h4> Show output 1 to 20 </h4>
     <script>
         for (var i = 1; i <= 20; i++) {
             if (i > 5) {
@@ -43,18 +43,83 @@
         }
     </script>
 
+
     <h3> Using BREAK formula within while loop </h3>
     <script>
         var rostGiven = 1;
         while (rostGiven < 10) {
             document.write("Rost Den, gift item ansi" + "<br>");
-            if (rostGiven > 5) {
+            if (rostGiven > 1) {
                 break;
             }
             rostGiven++;
 
         }
     </script>
+
+
+    <h3> Using BREAK formula within while loop </h3>
+    <script>
+        var rostGiven = 1;
+        while (rostGiven < 10) {
+            if (rostGiven > 1) {
+                break;
+            }
+            document.write("Rost Den, gift item ansi" + "<br>");
+            rostGiven++;
+        }
+    </script>
+
+
+    <h3> Break formula in "String" Array </h3>
+    <script>
+        var items = ["bottle", "mouse", "sunglass", "pen", "notebook"];
+        for (var i = 0; i < items.length; i++) {
+            if (items[i] == "pen") {
+                break;
+            }
+            document.write(items[i] + "<br>");
+        }
+    </script>
+
+
+    <h3> Another way Break formula in "String" Array </h3>
+    <script>
+        var items = ["bottle", "mouse", "sunglass", "pen", "notebook"];
+        for (var i = 0; i < items.length; i++) {
+            var item = items[i]  // variable declaration
+            if (item == "pen") {
+                break;
+            }
+            document.write(item + "<br>");
+        }
+    </script>
+
+
+
+    <h3> Break formula in "Number" Array </h3>
+    <script>
+        var numbers = [45, 87, 89, 56, 32, 51, 25, 188, 41, 25, 98];
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i] > 100) {
+                break;
+            }
+            document.write(numbers[i] + "<br>");
+        }
+    </script>
+
+
+    <h3> Continue formula in "Number" Array </h3>
+    <script>
+        var numbers = [45, 87, 89, 56, 32, 51, 25, 188, 41, 25, 98];
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i] > 50) {
+                continue;  // whenever it meets the if condition the loop skip document.write(output the value) statement then go to increment check again loop condition and if condition. It shows the output(document.write) until if condition false otherwise skip the output(document.write)
+            }
+            document.write(numbers[i] + "<br>");
+        }
+    </script>
+
 
 
 </body>

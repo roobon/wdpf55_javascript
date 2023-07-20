@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Question-01: Harry's mom gave him money and asked him 1000tk to buy some oranges and apples cost of 700tk. Write
+        a program to help Harry calculate how much money the shopkeeper will return?</h3>
+    <script>
+        var moneyGiven = 1000;
+        var applePrice = 400;
+        var orangePrice = 300;
+
+        //document.write("Total expense = apple price + orange price = " + (applePrice + orangePrice));
+
+        var totalExpense = ("Total expense = apple price + orange price = ") + (applePrice + orangePrice);
+        document.write(totalExpense);
+        document.write("<br>");
+
+        var getBack = ("The shopkeeper will return =  Money Given from Harry - total expense = ") + (moneyGiven - totalExpense);
+        document.write(getBack);
+    </script>
+
+
+    <h3>Question-02: Write a program to calculate the average marks of Mathematics, Biology, Chemistry, Physics and
+        Bangla of a Student </h3>
+    <script>
+        var mathMarks = 75.25;
+        var biologyMarks = 65;
+        var chemistryMarks = 80;
+        var physicsMarks = 35.45;
+        var banglaMarks = 99.50;
+
+        var totalMarks = mathMarks + biologyMarks + chemistryMarks + physicsMarks + banglaMarks;
+        var average = totalExpense / 5;
+        document.write(average.toFixed(2));
+    </script>
+
+
+    <h3>Question-03: Jhon's teacher gave him two variables. Each variable contains a string. Jhon's teacher asked him to
+        combine these two string and print them in one line. Help jhon write the program. </h3>
+    <script>
+        var line1 = "I am going to be";
+        var line2 = "an awesome web developer"
+
+        var concat = "Result = " + (line1 + " " + line2);
+        document.write(concat);
+    </script>
+
+
+    <h3>Question-04: Sarah's mother is teaching her mathematics. She gave Sarah a number and asked her what the
+        remainder would be if she divided the number by 5. Help Sarah write the program. </h3>
+    <script>
+        var number = 119;
+        var remainder = number % 5;
+        document.write("Remainder = " + remainder);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> Simple function example with return </h3>
+    <script>
+        function getAverage(assignment1, assignment2, assignment3) {
+            const total = assignment1 + assignment1 + assignment3;
+            const average = total / 3;
+
+            return average;
+
+        }
+
+        const assignment1Marks = 60;
+        const assignment2Marks = 58;
+        const assignment3Marks = 59;
+
+        var myAverage = getAverage(assignment1Marks, assignment2Marks, assignment3Marks);
+        document.write("My average so far = " + myAverage.toFixed(2));
+    </script>
+
+    <br>
+    <script>
+        let number = 3.1415926;
+        let fixedNumber = number.toFixed(2);
+
+        document.write(fixedNumber); // Output: "3.14" (as a string)
+    </script>
+
+
+    <h3> Repeatedly function calling </h3>
+    <script>
+        function add(num1, num2) {
+            const sum = num1 + num2;
+            return sum;
+        }
+
+        const result1 = add(12, 13);
+        const result2 = add(35, 7);
+        const finalResult = add(result1, result2);
+
+        document.write("Result1 = " + result1 + "<br>");
+        document.write("Result2 = " + result2 + "<br>");
+        document.write("Final Result = " + finalResult + "<br>");
+    </script>
+</body>
+
+</html>

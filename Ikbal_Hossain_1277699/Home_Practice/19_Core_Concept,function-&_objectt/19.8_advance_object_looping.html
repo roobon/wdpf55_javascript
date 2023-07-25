@@ -44,6 +44,7 @@
     <h3> show property name & value using "For" loop </h3>
 
     <script>
+        // final step
         var shoppingCart = { books: 3, sunglass: 1, keyboard: 5, mouse: 1, pen: 25, shoes: 2 };
 
         var keys = Object.keys(shoppingCart);  // *** this is must to get the properties using loop
@@ -62,6 +63,12 @@
 
     <hr>
     <h3> show property name & value using "For in" loop </h3>
+    <script>
+        for(var propertyName in shoppingCart){
+            const value = shoppingCart[propertyName]
+            document.write(propertyName, value + "<br>");
+        }
+    </script>
 
 </body>
 

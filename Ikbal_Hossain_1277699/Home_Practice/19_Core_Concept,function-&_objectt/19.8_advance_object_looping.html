@@ -8,20 +8,61 @@
 </head>
 
 <body>
-    <h3>
-        show property name and value using loop </h3>
+    <h3> Show individual property name and value </h3>
+
     <script>
+
         var shoppingCart = { books: 3, sunglass: 1, keyboard: 5, mouse: 1, pen: 25, shoes: 2 };  // object
-        // var shoppingCart = ["books", "sunglass", "keyboard", "mouse", "pen", "shoes"]; // array
 
+        // step 01
         var keys = Object.keys(shoppingCart);
-        document.write("keys / properties: " + keys + "<br> <br>");
+        document.write("1_keys / properties: " + keys + "<br> <br>");
+        // result=> keys = ["books", "sunglass", "keyboard", "mouse", "pen", "shoes"];
 
-        var keys = Object.values(shoppingCart);
-        document.write("values: " + keys + "<br> <br>"); 
 
+        // step 02
+        var values = Object.values(shoppingCart);
+        document.write("2_values: " + values + "<br> <hr>");
+        // result=> values = [3, 1, 5, 1, 25, 2];
 
     </script>
+
+
+
+    <h3> Show property name using loop </h3>
+
+    <script>
+        // step 03
+        for (i = 0; i < keys.length; i++) {
+            document.write(keys[i] + "<br>");
+        }
+    </script>
+
+
+
+    <hr>
+    <h3> show property name & value using "For" loop </h3>
+
+    <script>
+        var shoppingCart = { books: 3, sunglass: 1, keyboard: 5, mouse: 1, pen: 25, shoes: 2 };
+
+        var keys = Object.keys(shoppingCart);  // *** this is must to get the properties using loop
+        var values = Object.values(shoppingCart);
+
+
+        for (i = 0; i < keys.length; i++) {
+            var propertyName = keys[i];
+            var propertyValue = shoppingCart[propertyName];
+
+            document.write(propertyName + ": " + propertyValue + "<br>");
+            //  document.write(keys[i], shoppingCart[keys[i]]
+        }
+    </script>
+
+
+    <hr>
+    <h3> show property name & value using "For in" loop </h3>
+
 </body>
 
 </html>

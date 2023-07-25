@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        show property name and value using loop </h3>
+    <script>
+        var shoppingCart = { books: 3, sunglass: 1, keyboard: 5, mouse: 1, pen: 25, shoes: 2 };  // object
+        // var shoppingCart = ["books", "sunglass", "keyboard", "mouse", "pen", "shoes"]; // array
+
+        var keys = Object.keys(shoppingCart);
+        document.write("keys / properties: " + keys + "<br> <br>");
+
+        var keys = Object.values(shoppingCart);
+        document.write("values: " + keys + "<br> <br>"); 
+
+
+    </script>
+</body>
+
+</html>

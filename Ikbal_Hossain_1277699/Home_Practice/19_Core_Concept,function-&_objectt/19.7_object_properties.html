@@ -10,40 +10,40 @@
 <body>
     <h3> Multiple ways to get object property </h3>
     <script>
-        var shoppingCard = { books: 3, sunglass: 1, keyboard: 5, mouse: 1, pen: 25 };
+        var shoppingCart = { books: 3, sunglass: 1, keyboard: 5, mouse: 1, pen: 25 };
 
-        console.log(shoppingCard);
+        console.log(shoppingCart);
 
         // 3 ways get property value
 
         // First way
-        var penCount = shoppingCard.pen;  // 1. when you know the specific property name, use dot notation to get the property value
+        var penCount = shoppingCart.pen;  // 1. when you know the specific property name, use dot notation to get the property value
         document.write("1_Number of pen = " + penCount + "<br>" + "<br>");
 
 
 
         // Second way
-        var penCount1 = shoppingCard["pen"]  // 2. when you know the specific property name, use [] to get the property value
+        var penCount1 = shoppingCart["pen"]  // 2. when you know the specific property name, use [] to get the property value
         document.write("2_Number of pen = " + penCount1 + "<br>  <br>");
 
 
 
         // Third way. this is more dynamic way
         var propertyName = "mouse";
-        var propertyValue = shoppingCard[propertyName];
+        var propertyValue = shoppingCart[propertyName];
         document.write("3_property name and value: " + propertyName, propertyValue + "<br>  <br>");
         document.write("3.1_property name and value = " + propertyName + " : " + propertyValue + "<br>  <br>");
 
 
 
         // to show the object property or key like an array
-        var properties = Object.keys(shoppingCard);
+        var properties = Object.keys(shoppingCart);
         document.write("4_Object property or key: " + properties + "<br>  <br>");
 
 
 
         // to show the object value like an array
-        var propertyValues = Object.values(shoppingCard);
+        var propertyValues = Object.values(shoppingCart);
         document.write("5_Object value: " + propertyValues + "<br>  <br>");
     </script>
 
@@ -54,17 +54,17 @@
         // 3 ways get property value
 
         // First way
-        shoppingCard.mouse = 15;
-        console.log(shoppingCard)
+        shoppingCart.mouse = 15;
+        console.log(shoppingCart)
 
         // Second way
-        shoppingCard["mouse"] = 29;
-        console.log(shoppingCard);
+        shoppingCart["mouse"] = 29;
+        console.log(shoppingCart);
 
         // Third way
         var propertyName = "mouse";
-        shoppingCard[propertyValue] = 89;
-        console.log(shoppingCard);
+        shoppingCart[propertyName] = 89;
+        console.log(shoppingCart);
     </script>
 </body>
 

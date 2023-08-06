@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> Static Method in Function Constructor </h3>
+
+    <script>
+        const Computer = function (name, model) {
+            this.name = name;
+            this.model = model;
+        }
+
+        Computer.sayAboutComputer = function () {   // static method
+            console.log("this is a computer");
+        }
+
+        const dell = new Computer("Dell", "dk234");
+
+        console.log(dell);
+
+        Computer.sayAboutComputer();
+
+        console.log(dell.sayAboutComputer);  // result => undefined
+
+        console.log(dell.sayAboutComputer());   // result => dell.sayAboutComputer is not a function
+    </script>
+</body>
+
+</html>

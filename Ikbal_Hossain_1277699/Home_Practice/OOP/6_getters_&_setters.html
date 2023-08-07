@@ -31,14 +31,16 @@
 
         const dell = new Computer("Dell", "dk125");
 
-        console.log(dell);
-        console.log(dell.computerName);
-        dell.aboutComputer()
+        console.log(dell);  // result => Computer {name: 'Dell', model: 'dk125'}
+        
+        dell.aboutComputer()  // result => This computer name is Dell and the model is dk125.
+        console.log(dell.computerName);  // result => Dell
+       
 
-
-
-        // console.log(computerName);  // result =>  computerName is not defined
-        // dell.computerName()  // result =>  dell.computerName is not a function
+        //  dell.computerName;  // nothing to show
+        //  dell.computerName()  // result =>  dell.computerName is not a function
+        //  console.log(dell.computerName())  // result =>  dell.computerName is not a function
+        //  console.log(computerName);  // result =>  computerName is not defined
     </script>
 </body>
 

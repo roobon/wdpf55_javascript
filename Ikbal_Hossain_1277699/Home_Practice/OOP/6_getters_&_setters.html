@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Computer {
+            constructor(name, model) {
+                this.name = name;
+                this.model = model;
+            }
+
+            aboutComputer() {
+                console.log(`This computer name is ${this.name} and the model is ${this.model}.`);
+            }
+
+            static sayAboutComputer = function () {    // static method
+                console.log("This is a computer");
+            }
+        }
+
+        const dell = new Computer("Dell", "dk125");
+
+        console.log(dell);
+    </script>
+</body>
+
+</html>

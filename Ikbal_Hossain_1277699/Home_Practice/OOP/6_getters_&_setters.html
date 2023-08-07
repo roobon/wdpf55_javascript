@@ -23,12 +23,22 @@
             static sayAboutComputer = function () {    // static method
                 console.log("This is a computer");
             }
+
+            get computerName() {
+                return this.name;
+            }
         }
 
         const dell = new Computer("Dell", "dk125");
 
         console.log(dell);
-    
+        console.log(dell.computerName);
+        dell.aboutComputer()
+
+
+
+        // console.log(computerName);  // result =>  computerName is not defined
+        // dell.computerName()  // result =>  dell.computerName is not a function
     </script>
 </body>
 

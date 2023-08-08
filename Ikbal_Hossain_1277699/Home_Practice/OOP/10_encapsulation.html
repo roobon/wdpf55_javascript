@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> Encapsulation in property</h3>
+    <script>
+        class Computer {
+            #warranty // warranty ekhon private property hoye gece tai tar access only class constructor er vitor thekei pabo outside class constructor => console.log() er moode pabo na
+            constructor(name, model, warranty) {
+                this.name = name;
+                this.model = model;
+                // this.warranty = warranty;
+                this.#warranty = warranty;
+                // this.warranty = warranty;
+            }
+            aboutComputer() {
+                console.log(`This computer name is ${this.name} and the model is ${this.model}.`);
+            }
+
+            aboutWarranty() {
+                console.log(`${this.#warranty} years of warranty are provided by dell`)  // (this.warranty) eivabe likhle keno undefined asbe???
+            }
+
+        }
+
+        const dell = new Computer("Dell", "dk125", 3);
+        const hp = new Computer("hp", "dd33");
+
+        console.log(dell);
+        console.log(dell.name);
+        console.log(dell.model);
+        console.log(dell.warranty);  // result => undefined
+
+        dell.aboutComputer();
+        dell.aboutWarranty()  // eitar access keno pelam???
+
+
+
+    </script>
+</body>
+
+</html>

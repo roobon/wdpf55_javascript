@@ -16,7 +16,7 @@
             }
 
             aboutComputer() {
-                console.log(`this computer name is ${this.name} and the model is ${this.model}`);
+                console.log(`this computer name is ${this.name} and the model is ${this.model} and the color is ${this.color}`); // polymorphism bolte kono akta method ba kisuke modify ba overwrite kore ak ak jaygay ak ak rokom use kora.
             }
 
         }
@@ -26,12 +26,14 @@
                 super(name, model);
                 this.color = color;
             }
+
         }
 
-        const hp = new Hp("HP", "dk22");
+        const hp = new Hp("HP", "dk22", "black");
 
         console.log(hp);
-        hp.aboutComputer()
+        hp.aboutComputer();
+
     </script>
 </body>
 

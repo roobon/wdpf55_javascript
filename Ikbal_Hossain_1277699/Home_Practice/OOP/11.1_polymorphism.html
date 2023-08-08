@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Computer {
+            constructor(name, model) {
+                this.name = name;
+                this.model = model;
+            }
+
+            aboutComputer() {
+                console.log(`this computer name is ${this.name} and the model is ${this.model}`);
+            }
+
+        }
+
+        class HP extends Computer {
+            constructor(name, model, color) {
+                super(name, model);
+                this.color = color;
+            }
+
+            aboutComputer() {
+                console.log(`this computer name is ${this.name}, the model is ${this.model} and the color is ${this.color}`); // polymorphism bolte kono akta method ba kisuke modify ba overwrite kore ak ak jaygay ak ak rokom use kora.
+            }
+
+        }
+
+        const hp1 = new HP("hp", "hp_m22f", "black");
+        const hp2 = new HP("hp", "hp_m24f", "silver");
+
+
+        console.log(hp1);
+        hp1.aboutComputer();
+
+        console.log(hp2);
+        hp2.aboutComputer();
+
+    </script>
+</body>
+
+</html>

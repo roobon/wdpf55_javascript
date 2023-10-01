@@ -14,7 +14,7 @@
         Female: <input type="radio" name="gender" value="Female"><br>
         <textarea name="address" id="" cols="30" rows="5"></textarea><br>
         <select name="district">
-            <option value="">Select one</option>
+            <option>Select one</option>
             <option>Dhaka</option>
             <option>Rajshahi</option>
         </select><br>
@@ -36,7 +36,7 @@
             let languages = "";
             for(let i=0; i<langs.length; i++){
                 if(langs[i].checked){
-                languages += langs[i].value + ",";
+                languages += langs[i].value + "";
                 }
             }
            let mywindow = window.open("", "", "height=300, width=400");

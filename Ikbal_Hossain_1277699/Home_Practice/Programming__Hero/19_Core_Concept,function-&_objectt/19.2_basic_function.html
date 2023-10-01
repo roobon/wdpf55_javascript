@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> Basic Information about Function </h3>
+    <script>
+        function sleep(name, time) {  // function parameters are listed the parentheses() in the function definition.
+            document.write(name + " is sleeping from " + time + "<br>");
+            // inside the function the arguments(the parameters) behave as local variable.
+            return 5;
+            // 1. When JavaScript reaches return statement, the function will stop executing.
+            // 2. If the function was invoked from a statement, JavaScript will "return" to execute the code after invoking the statement.
+            // 3. Functions often compute a return value. The return value ia "returned" back to the "caller"
+        }
+        
+        sleep("Jasim", "10 PM");  // function arguments are values received by the function when it is invoked(called).
+        sleep("Rahim", "11 PM");
+        sleep("Karim", "12 PM");
+    </script>
+</body>
+
+</html>

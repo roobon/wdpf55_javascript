@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>1. function call </h3>
+    <script>
+        function add(number1, number2) {
+            document.write(number1, number2 + "<br>");
+            document.write(number1 + ", " + number2 + "<br>");
+            document.write(number1 + number2 + "<br>");
+            var sum = number1 + number2;
+            document.write(sum);
+        }
+
+        add(45, 15);
+    </script>
+
+    <h3>2. function return </h3>
+    <script>
+        function add(number1, number2) {
+            document.write(number1 + ", " + number2 + "<br>");
+            var sum = number1 + number2;
+            document.write(sum + "<br>");
+        }
+
+        var total = add(80, 20);
+        document.write("total = " + total);
+        // 1. তুমি যদি function থেকে কোন কিছু return না করো তাহলে ওখান থেকে default হিসাবে (return এর value) undefined পাবা।
+    </script>
+
+
+    <h3>3. function return </h3>
+    <script>
+        function add(number1, number2) {
+            document.write(number1 + ", " + number2 + "<br>");
+            var sum = number1 + number2;
+            document.write(sum + "<br>");
+            return;
+        }
+
+        var total = add(80, 20);
+        document.write("total = " + total);
+        // 2. তুমি return লিখেছো কিন্তু তারপর কিছু লিখো নাই(কি return করবা সেটা বলো নাই), তাহলে return এর value হিসাবে undefined পাবা।
+    </script>
+</body>
+
+
+<h3>4. function return </h3>
+<script>
+    function add(number1, number2) {
+        document.write(number1 + ", " + number2 + "<br>");
+        var sum = number1 + number2;
+        // document.write(sum + "<br>");
+        return sum;
+    }
+
+    var total = add(80, 20);
+    document.write("total = " + total);
+    // 3. তুমি যদি return এর পর কোন একটা value অথবা variable লিখো, যদি variable লিখো তাহলে variable  এর value টা return করবে।
+</script>
+
+
+<h3>5. function return </h3>
+<script>
+    function add(number1, number2) {
+        document.write(number1 + ", " + number2 + "<br>");
+        var sum = number1 + number2;
+        // document.write(sum + "<br>");
+        return total;
+        // When JavaScript reaches return statement, the function will stop executing.
+
+        document.write("Do you still remember me?")
+        return 15;
+        document.write("I need more money");
+        return "Hello World";
+        return "I am hungry";
+    }
+
+    var total = add(80, 20);
+    document.write("total = " + total);
+</script>
+
+
+<h3>6. function return </h3>
+<script>
+    function bringSingara(money) {
+        var singaraPrice = 10;
+        var quantity = money / singaraPrice;
+        return quantity; 
+
+    }
+    var budget = 200;
+    var singaras = bringSingara(budget);
+    document.write("Eating quantity of singara = " + singaras);
+</script>
+
+</html>

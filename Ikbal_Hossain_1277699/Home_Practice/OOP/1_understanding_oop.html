@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> Understanding OOP </h3>
+    <script>
+        var computer = function () {
+            console.log(this);
+        }
+        const pc = new computer();
+    </script>
+
+
+    <script>
+        const obj = {};
+        obj.name = "Ikbal Hossain";
+        obj.playlist = 20;
+        console.log(obj);
+    </script>
+
+
+    <script>
+        var Computer = function (name, model) {
+            this.name = name;
+            this.model = model;
+
+        }
+        var dell = new Computer("dell", "dk125");
+        var hp = new Computer("hp", "hp699");
+
+        console.log(dell);
+        console.log(hp);
+    </script>
+
+
+    <script>
+        var Computer = function (name, model) {
+            this.name = name;
+            this.model = model;
+
+            this.aboutComputer = function () {
+                // console.log("This computer name is the " + this.name + " and this model is " + this.model);
+                console.log(`This computer name is the ${this.name} and this model is ${this.model}`);
+            }
+
+        }
+        var dell = new Computer("dell", "dk125");
+        var hp = new Computer("hp", "hp699");
+
+        console.log(dell);
+        console.log(hp);
+
+        dell.aboutComputer();
+        hp.aboutComputer();
+    </script>
+</body>
+
+</html>

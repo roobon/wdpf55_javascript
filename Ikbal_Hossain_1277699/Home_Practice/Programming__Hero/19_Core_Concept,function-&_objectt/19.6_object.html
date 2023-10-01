@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> Create an Object </h3>
+    <p id="demo"> </p>
+    <script>
+        var mobile = { brand: "Samsung", price: 19000, storage: "64gb", camera: "7mp" };
+        document.write(mobile.brand + "<br>")
+        var x = mobile;
+        document.write(x.price)
+
+
+
+        document.getElementById("demo").innerHTML = "I want to buy " + mobile.brand + "phone whose price " + mobile.price + " taka. The configuration are " + mobile.storage + " storage and " + mobile.camera + " camera. I think this will be best for me."
+    </script>
+
+
+    <script> // you can also create object in this way 
+        var mobile = {
+            brand: "Samsung",
+            camera: "7mp",
+            price: 19000,
+            storage: "64gb"
+        }
+        console.log(mobile);
+        const x = mobile;
+        console.log(x);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> Static Method in Class Constructor </h3>
+    <script>
+        class Computer {
+            constructor(name, model) {
+                this.name = name;
+                this.model = model;
+            }
+
+            aboutComputer() {
+                console.log(`This computer name is ${this.name} and the model is ${this.model}.`);
+            }
+
+            static sayAboutComputer = function(){    // static method
+                console.log("This is a computer");
+            }
+        } 
+
+        const dell = new Computer("Dell", "dk125");
+
+        console.log(dell);
+
+        dell.aboutComputer();
+
+        Computer.sayAboutComputer();  // You can call static method only using by its parent class because static method is under parent class.
+
+        dell.sayAboutComputer();  //  dell.sayAboutComputer is not a function. You can't access static method like this
+
+    </script>
+</body>
+
+</html>

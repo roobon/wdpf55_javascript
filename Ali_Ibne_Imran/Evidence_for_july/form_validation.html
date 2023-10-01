@@ -28,6 +28,7 @@
             }else{
                 alert("Email is invalid");
                 valid = false;
+                return false;
             }
             let passwordPattern = /[a-zA-Z0-9]{6,8}/
             if(this.password.match(passwordPattern)){

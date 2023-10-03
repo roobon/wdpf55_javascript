@@ -1,7 +1,27 @@
 .banner_img img{
     text-align: center;
     /* width:80vh; */
-    height:70vh;
-
+    height:70vh;}
+    .about_section {
+        display: flex;
+        justify-content: first baseline;
+        gap: 60px;
     
-}
+        padding: 5px;
+        text-align: center;
+        background-color: rgb(3, 66, 66);
+        color: white;
+    }
+    
+    .welcome_section h1 {
+        margin-left: 80px;
+    }
+    
+    .welcome_section,
+    p {
+        font-size: 25px;
+    }
+    
+    .welcome-img img {
+        height: 80px;
+    }

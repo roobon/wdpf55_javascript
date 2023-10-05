@@ -90,6 +90,54 @@ a:hover {
             margin-left: 4%;
             margin-right: 4%;
           }
+          /* =========profile image dflex========= */
+          .profile_dflex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin-top:60px;
+            text-align: center;
+         
+          }
+          .middle_button{
+            margin-top:5%;
+            margin-left:5%;
+          }
+          div img{
+           border:1px solid black;
+          }
+          /* =========profile Image Ending======= */
+          /* ===============Footer section Start=========== */
+          .footer_dflex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(3, 82, 82);
+            gap: 10%;
+            color: white;
+            padding: 15px;
+            margin-top:70px;
+        
+        }
+        
+        .footer_copy {
+            background-color: rgb(1, 28, 28);
+            margin-top: -30px;
+            color: white;
+            text-align: center;
+            height: 35px;
+        }
+        /* footer down menu */
+        .footer_features_p{
+            margin-top:13%;
+            position: absolute;
+            color:rgba(121, 160, 29, 0.979);
+            font-size:30px;
+            text-align: center;
+            margin-left: 20%;
+        }
+
           
     
 

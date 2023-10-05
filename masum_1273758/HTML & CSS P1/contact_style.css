@@ -1,0 +1,86 @@
+
+
+.head_title {
+    font-size: 20px;
+    background-color: rgb(5, 82, 82);
+    color: white;
+}
+
+.topnav,
+a,li{
+    text-decoration: none;
+    padding:20px;
+    color: white;
+    text-align:center;
+    font-size: 20px;
+
+}
+a:hover {
+   color: white;
+    background-image: url(img/nav-active.png);
+ background-repeat: no-repeat;
+ background-size:cover;
+ }
+.head_title {
+    display: flex;
+    justify-content: space-between;
+}
+/* =============navbar Ending====== */
+
+.banner_img img{
+    text-align: center;
+    /* width:80vh; */
+    height:100vh;}
+    .about_section {
+        display: flex;
+        justify-content:center;
+        gap: 80px;
+    text-align: center;
+        background-color: rgb(3, 66, 66);
+        color: white;
+    }
+    
+    .about_section h1 {
+        margin-left: 70px;
+        font-size: 30px;
+        
+        white-space: nowrap;
+    }
+    
+    .about_section,
+    p {
+        font-size: 20px;
+    }
+    
+    .about-img img  {
+        height:50px;
+    }
+    /* =========Contact Section Start============= */
+    .horizontal-line {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .contact-heading {
+        text-align: center;
+        font-size: 45px;
+        margin-top:7%;
+    }
+    
+    .contact-small {
+        text-align: center;
+        font-weight: bold;
+    }
+    .world_map iframe{
+      width:1095px;
+      height:450px;
+      margin-left: 10%;
+      margin-top:40px;
+}
+.contact_header{
+    background-color: rgb(255, 250, 242);
+}
+.contact_information{
+    margin-left:10%;
+}
+    

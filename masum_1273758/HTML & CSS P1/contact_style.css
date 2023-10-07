@@ -74,8 +74,8 @@ a:hover {
     .world_map iframe{
       width:1095px;
       height:450px;
-      margin-left: 10%;
-      margin-top:40px;
+      margin-left:10%;
+      margin-top:90px;
 }
 .contact_header{
     background-color: rgb(255, 250, 242);
@@ -83,4 +83,24 @@ a:hover {
 .contact_information{
     margin-left:10%;
 }
+.email_location{
+    display: flex;
+    justify-content:left;
+    gap:7%;
+    margin-top:5%;
+    margin-left:10%;
+    margin-right:40px;
+}
+.form input, textarea{
+    width:550px;
+    padding: 10px;
+    background-color:rgb(153, 205, 225);
+   
+    
+}
+.form input, placeholder{
+    color:gold
+}
+
+
     

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // function number (n) {
+    //     return n
+    //  }
+//    let number =  (m,n)=> m+n;
+    
+//      console.log(number(30,20));
+var javascript =  {
+    name: "javascript",
+    labraries: ["React","Angular","vue"],
+    printLibraries: function(){
+        this.labraries.forEach(function(a){
+            console.log('${this.name} loves ${a}');
+        })
+    }
+} 
+javascript.printLibraries();
+   </script>
+</body>
+</html>

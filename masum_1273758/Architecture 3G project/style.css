@@ -17,6 +17,21 @@
         gap:10px;
       
     }
+    /* =========Visit project Section Start========== */
+    .latest_project{
+        width: 350px;
+        margin-top:25px;
+        
+    }
+    /* ===========Visit Project Section Ending====== */
+    /* ==============Photo Section Start=========== */
+    .photo{
+        width:280px;
+        gap: 10px;
+        margin-bottom:10%;
+        margin-top: 50px;
+    }
+    /* ============Photo Secting Ending */
     /* ====footer=== */
     .footer{
         

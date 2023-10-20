@@ -1,0 +1,42 @@
+<!-- Before ES6 (2015), JavaScript had Global Scope and Function Scope.
+<script>
+    var x = 5; // global scope
+    function sleep() {  // function declare
+        // inside the function => function / local scope
+
+    } 
+    sleep(); // function call
+</script>
+
+ES6 introduced two important new JavaScript keywords: let and const. These two keywords provide Block Scope in JavaScript.
+
+Variables declared inside a { } block cannot be accessed from outside the block:
+
+<script>
+    if(a = b){
+        console.log("I will give you 500 taka")
+    }
+</script>
+apart from function scope whenever you find a curly braces, inside the curly braces is Block Scope -->
+
+
+<script>
+    if(true){
+        let x = 6;
+        console.log(x);
+    }
+    console.log(x); //  Uncaught ReferenceError: x is not defined will be showed in browser
+</script>
+
+<script>
+    let x = 7;
+    if(true){
+        let x = 8
+        console.log(x); // 8 will be shown
+    }
+    console.log(x); // 7 will be shown here bcz Variables declared inside a { } block cannot be accessed from outside the block:
+</script>
+
+Variables declared with the var keyword can NOT have block scope.
+
+Variables declared inside a { } block can be accessed from outside the block.

@@ -11,6 +11,6 @@
 // }
 // let company =language?.library?.react?.company;
 // console.log(company);
-let colors = ["red","green","yellow","Blue"];
-colors =null;
-console.log(colors?.[1]);
+// let colors = ["red","green","yellow","Blue"];
+// colors =null;
+// console.log(colors?.[1]);

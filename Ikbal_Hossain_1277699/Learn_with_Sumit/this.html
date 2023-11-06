@@ -69,11 +69,18 @@
             console.log(this.name);
             console.log(this.age);
           },
+          father:{
+            name: "Ibrahim Khalil",
+            printName: function(){
+                console.log(this.name);
+            }
+          }
         };
       };
 
       var saimun = Person("Saimun", 30);
       saimun.printName();
+      saimun.father.printName();
     </script>
   </body>
 </html>

@@ -6,8 +6,79 @@
     <title>Document</title>
 </head>
 <body>
+    <script>
+        function fish(){
+            console.log("10 fishes");
+        }
+        fish();
+    </script>
+
+
 <script>
-    
+    function number(){
+        return 10;
+    }
+    console.log(number());
+</script>
+
+
+<script>
+    // ES6 fat arrow function
+    let fruits = () => {
+        return 20;
+    }
+    console.log("Number of fruits" + ": " + fruits());
+</script>
+
+
+<script>
+    // jodi arrow function er body er modde ektai statement thake abong seta kono kisu return kore tahole aro short vabe kora jay. Then I have to simply omit return
+
+    let capital = () => "Dhaka";
+    console.log("The capital of Bangladesh is " + capital());
+</script>
+
+
+<script>
+    let currency = () => console.log("taka");
+    currency(); 
+</script>
+
+
+
+<!-- Fat arrow with parameter -->
+
+<script>
+    function fish(n){
+        console.log(n + " fishes");
+    }
+    fish(10);
+</script>
+
+
+<script>
+    function fish(n){
+        return(n + " fishes");
+    }
+    console.log("Number of fishes remaining: "+ fish(30));
+</script>
+
+
+<script>
+    // if you have one parameter then you can omit () but it won't occur for multiple parameter. It is suggested that always use () while denoting parameter
+    let animal = type => "ferocious"
+    console.log("The wolf is a " + animal() + " animal")
+</script>
+
+
+<!-- If you have multiple task in function body then you have to maintain {} -->
+<script>
+    let sum = (a, b) => {
+        // other stuffs
+        const statement = "The summation of a & b"
+        return statement + ": " + (a + b);
+    };
+    console.log(sum(10, 5));
 </script>
 </body>
 </html>

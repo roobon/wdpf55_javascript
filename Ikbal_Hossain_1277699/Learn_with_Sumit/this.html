@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        implicit binding
+        explicit binding
+        new binding
+        window binding
+     -->
+
+    <script>
+      var printPlayerName = function (name) {
+        console.log(name);
+      };
+      printPlayerName("Sakib");
+    </script>
+
+    <script>
+      var player = {
+        name: "Mahmudullah",
+        age: 38,
+        printPlayerName: function () {
+          console.log(this.name);
+        },
+      };
+      player.printPlayerName();
+    </script>
+    <!-- Implicit: 1st dekhte hobe kon line a function call hoise then call hoyar somoy function ar left e ki kono dot notation ace? sei dot notation ar left a je object ta ace setai holo this(player). now player object er (this.name) er name property holo "Mahmudullah" -->
+
+    <!-- exception: only work for normal function will not work for arrow function -->
+
+    <script>
+      var printPlayerNameFunction = function (obj) {
+        obj.printPlayerName = function () {
+          console.log(this.name);
+        };
+      };
+
+      var mushfiq = {
+        name: "Mushfiq",
+        age: 36,
+      };
+
+      var mahmudullah = {
+        name: "Mahmudullah",
+        age: 37,
+      };
+
+      printPlayerNameFunction(mushfiq);
+      printPlayerNameFunction(mahmudullah);
+
+      mushfiq.printPlayerName();
+      mahmudullah.printPlayerName();
+
+      // kono object jodi function ar bahir theke function er modde pass kore dei and sei object diyeo jodi inner function ke call kori, se khetreo sei object ke this represent korte pare.
+    </script>
+
+    <script>
+      var Person = function (name, age) {
+        return {
+          name: name,
+          age: age,
+          printName: function () {
+            console.log(this.name);
+            console.log(this.age);
+          },
+        };
+      };
+
+      var saimun = Person("Saimun", 30);
+      saimun.printName();
+    </script>
+  </body>
+</html>

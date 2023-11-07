@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- recall the (implicit binding) -->
+    <script>
+      var ikbal = {
+        name: "Ikbal",
+        occupation: "Future Developer",
+        printName: function () {
+          console.log(this.occupation);
+        },
+      };
+      ikbal.printName();
+    </script>
+
+    <!-- concept of (explicit binding) -->
+    <script>
+      var printName = function () {
+        console.log(this.occupation);
+      };
+
+      var ibrahim = {
+        name: "Ibrahim Khalil",
+        age: 56,
+        occupation: "Service Holder",
+      };
+
+      printName.call(ibrahim);
+      // .call() 1st je parameter receive kore seta akta object => .call(ibrahim) kon object diye/ kon object er context a ami ei (printName) function take call korte cacci. tahole printName function ta call hobe through "ibrahim". eikhane ami explicitly bole dicci printName function er modde this ke hobe through (ibrahim)
+    </script>
+
+
+<!-- explicit binding with .call -->
+    <script>
+      var printCharacteristics = function (v1, v2, v3) {
+        // console.log(this.name + " is " + v1 +", " + v2 + " & " + v3 + " person.");
+        console.log(`${this.name} is ${v1}, ${v2} & ${v3} person`);
+      };
+
+      var walid = {
+        name: "Walid",
+        age: 30,
+        occupation: "Job Holder",
+      };
+
+      var virtue1 = "Well Mannered";
+      var virtue2 = "Educated";
+      var virtue3 = "Honest";
+
+      printCharacteristics.call(walid, virtue1, virtue2, virtue3);
+    </script>
+
+
+<!-- explicit binding with .bind -->
+<script>
+  var printCharacteristics = function (v1, v2, v3) {
+    // console.log(this.name + " is " + v1 +", " + v2 + " & " + v3 + " person.");
+    console.log(`${this.name} is ${v1}, ${v2} & ${v3} person`);
+  };
+
+  var joy = {
+    name: "Joy Banik",
+    age: 30,
+    occupation: "Job Holder",
+  };
+
+  var virtue1 = "Well Mannered";
+  var virtue2 = "Educated";
+  var virtue3 = "Addicted with girls";
+
+   // .bind function works like .call function but function take direct call kore dey na, akta function er instance return kore and seta (var newFunction) variable a store hoyece
+
+  var newFunction = printCharacteristics.bind(joy, virtue1, virtue2, virtue3);
+  newFunction();
+</script>
+
+
+
+<!-- explicit binding with .apply -->
+    <script>
+      var printCharacteristics = function (v1, v2, v3) {
+        // console.log(this.name + " is " + v1 +", " + v2 + " & " + v3 + " person.");
+        console.log(`${this.name} is ${v1}, ${v2} & ${v3} person`);
+      };
+
+      var walid = {
+        name: "Walid",
+        age: 30,
+        occupation: "Job Holder",
+      };
+
+      var virtue1 = "Well Mannered";
+      var virtue2 = "Educated";
+      var virtue3 = "Honest";
+
+      var virtue = [virtue1, virtue2, virtue3]; // parameter are passing by an array
+
+      printCharacteristics.apply(walid, virtue);
+    </script>
+
+
+
+  </body>
+</html>

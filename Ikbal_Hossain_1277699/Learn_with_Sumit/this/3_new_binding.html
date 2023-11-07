@@ -8,9 +8,13 @@
 <body>
     <script>
         function Person(name, designation){
+            // let this = Object.create(null);
+
             this.name = name;
             this.designation = designation;
             console.log(`This is ${this.name} and he is a ${this.designation} `)
+
+            // return this;
         }
 
         var ikbal = new Person("Ikbal Hossain", "Web Developer")

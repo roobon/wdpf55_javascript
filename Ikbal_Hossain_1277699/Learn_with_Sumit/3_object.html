@@ -12,10 +12,9 @@
         lastName: "Hossain",
         age: 30,
         eyeColor: "black",
-      }; // literal syntax. x = 5; sorasori x ar value 5 likhe diyeci. aitake literal syntax bole.
+      }; // literal syntax. x = 5; sorasori x ar value 5 likhe diyeci. aitake literal syntax bole. sorasori value ta jodi likhe dei sei way te likhle bole literal syntax
       console.log(person);
     </script>
-
 
     <script>
       const car = {
@@ -24,6 +23,7 @@
         weight: "850kg",
         color: "white",
         start: function () {
+          // A method is a function stored as a property. => object method
           console.log("car has started");
         },
         drive: function () {
@@ -31,6 +31,50 @@
         },
       };
       console.log(car);
+
+      // Accessing Object Properties
+      console.log(car.model);
+      console.log(car["color"]);
+      car.start(); // Accessing Object Methods
+    </script>
+
+
+    <script>
+      const truck = {
+        name: "Fiat",
+        model: 500,
+        weight: "850kg",
+        color: "white",
+        start: function () {
+          this.drive(); // function in another function
+          console.log("start driving");
+        },
+        drive: function () {
+          console.log("drive slowly");
+        },
+      };
+
+      truck.start();
+    </script>
+
+
+<!-- Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed. -->
+    <script>
+      let x = "Ikbal Hossain";  // literal syntax
+      console.log(typeof x);
+      // Or
+      let y = new String("Saimun");  // Declares y as a String object
+      console.log(typeof y);
+
+      let z = 12;  // literal syntax
+      // Or
+      let m = new Number(10)   // Declares m as a Number object
+
+
+      let p = true;   // literal syntax
+      // Or
+      let q = new Boolean(false);   // Declares m as a Boolean object
+
     </script>
   </body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = "Ikbal Hossain"
+        let b = new String("Ikbal Hossain");
+        // b = object. object er all characteristics ekhon b er modde ace. object er ei super power ta string er modde add korar jonno javascript ei jinis take object hisabe treat korar o option rekhece jate akta string er length ber kora theke suru kore aro onek kisu paower jonno javascript eitake object akare treat kore.
+    </script>
+
+
+
+    <script>
+        const country = {
+            name: "Bangladesh",
+            districts: 64,
+            literacy: function(){
+                return (`Only few persons are truly educated among 64 districts of Bangladesh.`);
+            }
+        };
+        console.log(country.literacy());
+    </script>
+<!-- Primitive values, like "Ikbal Hossain", can't have properties or methods(bcz they aren't not objects)
+But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as object when executing methods and properties -->
+
+
+    <script>
+        // .length => property
+        let x = "Bangladesh";  // treated as primitive values
+        console.log(x.length); // think as (new string)
+        // execute korar somoy JavaScript jokhoni dekhbe . call kora hoyece tokhoni se x ke object hisabe think korbe and new String("Ikbal Hossain") ei string er poperty gular access nibe.
+    </script>
+</body>
+</html>

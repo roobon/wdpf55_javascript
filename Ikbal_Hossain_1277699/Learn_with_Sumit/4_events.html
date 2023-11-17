@@ -9,8 +9,28 @@
     <!-- javascript is a event driven programming language -->
     <!-- HTML events are "things" that happen to HTML elements -->
 
+  
+    <!-- HTML events are "things" that happen to HTML elements. such as p tag, button => click event -->
+    
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is</button>
+    <p id="demo"></p>
+    <hr>
+
+
+    <button onclick="this.innerHTML = Date()">The time is</button>  
+    <!-- here onclick="this.innerHTML = Date()" => event handle code -->
+    <hr>
+
+
+    <button onclick="displayDate()">The time is</button>
+
+    
     <script>
-        
+        function displayDate(){  // event handler function
+            document.getElementById("test").innerHTML = Date();
+        }
     </script>
+    <h4 id="test"></h4>
+    
 </body>
 </html>

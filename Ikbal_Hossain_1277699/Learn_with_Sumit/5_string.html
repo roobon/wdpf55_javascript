@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let answer1 = "It's alright";
+      let answer2 = "He is called 'Johnny'";
+      let answer3 = 'He is called "Johnny"';
+      console.log(answer3.length);
+
+    </script>
+
+<!-- Escape Character -->
+<!-- The backslash (\) escape character turns special characters into string characters: -->
+
+    <script>
+        let text = "We are the so-called \"Vikings\" from the north.";
+        console.log(text);
+    </script>
+
+
+    <script>
+        let text1 = 'We are the so-called \'Vikings\' from the north.';
+        console.log(text1);
+    </script>
+
+
+    <script>
+        let text2 = "We are the so-called \\Vikings\\ from the north.";
+        console.log(text2);
+    </script>
+
+
+    <script>
+        let text3 = "It's alright.";
+        console.log(text3);
+
+        let text4 = 'It\'s alright.';
+        console.log(text4);
+
+    </script>
+
+
+
+<!-- Breaking Long Code Lines -->
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello \
+        Dolly!";
+    </script>
+
+
+
+
+<!-- The \ method is not the preferred method. It might not have universal support.
+Some browsers do not allow spaces behind the \ character. -->
+
+    <p id="demo1"></p>
+
+    <script>
+        // A safer way to break up a string, is to use string addition:
+        document.getElementById("demo1").innerHTML = "Hello " +
+        "Dolly!";
+    </script>
+
+
+
+
+    <!-- JavaScript Strings as Objects -->
+    <p id="demo2"></p>
+
+    <script>
+    // x is a string
+    let x = "John";
+
+    // y is an object
+    let y = new String("John");
+
+    document.getElementById("demo2").innerHTML =
+    typeof x + "<br>" + typeof y;
+
+
+    //  Do not create Strings objects. The new keyword complicates the code and slows down execution speed. String objects can produce unexpected results:
+    </script>
+
+
+
+
+    <script>
+        let m = "John";
+        let n = new String("John");
+        console.log(m==n);
+        console.log(m===n);
+        // (m == n) is true because m and n have equal values but (m === n) isn't true because they have equal value but not same data type
+    </script>
+
+
+
+
+    <!-- Or even worse. Objects can't be compared -->
+    <script>
+        let p = new String("John");
+        let q = new String("John");
+        console.log(p == q);
+        console.log(p === q);
+        // (p == q) or (p === q) are false because p and q are object
+    </script>
+  </body>
+</html>
